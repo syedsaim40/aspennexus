@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    distDir: 'custom-directory',
+    distDir: 'build',
 };
 
 export default nextConfig;

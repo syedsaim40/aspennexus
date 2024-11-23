@@ -1,0 +1,117 @@
+// Banner css
+.mainBanner {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    .bannerHeading {
+      padding-bottom: 5rem;
+      h1 {
+        font-size: 62px;
+        font-weight: 600;
+        padding-bottom: 1rem 0rem;
+      }
+      h2{
+          font-size: 62px;
+          font-weight: 600;
+          text-align: center;
+          
+          span {
+            color: var(--primary);
+          }
+      }
+    }
+    .bannerLinks {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      .btn{
+        padding: 1.2rem 1.5rem;
+        cursor: pointer;
+      }
+      .Video {
+          align-items: center;
+          display: flex;
+          margin-left: 3rem;
+        .vIcon {
+          width: 21px;
+          height: 21px;
+        }
+        p {
+          font-size: 12px;
+          font-weight: 500;
+          padding-left: 5px;
+        }
+      }
+  
+    }
+  }
+
+  //Services SCSS
+.serviceMain {
+    position: relative;
+    .serviceText {
+     width: 60%;
+     @media (max-width: 767.7px){
+      width: 100%;
+     }
+      p {
+        font-size: 16px;
+        color: var(--primary);
+        font-weight: 600;
+        padding: 1rem 0rem;
+      }
+      h1 {
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 500;
+        color: black;
+      }
+    }
+    .serviceContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+      
+      .serviceCard {
+        padding: 2rem 2rem;
+        Image{
+          width: 140px;
+          height: 140px;
+        }
+        h2 {
+          font-size: 32px;
+          font-weight: 500;
+          color: var(--primary);
+          padding: 1.5rem 0rem;
+        }
+        p{
+          color: #3F3F3F;
+          font-style: 16px;
+          font-weight: 400;
+          letter-spacing: 1px;
+          padding-bottom: 1rem;
+        }
+        a{
+          color:  #0F0F0F;
+          font-weight: 500;
+          font-style: 16px;
+        }
+      }
+    }
+    .exploreBtn{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+  }
+
+  //Gallery Css
+.gallery_wrapper{
+  background: var(--primary);
+  padding: 2rem;
+}
+  

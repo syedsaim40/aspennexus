@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import './homepage.scss';
 import { ReactTyped } from "react-typed";
 import Link from 'next/link';
@@ -8,9 +8,13 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 import serviceImg1 from '../public/Images/serviceImg1.png';
 import useScreenSize from '../src/app/Hooks/useScreenSize';
+import "yet-another-react-lightbox/styles.css";
+import Lightbox from 'yet-another-react-lightbox';
 
 const Homepage = () => {
   const{winHeight} = useScreenSize();
+
+  const [open, setOpen] = React.useState(false);
 
   return (
     <>
@@ -44,6 +48,32 @@ const Homepage = () => {
               </div>
           </div>
       </div>
+      </section>
+
+      
+      <section className='gallery_wrapper'>
+          <div className='container'>
+          <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={[
+          {
+            src: "/public/Images/slide1.webp",
+            alt: "image 1",
+            width: 3840,
+            height: 2560,
+            srcSet: [
+              { src: "/public/Images/saim.jpg", width: 320, height: 213 },
+              { src: "/public/Images/saim.jpg", width: 640, height: 427 },
+              { src: "/public/Images/saim.jpg", width: 1200, height: 800 },
+              { src: "/public/Images/saim.jpg", width: 2048, height: 1365 },
+              { src: "/public/Images/saim.jpg", width: 3840, height: 2560 },
+            ],
+          },
+          // ...
+        ]}
+      />
+          </div>
       </section>
 
       {/* Services Section shocase on home */}
@@ -104,9 +134,6 @@ const Homepage = () => {
       </section>
 
       {/* Gallery Section slideshow on home */}
-      <section className='gallery_wrapper'>
-          <div className='container'></div>
-      </section>
     </>
   )
 }

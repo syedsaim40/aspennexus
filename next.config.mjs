@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     distDir: 'custom-directory',
-    reactStrictMode: true,
+    // reactStrictMode: true,
 };
 
 

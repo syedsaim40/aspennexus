@@ -30,8 +30,9 @@
     "build/types/**/*.ts",
     "custom_build/types/**/*.ts",
     "new_build/types/**/*.ts",
+    "new_build1/types/**/*.ts",
     "next-env.d.ts",
-    "new_build1/types/**/*.ts"
+    "custom-directory/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

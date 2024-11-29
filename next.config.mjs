@@ -1,12 +1,9 @@
-import { join } from 'path';
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+import path from 'path';
 
 const nextConfig = {
   reactStrictMode: true,
-  distDir: join(__dirname, 'build'),  // This should be correct now
+  // Set distDir to a relative path from the project root
+  distDir: 'custom-directory', 
 };
 
 export default nextConfig;

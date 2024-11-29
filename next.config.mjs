@@ -1,8 +1,9 @@
+const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    distDir: 'build',
+    distDir: path.resolve(__dirname, 'build'), // Ensures absolute path
     reactStrictMode: true,
 };
 
-
-export default nextConfig;
+module.exports = nextConfig;

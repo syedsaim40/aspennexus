@@ -1,122 +1,62 @@
-'use client'
-import React from 'react'
-import { useState } from 'react';
+// pages/api/contact.js
+import nodemailer from 'nodemailer';
 
-const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [countryCode, setCountryCode] = useState('+1'); // Default country code
-  const [message, setMessage] = useState('');
-  const [interest, setInterest] = useState(''); // New state for interest category
-  const [date, setDate] = useState(''); // New state for date
-  const [time, setTime] = useState(''); // New state for time
-  const [status, setStatus] = useState('');
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    const { name, email, phone, interest, date, time, message } = req.body;
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('Sending...');
+    // Configure the email transport using nodemailer
+    const transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+      });
 
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name, email, phone: `${countryCode} ${phone}`, interest, date, time, message }),
-    });
+       // HTML email template
+       const htmlContent = `
+       <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 5px;">
+         <header style="text-align: center; padding-bottom: 10px;">
+           <h1 style="color: #007BFF;">Contact Form Submission</h1>
+         </header>
+         <p><strong>Name:</strong> ${name}</p>
+         <p><strong>Email:</strong> ${email}</p>
+         <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Interest:</strong> ${interest}</p>
+        <p><strong>Date:</strong> ${date}</p>
+        <p><strong>Time:</strong> ${time}</p>
+         <p><strong>Message:</strong></p>
+         <p style="background-color: #fff; padding: 10px; border-radius: 3px; border: 1px solid #ddd;">${message}</p>
+         <footer style="margin-top: 20px; font-size: 12px; color: #777; text-align: center;">
+           <p>This message was sent from your contact form.</p>
+           <p style="font-size: 10px;">&copy; ${new Date().getFullYear()} Your Company Name</p>
+         </footer>
+       </div>
+     `;
 
-    const result = await res.json();
-    if (res.ok) {
-      setStatus('Message sent successfully!');
-      setName('');
-      setEmail('');
-      setPhone('');
-      setInterest(''); // Reset interest category
-      setDate(''); // Reset date
-      setTime(''); // Reset time
-      setMessage('');
-    } else {
-      setStatus(`Error: ${result.error}`);
+    try {
+      console.log('Sending email...');
+      await transporter.sendMail({
+        from: email,
+        to: 'syedsaim40@gmail.com', // Replace with the recipient's email
+        subject: `Contact form submission from ${name}`,
+        text: message,
+        html: htmlContent,
+      });
+      
+      console.log('Email sent successfully');
+      return res.status(200).json({ message: 'Message sent successfully!' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      console.error('Error details:', error.message);
+      console.error('Stack trace:', error.stack);
+      console.error('Error sending email:', error);
+      return res.status(500).json({ error: 'Failed to send message' });
     }
-  };
-
-  return (
-    <div className='contact_form'>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <input
-          type="email"
-          placeholder="Your Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <div>
-          <select
-            value={countryCode}
-            onChange={(e) => setCountryCode(e.target.value)}
-            style={{ marginRight: '10px' }}
-          >
-            <option value="+1">+1 (USA)</option>
-            <option value="+44">+44 (UK)</option>
-            <option value="+91">+91 (India)</option>
-            <option value="+61">+61 (Australia)</option>
-            {/* Add more country codes as needed */}
-          </select>
-          <input
-            type="tel"
-            placeholder="Your Phone Number"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <select
-            value={interest}
-            onChange={(e) => setInterest(e.target.value)}
-            required
-          >
-            <option value="">Select Your Interest</option>
-            <option value="Product Inquiry">Product Inquiry</option>
-            <option value="Support">Support</option>
-            <option value="Feedback">Feedback</option>
-            <option value="General Inquiry">General Inquiry</option>
-            {/* Add more interest categories as needed */}
-          </select>
-        </div>
-        <div>
-          <input
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            required
-          />
-          <input
-            type="time"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            required
-          />
-        </div>
-        <textarea
-          placeholder="Your Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        />
-        <button type="submit">Send Message</button>
-      </form>
-      {status && <p>{status}</p>}
-    </div>
-  );
-};
-
-export default Contact;
+  } else {
+    res.setHeader('Allow', ['POST']);
+    return res.status(405).end(`Method ${req.method} Not Allowed`);
+  }
+}

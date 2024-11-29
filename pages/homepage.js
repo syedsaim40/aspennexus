@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from 'react';
 import './homepage.scss';
 import { ReactTyped } from "react-typed";

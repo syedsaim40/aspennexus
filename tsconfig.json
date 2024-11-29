@@ -25,10 +25,12 @@
     "strictNullChecks": true
   },
   "include": [
-    "next-env.d.ts",
-    "build/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "build/types/**/*.ts",
+    "custom_build/types/**/*.ts",
+    "next-env.d.ts",
+    "new_build/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

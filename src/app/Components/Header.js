@@ -32,7 +32,7 @@ function Header() {
 
       {/* Right Side: Contact Us Button */}
       <div className="contact">
-        <Link href="/contact-us" className='btn'>
+        <Link href="/contact" className='btn'>
           Contact Us →
         </Link>
       </div>

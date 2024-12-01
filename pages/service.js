@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Header from '../src/app/Components/Header';
+import Footer from '../src/app/Components/Footer';
 import Strategy from "../public/Images/Strategy.png";
 import Marketing from "../public/Images/Marketing.png";
 import Design from "../public/Images/Design.png";
@@ -14,7 +15,7 @@ function service() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Header/>
+        <Header />
         <section>
           <div className="container">
             <div className="section">
@@ -102,6 +103,7 @@ function service() {
             </div>
           </div>
         </section>
+        <Footer />
       </main>
     </div>
   )

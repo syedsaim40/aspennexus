@@ -1,0 +1,62 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7rem 0;
+    .contentSection {
+      margin-right: 1rem;
+      h1 {
+        font-size: 32px;
+        font-weight: 500;
+        color: var(--primary);
+        padding: 1rem 0rem;
+      }
+      h3 {
+        color: #0f0f0f;
+         padding-top: 0.5rem;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 2rem;
+      }
+      .serviceDetail{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          color: var(--primary);
+          font-size: 16px;
+          font-weight: 500;
+          p{
+            
+              padding-bottom: 1rem;
+          }
+      }
+    }
+    .contentSection2{
+      margin-left: 2rem;
+      h1 {
+        font-size: 32px;
+        font-weight: 500;
+        color: var(--primary);
+        padding: 1rem 0rem;
+      }
+      h3 {
+        color: #0f0f0f;
+         padding-top: 0.5rem;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 2rem;
+      }
+      .serviceDetail{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          color: var(--primary);
+          font-size: 16px;
+          font-weight: 500;
+          p{
+            
+              padding-bottom: 1rem;
+          }
+      }
+    }
+    
+  }
+  

@@ -4,6 +4,8 @@ import { useState } from "react";
 import "./contact.scss";
 import "../src/app/globals.css";
 import Link from "next/link";
+import Header from "../src/app/Components/Header";
+import Footer from "../src/app/Components/Footer";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -53,6 +55,7 @@ const Contact = () => {
 
   return (
     <>
+    <Header />
       <div className="container">
         <div className="section">
           <div className="contact">
@@ -158,6 +161,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

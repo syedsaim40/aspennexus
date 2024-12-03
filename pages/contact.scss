@@ -180,3 +180,44 @@ select:valid {
 select option:checked {
   color: var(--primary); /* Ensure the selected option text remains green */
 }
+
+// Dropdown styling for country select
+.countrySelector {
+  position: relative;
+  min-width: 260px;
+  margin-right: 1rem;
+
+  input {
+    width: 100%;
+    padding: 0 1rem 0 0;
+    margin-bottom: 0 !important;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 66%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+
+    li {
+      padding: 0.8rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #f1f1f1;
+      }
+    }
+
+    li:not(:last-child) {
+      border-bottom: 1px solid #eee;
+    }
+  }
+}

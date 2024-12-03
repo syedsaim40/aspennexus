@@ -153,3 +153,21 @@
     }
   }
 }
+
+/* Make the text color green for date and time inputs when selected */
+.dateTime input[type="date"]:focus,
+.dateTime input[type="date"]:valid,
+.dateTime input[type="time"]:focus,
+.dateTime input[type="time"]:valid {
+  color: var(--primary); /* Change text color to green */
+}
+
+/* Make the text color green for the selected option in the dropdown */
+select:focus,
+select:valid {
+  color: var(--primary); /* Change text color to green */
+}
+
+select option:checked {
+  color: var(--primary); /* Ensure the selected option text remains green */
+}

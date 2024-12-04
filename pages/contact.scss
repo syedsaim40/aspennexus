@@ -29,8 +29,6 @@
       display: flex;
       select {
         all: unset;
-
-        // border: 2px solid #b4b2b2;
         padding-bottom: 1rem;
         margin: 1rem 0rem;
         display: block;
@@ -44,7 +42,17 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        &:is(:focus) {
+            outline: none !important;
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        option{
+            color: #5a5a5a;
+        }
+        
       }
+      
     }
     .inquriy {
       display: flex;
@@ -55,26 +63,40 @@
         flex: 1;
         select {
           all: unset;
-          //   border-bottom: 2px solid #b4b2b2;
-          //   padding: 1rem;
           font-size: 16px;
           font-weight: 400;
           color: #5a5a5a;
           font-family: var(--mont);
           width: 100%;
-          padding-bottom: 1rem;
-          //   margin: 1rem 0rem;
+          padding-bottom: 1.1rem;
+         
           display: block;
-          font-family: var(--mont);
           font-size: 24px;
           font-weight: 400;
           color: #5a5a5a;
           border: none;
           border-bottom: 2px solid #b4b2b2;
+          &:is(:focus) {
+            outline: none !important;
+            border-color: var(--primary);
+            color: var(--primary);
+            }
+          
         }
       }
       .dateTime {
         flex: 1;
+       label{
+        display: block;
+        cursor: pointer;
+        input{
+            display: block;
+            &:is(:focus) {
+                
+                color: var(--primary);
+                }
+        }
+       }
       }
     }
 
@@ -100,6 +122,8 @@
 
     textarea {
       max-width: 100%;
+      width: 100%;
+      min-height: 60px;
       resize:vertical;
       align-items: center;
       margin-top: 2rem;

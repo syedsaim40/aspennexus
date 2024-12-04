@@ -196,12 +196,14 @@ const Contact = () => {
                   </select>
                 </div>
                 <div className="dateTime">
-                  <input
+                 <label>
+                   <input
                     type="date"
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
                     required
                   />
+                 </label>
                 </div>
                 <div className="dateTime">
                   <input

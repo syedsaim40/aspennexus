@@ -163,9 +163,11 @@
   }
 }
 
-section{
-  &.topSpace{
-    padding-top: 100px;
+div{
+  .section{
+    &.topSpace{
+      padding-top: 100px;
+    }
   }
 }
 

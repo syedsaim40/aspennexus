@@ -4,6 +4,8 @@ import { useState } from "react";
 import "./contact.scss";
 import "../src/app/globals.css";
 import Link from "next/link";
+import Header from "../src/app/Components/Header";
+import Footer from "../src/app/Components/Footer";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -52,6 +54,7 @@ const Contact = () => {
   };
 
   return (
+    
     // <div className='contact_form'>
     //   <h1>Contact Us</h1>
     //   <form onSubmit={handleSubmit}>
@@ -128,6 +131,7 @@ const Contact = () => {
     //   {status && <p>{status}</p>}
     // </div>
     <>
+       <Header/>
       {/* Contact */}
       <div className="container">
         {/* Contact section */}
@@ -228,6 +232,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

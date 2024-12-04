@@ -161,7 +161,7 @@ const Contact = () => {
                 required
               />
               <div className="numberInfo">
-                <select
+                <select className="country_wrapper"
                   value={countryCode}
                   onChange={(e) => setCountryCode(e.target.value)}
                   style={{ marginRight: "10px" }}

@@ -1,6 +1,8 @@
+
+
 .contact {
-  margin: 3rem 0;
   .contactText {
+   
     h1 {
       color: var(--textColor);
       font-family: var(--mont);
@@ -27,10 +29,12 @@
     }
     .numberInfo {
       display: flex;
+      margin-bottom: 1rem;
       select {
         all: unset;
         padding-bottom: 1rem;
         margin: 1rem 0rem;
+        margin-bottom: 2rem;
         display: block;
         font-family: var(--mont);
         font-size: 24px;
@@ -57,7 +61,7 @@
     .inquriy {
       display: flex;
       gap: 1rem;
-
+ 
       .interest {
         margin-top: 1rem;
         flex: 1;
@@ -68,7 +72,7 @@
           color: #5a5a5a;
           font-family: var(--mont);
           width: 100%;
-          padding-bottom: 1.1rem;
+          padding-bottom: 1rem;
          
           display: block;
           font-size: 24px;
@@ -80,6 +84,9 @@
             outline: none !important;
             border-color: var(--primary);
             color: var(--primary);
+            }
+            option{
+                color: #5a5a5a;
             }
           
         }
@@ -104,6 +111,7 @@
       width: 100%;
       padding-bottom: 1rem;
       margin: 1rem 0rem;
+      margin-bottom: 2rem;
       display: block;
       font-family: var(--mont);
       font-size: 24px;
@@ -150,6 +158,25 @@
       padding: 1.1rem 1.4rem;
       font-weight: 500;
       font-family: var(--mont);
+      margin-bottom: 2rem;
     }
   }
+}
+
+/* Make the text color green for date and time inputs when selected */
+.dateTime input[type="date"]:focus,
+.dateTime input[type="date"]:valid,
+.dateTime input[type="time"]:focus,
+.dateTime input[type="time"]:valid {
+  color: var(--primary); /* Change text color to green */
+}
+
+/* Make the text color green for the selected option in the dropdown */
+select:focus,
+select:valid {
+  color: var(--primary); /* Change text color to green */
+}
+
+select option:checked {
+  color: var(--primary); /* Ensure the selected option text remains green */
 }

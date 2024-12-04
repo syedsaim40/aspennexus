@@ -63,7 +63,7 @@
       gap: 1rem;
  
       .interest {
-        margin-top: 1rem;
+        margin-top: 18px;
         flex: 1;
         select {
           all: unset;
@@ -160,6 +160,12 @@
       font-family: var(--mont);
       margin-bottom: 2rem;
     }
+  }
+}
+
+section{
+  &.topSpace{
+    padding-top: 100px;
   }
 }
 

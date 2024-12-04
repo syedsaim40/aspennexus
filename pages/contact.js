@@ -536,7 +536,7 @@ const Contact = () => {
     <>
     <Header />
       <div className="container">
-        <div className="section">
+        <div className="section topSpace">
           <div className="contact">
             <div className="contactText">
               <h1>Interested?</h1>

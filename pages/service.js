@@ -17,6 +17,14 @@ function service() {
       <main className={styles.main}>
         <Header />
         <section>
+       <div className="mainHeading">
+       <div className="serviceHeading">
+              <div className="container">
+              <p>OUR SERVICES</p>
+              <h2>From proof of concepts and to complex systems of an enterprise-level – we’ve got everything covered.</h2>
+              </div>
+            </div>
+       </div>
           <div className="container">
             <div className="section">
               <div className="contentSection">

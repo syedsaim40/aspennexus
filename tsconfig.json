@@ -34,7 +34,7 @@
     "new_build1/types/**/*.ts",
     "next-env.d.ts",
     "F:\\E-Data\\Freelance Projects\\nexus\\build/types/**/*.ts"
-  ],
+, "src/app/Components/Gallery.js"  ],
   "exclude": [
     "node_modules"
   ]

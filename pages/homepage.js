@@ -8,12 +8,22 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 import serviceImg1 from '../public/Images/serviceImg1.png';
 import useScreenSize from '../src/app/Hooks/useScreenSize';
+
+import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import Lightbox from 'yet-another-react-lightbox';
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import NextJsImage from '../src/app/Components/NextJsImage';
+import slides from '../src/app/Components/slides';
+
+import image1 from "/public/Images/saim.jpg";
+import image2 from "/public/Images/slide1.webp";
+import image3 from "/public/Images/News3.png";
+
+import Gallery from "../src/app/Components/Gallery";
+
 
 const Homepage = () => {
   const{winHeight} = useScreenSize();
-
   const [open, setOpen] = React.useState(false);
 
   return (
@@ -53,26 +63,21 @@ const Homepage = () => {
       
       <section className='gallery_wrapper'>
           <div className='container'>
+
+          <Gallery />
+
+          {/* <button type="button" onClick={() => setOpen(true)}>
+            Open Lightbox
+          </button>
+
           <Lightbox
-        open={open}
-        close={() => setOpen(false)}
-        slides={[
-          {
-            src: "/public/Images/slide1.webp",
-            alt: "image 1",
-            width: 3840,
-            height: 2560,
-            srcSet: [
-              { src: "/public/Images/saim.jpg", width: 320, height: 213 },
-              { src: "/public/Images/saim.jpg", width: 640, height: 427 },
-              { src: "/public/Images/saim.jpg", width: 1200, height: 800 },
-              { src: "/public/Images/saim.jpg", width: 2048, height: 1365 },
-              { src: "/public/Images/saim.jpg", width: 3840, height: 2560 },
-            ],
-          },
-          // ...
-        ]}
-      />
+            open={open}
+            close={() => setOpen(false)}
+            slides={[image1, image2, image3]}
+            render={{ slide: NextJsImage, thumbnail: NextJsImage }}
+            plugins={[Thumbnails]}
+            thumbnails={{width: 100, height: 150, imageFit: "cover", gap: 20}}
+          /> */}
           </div>
       </section>
 

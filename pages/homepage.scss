@@ -40,6 +40,7 @@
           align-items: center;
           display: flex;
           margin-left: 3rem;
+        
         .vIcon {
           width: 21px;
           height: 21px;
@@ -48,6 +49,10 @@
           font-size: 12px;
           font-weight: 500;
           padding-left: 5px;
+        }
+        @media (max-width: 499px){
+          margin: 0;
+          margin-top: 2rem;
         }
       }
       @media (max-width: 499px){
@@ -77,25 +82,35 @@
         font-size: 40px;
         font-weight: 500;
         color: black;
+        @media (max-width: 499px){
+          font-size: 20px;
+        }
       }
     }
     .serviceContainer {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     @media (max-width: 499px){
-      grid-template-columns: repeat(1,1fr);
+      grid-template-columns: repeat(2,1fr);
     }
       .serviceCard {
         padding: 2rem 2rem;
         Image{
           width: 140px;
           height: 140px;
+          @media (max-width: 499px){
+            width: 100px;
+            height: 100px;
+          }
         }
         h2 {
           font-size: 32px;
           font-weight: 500;
           color: var(--primary);
           padding: 1.5rem 0rem;
+          @media (max-width: 499px){
+            font-size: 20px;
+          }
         }
         p{
           color: #3F3F3F;
@@ -103,11 +118,17 @@
           font-weight: 400;
           letter-spacing: 1px;
           padding-bottom: 1rem;
+          @media (max-width: 499px){
+            font-size: 8px;
+          }
         }
         a{
           color:  #0F0F0F;
           font-weight: 500;
           font-style: 16px;
+          @media (max-width: 499px){
+            font-size: 8px;
+          }
         }
       }
     }
@@ -135,16 +156,23 @@
       font-size: 40px;
       font-weight: 500;
       font-family: var(--mont);
+      @media (max-width: 499px){
+        font-size: 23px;
+      }
+      
     }
   }
   .reviewCard{
-    height: 484px;
+
     background: #E1DBF6;
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-     padding: 0rem 2rem;
+     padding: 2rem 2rem;
      gap: 2rem;
+     @media (max-width: 499px){
+      padding: 2rem 2rem;
+    }
      .reviewText{
       h4{
         color: #0F0F0F;
@@ -153,6 +181,9 @@
         font-family: var(--mont);
         padding-bottom: 4rem;
         width: 80%;
+        @media (max-width: 499px){
+          width: 100%;
+        }
       }
       span{
         color: var(--primary);
@@ -166,12 +197,18 @@
         color: #0F0F0F;
       }
      }
+     @media (max-width: 499px){
+      flex-direction: column;
+    }
   }
 }
 
 .gallery_inner{
   display: flex;
   margin-bottom: 3rem;
+  @media (max-width: 499px){
+flex-direction: column;
+align-items: center;  }
   .containerText{
     padding: 0 6rem 0 0;
     flex: 1;
@@ -186,6 +223,8 @@
       color: #fff;
       line-height: normal;
       font-family: var(--mont);
+      @media (max-width: 499px){
+padding-bottom: 1rem;      }
     }
   }
   .cont_btn{

@@ -113,7 +113,7 @@
 .gallery_wrapper{
   background: var(--primary);
   padding: 2rem;
-  min-height: 500px;
+  // min-height: 500px;
 }
 .review{
   margin-bottom: 5rem;
@@ -192,4 +192,7 @@
       display: inline-block;
     }
   }
+}
+.gallery_Holder{
+  min-height: 450px;
 }

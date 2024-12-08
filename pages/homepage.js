@@ -158,7 +158,7 @@ const Homepage = () => {
             <Link className="btn4" href={"/contact"}>Book a Free Consultation</Link>
           </div>
         </div>
-        <div className='container'>
+        <div className='container gallery_Holder'>
           <Gallery />
         </div>
       </section>

@@ -12,14 +12,19 @@
         font-size: 62px;
         font-weight: 600;
         padding-bottom: 1rem 0rem;
+        @media (max-width: 499px){
+          font-size: 32px;
+        }
       }
       h2{
           font-size: 62px;
           font-weight: 600;
           text-align: center;
-          
           span {
             color: var(--primary);
+          }
+          @media (max-width: 499px){
+            font-size: 32px;
           }
       }
     }
@@ -45,7 +50,11 @@
           padding-left: 5px;
         }
       }
-  
+      @media (max-width: 499px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 
@@ -73,7 +82,9 @@
     .serviceContainer {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-      
+    @media (max-width: 499px){
+      grid-template-columns: repeat(1,1fr);
+    }
       .serviceCard {
         padding: 2rem 2rem;
         Image{

@@ -21,7 +21,7 @@ const Homepage = () => {
   const [open, setOpen] = React.useState(false);
 
  let settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 400,
     slidesToShow: 1,
@@ -31,7 +31,7 @@ const Homepage = () => {
   return (
     <>
       {/* // Home Banner */}
-      <section style={{ height: winHeight }}>
+      <section className="sectionSpace" style={{ height: winHeight }}>
         <div>
           {/* This is main banner */}
           <div className="mainBanner">
@@ -66,29 +66,8 @@ const Homepage = () => {
         </div>
       </section>
 
-      
-      <section className='gallery_wrapper'>
-          <div className='container'>
-
-          <Gallery />
-
-          {/* <button type="button" onClick={() => setOpen(true)}>
-            Open Lightbox
-          </button>
-
-          <Lightbox
-            open={open}
-            close={() => setOpen(false)}
-            slides={[image1, image2, image3]}
-            render={{ slide: NextJsImage, thumbnail: NextJsImage }}
-            plugins={[Thumbnails]}
-            thumbnails={{width: 100, height: 150, imageFit: "cover", gap: 20}}
-          /> */}
-          </div>
-      </section>
-
       {/* Services Section shocase on home */}
-      <section>
+      <section className="sectionSpace">
         <div className="container">
           {/* Service section */}
           <div className="serviceMain">
@@ -168,9 +147,24 @@ const Homepage = () => {
       </section>
 
       {/* Gallery Section slideshow on home */}
+      <section className="gallery_wrapper sectionSpace">
+        <div className="container gallery_inner">
+          <div className="containerText">
+            <h3>See The Results</h3>
+            <h2>Check out some of our past results</h2>
+          </div>
+          <div className="cont_btn">
+            <p>Integrate your Amazon and Shopify stores seamlessly with our automation services. Automate inventory updates and gain real-time data insights, leading to streamlined operations, heightened productivity, and enhanced customer experiences.</p>
+            <Link className="btn4" href={"/contact"}>Book a Free Consultation</Link>
+          </div>
+        </div>
+        <div className='container'>
+          <Gallery />
+        </div>
+      </section>
 
       {/* Review Section */}
-      <section>
+      <section className="sectionSpace">
         <div className="container">
         
           <div className="review">

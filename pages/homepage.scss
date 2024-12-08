@@ -113,6 +113,7 @@
 .gallery_wrapper{
   background: var(--primary);
   padding: 2rem;
+  min-height: 500px;
 }
 .review{
   margin-bottom: 5rem;
@@ -154,5 +155,41 @@
         color: #0F0F0F;
       }
      }
+  }
+}
+
+.gallery_inner{
+  display: flex;
+  margin-bottom: 3rem;
+  .containerText{
+    padding: 0 6rem 0 0;
+    flex: 1;
+    h3{
+      font-size: clamp(16px, 4vw, 32px);
+      color: #fff;
+      line-height: normal;
+      font-family: var(--mont);
+    }
+    h2{
+      font-size: clamp(22px, 4vw, 42px);
+      color: #fff;
+      line-height: normal;
+      font-family: var(--mont);
+    }
+  }
+  .cont_btn{
+    flex: 1;
+    p{
+      font-size: clamp(16px, 4vw, 18px);
+      color: #fff;
+      font-weight: 400;
+      line-height: normal;
+      font-family: var(--mont);
+      display: block;
+      margin-bottom: 2rem;
+    }
+    a{
+      display: inline-block;
+    }
   }
 }

@@ -110,7 +110,11 @@
   all: unset;
 }
 .sectionSpace {
-  margin-bottom: 2rem;
+  display: block;
+  margin-bottom: 4rem;
+  @media (max-width: 767.9px){
+    margin-bottom: 2rem;
+  }
 }
 .noBG {
   background: transparent;
@@ -170,6 +174,25 @@
      
       background-color: white;
       color: var(--primary);
+    
+  }
+}
+
+.btn4{
+  padding: 1.2rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: white;
+  outline: none;
+ 
+  letter-spacing: 1px;
+
+  &:hover{
+     border-color: #fff;
+      background-color: var(--primary);
+      color: white;
     
   }
 }

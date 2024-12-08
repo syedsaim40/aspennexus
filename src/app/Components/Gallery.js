@@ -5,6 +5,9 @@ import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import './Gallery.scss';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const Gallery = () => {
   const [open, setOpen] = useState(false);
@@ -12,12 +15,14 @@ const Gallery = () => {
   const [isClient, setIsClient] = useState(false);
 
   const galleryTab = [
-    { imageUrl: "https://themewagon.github.io/snapshot/images/model-3.jpg" },
-    { imageUrl: "https://themewagon.github.io/snapshot/images/model-3.jpg" },
-    { imageUrl: "https://themewagon.github.io/snapshot/images/model-3.jpg" },
-    { imageUrl: "https://themewagon.github.io/snapshot/images/model-3.jpg" },
-    { imageUrl: "https://themewagon.github.io/snapshot/images/model-3.jpg" },
-    { imageUrl: "https://themewagon.github.io/snapshot/images/model-3.jpg" },
+    { imageUrl: "Images/ss1.webp" },
+    { imageUrl: "Images/ss2.webp" },
+    { imageUrl: "Images/ss1.webp" },
+    { imageUrl: "Images/ss2.webp" },
+    { imageUrl: "Images/ss1.webp" },
+    { imageUrl: "Images/ss2.webp" },
+    { imageUrl: "Images/ss1.webp" },
+    { imageUrl: "Images/ss2.webp" },
   ];
 
   const slides = galleryTab.map((item) => ({
@@ -32,6 +37,16 @@ const Gallery = () => {
       { src: item.imageUrl, width: 3840, height: 2560 },
     ],
   }));
+
+  
+ const settings = {
+  className: "center",
+  centerMode: true,
+  infinite: true,
+  centerPadding: "60px",
+  slidesToShow: 5,
+  speed: 500
+};
 
   useEffect(() => {
     setIsClient(true);
@@ -50,6 +65,7 @@ const Gallery = () => {
   return (
     <div className="w-full">
       <div className="gallery-container">
+      <Slider {...settings}>
         {galleryTab.map((x, index) => (
           <div key={index} className="gallery-item">
             <div className="image-wrapper">
@@ -68,6 +84,7 @@ const Gallery = () => {
             </div>
           </div>
         ))}
+        </Slider>
       </div>
 
       {/* Force re-render of Lightbox using key */}

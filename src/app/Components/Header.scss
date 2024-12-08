@@ -1,47 +1,115 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box
-}
-.headerWrapper{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 2rem 1.5rem;
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   background: #fff;
-   z-index: 1;
-   .logo{
-       h2{
-           font-family: var(--didact);
-           font-size: 32px;
-           letter-spacing: -2px;
-           font-weight: 600;
-           color:var(--primary) ;
-       }
-    }
-   .menuList{
-           a{
-               padding: 0rem 1.7rem;
-               font-size: 16px;
-               font-weight: 500;
-               color: var(--textColor);
-               cursor: pointer;
-
-               &:hover{
-                 
-                   color: var(--primary);
-               }
-               span{
-                   color: var(--primary);
-               }
-           }   
-   }
-   button{
-       cursor: pointer;
-   }
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 2px 31px -16px #0006;
   
-}
+    .menuList {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+  
+      a,
+      .dropdownToggle {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--textColor);
+        text-decoration: none;
+        cursor: pointer;
+  
+        &:hover {
+          color: var(--primary);
+        }
+      }
+  
+      .active {
+        color: var(--primary); /* Active link color */
+        font-weight: 600; /* Optional: bold the active link */
+      }
+  
+      .dropdown {
+        position: relative;
+  
+        .dropdownToggle {
+          &:hover {
+            color: var(--primary);
+          }
+        }
+  
+        .dropdownMenu {
+            position: absolute;
+            top: calc(100% + 0.5rem);
+            right: auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.211);
+            display: flex;
+            flex-direction: row;
+            z-index: 1000;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 2rem;
+            left: auto;
+            transform: translate(-45%, 0px);
+          .innerItemParent{
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            align-items: flex-start;
+            h3{
+                padding: 0.5rem 0;
+                color: var(--primary);
+                font-weight: 600;
+                font-size: 16px;
+                line-height: normal;
+                display: block;
+                width: 100%;
+                min-width: 250px;
+                max-width: max-content;
+                // margin-bottom: 1rem;
+            }
+                a {
+                    // width: calc(100% - 16px);
+                    width: max-content;
+                    display: inline-block;
+                    padding: 0.5rem 0 0.5rem 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: var(--textColor);
+                    text-decoration: none;
+                    position: relative;
+                    overflow: hidden;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 2px;
+                        width: 100%;
+                        background: var(--primary);
+                        transform: translate(-100%, 0px);
+                        transition: all linear 0.2s;
+                    }
+                    &:hover {
+                        color: var(--primary);
+                        &::before{
+                            transition: all linear 0.2s;
+                            transform: translate(0, 0px);
+                        }
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+  

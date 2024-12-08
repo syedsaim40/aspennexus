@@ -24,8 +24,14 @@ export async function getStaticPaths() {
   const servicesDir = path.join(process.cwd(), 'pages/services');
   const files = fs.readdirSync(servicesDir);
 
+  // Filter out the dynamic route file and other static files
   const paths = files
-    .filter((file) => file.endsWith('.js') && file !== '[slug].js') // Exclude dynamic route file
+    .filter(
+      (file) =>
+        file.endsWith('.js') && 
+        file !== '[slug].js' && 
+        !fs.existsSync(path.join(servicesDir, file.replace('.js', ''))) // Exclude files with conflicts
+    )
     .map((file) => ({
       params: { slug: file.replace('.js', '') },
     }));

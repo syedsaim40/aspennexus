@@ -24,7 +24,7 @@ const ServicePage = ({ slug }) => {
 
   return (
     <div>
-      <h1>Service: {slug}</h1>
+      {/* <h1>Service: {slug}</h1> */}
       <ServiceComponent />
     </div>
   );

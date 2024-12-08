@@ -51,49 +51,16 @@ function Header() {
           {isDropdownOpen && (
             <div className="dropdownMenu">
               <div className='innerItemParent'>
-                <h3>Amazon</h3>
-                <Link href="/services/development">Amazon Store Creation</Link>
-                <Link href="/services/development">Amazon FBA Automation</Link>
-                <Link href="/services/development">Amazon Private Labelled</Link>
-                <Link href="/services/development">Amazon A+ Content</Link>
-                <Link href="/services/development">Amazon Product Hunting</Link>
-                <Link href="/services/development">Amazon PPC</Link>
+                {/* <h3>Amazon</h3> */}
+                <Link href="/services/shopify">Shopify automatically</Link>
+                <Link href="/services/amazon">Amazon Automation</Link>
+                <Link href="/services/tiktok">Tiktok Shop Automation</Link>
+                <Link href="/services/digitalMarketing">Digital Marketing</Link>
               </div>
               <div className='innerItemParent'>
-                <h3>Wallmart</h3>
-                <Link href="/services/temp">Temporary</Link>
-                <Link href="/services/temp">Walmart Store Creation</Link>
-                <Link href="/services/temp">Walmart Private Labelled</Link>
-                <Link href="/services/temp">Walmart Dropshipping</Link>
-                <Link href="/services/temp">Walmart Product Hunting</Link>
-                <Link href="/services/temp">Walmart WFS</Link>
-              </div>
-              <div className='innerItemParent'>
-                <h3>Youtube</h3>
-                <Link href="/services/development">Development</Link>
-                <Link href="/services/temp">Temporary</Link>
-                <Link href="/services/development">Development</Link>
-                <Link href="/services/temp">Temporary</Link>
-                <Link href="/services/development">Development</Link>
-                <Link href="/services/temp">Temporary</Link>
-              </div>
-              <div className='innerItemParent'>
-                <h3>Shopify</h3>
-                <Link href="/services/development">Development</Link>
-                <Link href="/services/temp">Temporary</Link>
-                <Link href="/services/development">Development</Link>
-                <Link href="/services/temp">Temporary</Link>
-                <Link href="/services/development">Development</Link>
-                <Link href="/services/temp">Temporary</Link>
-              </div>
-              <div className='innerItemParent'>
-                <h3>Others</h3>
-                <Link href="/services/development">Development</Link>
-                <Link href="/services/temp">Temporary</Link>
-                <Link href="/services/development">Development</Link>
-                <Link href="/services/temp">Temporary</Link>
-                <Link href="/services/development">Development</Link>
-                <Link href="/services/temp">Temporary</Link>
+                <Link href="/services/graphicDesign">Graphic Designing</Link>
+                <Link href="/services/privateLabel">Private Labeling</Link>
+                <Link href="/services/websiteDevelop">Website development</Link>
               </div>
             </div>
           )}

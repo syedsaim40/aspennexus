@@ -64,6 +64,8 @@
             flex-direction: column;
             z-index: 1000;
             align-items: flex-start;
+            min-width: 200px;
+            max-width: max-content;
             h3{
                 padding: 0.5rem 0;
                 color: var(--primary);
@@ -72,8 +74,6 @@
                 line-height: normal;
                 display: block;
                 width: 100%;
-                min-width: 250px;
-                max-width: max-content;
                 // margin-bottom: 1rem;
             }
                 a {

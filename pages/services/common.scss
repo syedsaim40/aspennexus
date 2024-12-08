@@ -1,0 +1,88 @@
+.mainHeading{
+    margin-top: 83px;
+      .serviceHeading{
+        height: 383px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         background: #E1DBF6;
+         p{
+          font-size: 16px;
+          color: var(--primary);
+          font-weight: 600;
+          font-family: var(--mont);
+          padding-bottom: 1rem;
+         }
+         h2{
+          color:#0f0f0f;
+          width: 80%;
+          font-size: 40px;
+          font-weight: 500;
+          font-family: var(--mont);
+         }
+        }
+    }
+    .section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin: 5rem 0;
+        .contentSection {
+         
+          h1 {
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--primary);
+            padding: 1rem 0rem;
+           
+          }
+          h3 {
+            color: #0f0f0f;
+             padding-top: 0.5rem;
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 2rem;
+          }
+          .serviceDetail{
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              color: var(--primary);
+              font-size: 16px;
+              font-weight: 500;
+              p{
+                
+                  padding-bottom: 1rem;
+              }
+          }
+        }
+        .contentSection2{
+         
+          h1 {
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--primary);
+            padding: 1rem 0rem;
+          }
+          h3 {
+            color: #0f0f0f;
+             padding-top: 0.5rem;
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 2rem;
+          }
+          .serviceDetail{
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              color: var(--primary);
+              font-size: 16px;
+              font-weight: 500;
+              p{
+                
+                  padding-bottom: 1rem;
+              }
+          }
+        }
+        
+      }
+      

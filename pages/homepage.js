@@ -53,7 +53,7 @@ const Homepage = () => {
             {/* Banner links */}
             <div className="bannerLinks">
               <div>
-                <Link className="btn" href="#">
+                <Link className="btn" href="/service">
                   Explore our services →
                 </Link>
               </div>

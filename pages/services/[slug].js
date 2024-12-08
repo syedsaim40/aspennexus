@@ -1,9 +1,11 @@
 // pages/services/[slug].js
 import fs from 'fs';
-import path from 'path';
+import path from 'path'; // Add this line
 import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic';
 
-const ServicePage = ({ content, slug }) => {
+
+const ServicePage = ({ slug }) => {
   const router = useRouter();
 
   // Show loading state for fallback pages
@@ -11,27 +13,31 @@ const ServicePage = ({ content, slug }) => {
     return <div>Loading...</div>;
   }
 
+  // Dynamically import the service component
+  const ServiceComponent = dynamic(() =>
+    import(`../../services/${slug}`).catch(() => null)
+  );
+
+  if (!ServiceComponent) {
+    return <div>Service not found</div>;
+  }
+
   return (
     <div>
       <h1>Service: {slug}</h1>
-      <p>{content}</p>
+      <ServiceComponent />
     </div>
   );
 };
 
 // Generate paths based on files in the services folder
 export async function getStaticPaths() {
-  const servicesDir = path.join(process.cwd(), 'pages/services');
+  const servicesDir = path.join(process.cwd(), 'services'); // Adjust to the correct folder path
   const files = fs.readdirSync(servicesDir);
 
-  // Filter out the dynamic route file and other static files
+  // Filter to only .js files
   const paths = files
-    .filter(
-      (file) =>
-        file.endsWith('.js') && 
-        file !== '[slug].js' && 
-        !fs.existsSync(path.join(servicesDir, file.replace('.js', ''))) // Exclude files with conflicts
-    )
+    .filter((file) => file.endsWith('.js'))
     .map((file) => ({
       params: { slug: file.replace('.js', '') },
     }));
@@ -42,15 +48,12 @@ export async function getStaticPaths() {
   };
 }
 
-// Generate content for each page
+// Generate props for each page
 export async function getStaticProps({ params }) {
   const { slug } = params;
 
-  // You can dynamically fetch content here, e.g., from a CMS
-  const content = `This is the content for ${slug}`;
-
   return {
-    props: { content, slug },
+    props: { slug },
   };
 }
 

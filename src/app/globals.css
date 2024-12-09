@@ -140,6 +140,14 @@
       color: var(--primary);
       border: 2px solid var(--primary);
   }
+  @media (max-width: 767.9px){
+    font-size: 0.6rem;
+    padding: 0.6rem 1.1rem;
+    }
+  @media (max-width: 499px){
+    font-size: 0.6rem;
+    padding: 0.4rem 1rem;
+    }
 }
 .btn2{
   padding: 1.2rem 1.3rem;
@@ -157,6 +165,14 @@
       background-color: var(--primary);
       color: white;
     
+  }
+  @media (max-width: 767.9px){
+    font-size: 0.7rem;
+    padding: 1rem 1rem;
+    }
+  @media (max-width: 499px){
+  font-size: 0.6rem;
+  padding: 1rem 1rem;
   }
 }
 .btn3{
@@ -195,6 +211,14 @@
       color: white;
     
   }
+  @media (max-width: 767.9px){
+    font-size: 0.7rem;
+    padding: 1.1rem 1.1rem;
+    }
+  @media (max-width: 499px){
+    font-size: 0.6rem;
+    padding: 1rem 1rem;
+    }
 }
 
 @media (prefers-color-scheme: dark) {

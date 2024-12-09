@@ -73,10 +73,10 @@
   }
 }
 
-.slick-slide{
-  &.slick-current{
+.slick-slide {
+  &.slick-current {
     transform: scale(1.03);
-    .gallery-item{
+    .gallery-item {
       height: 420px;
     }
   }

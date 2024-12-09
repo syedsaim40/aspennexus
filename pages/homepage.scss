@@ -1,235 +1,282 @@
 // Banner css
 .mainBanner {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    .bannerHeading {
-      padding-bottom: 5rem;
-      h1 {
-        font-size: 62px;
-        font-weight: 600;
-        padding-bottom: 1rem 0rem;
-        @media (max-width: 499px){
-          font-size: 32px;
-        }
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  .bannerHeading {
+    padding-bottom: 5rem;
+    h1 {
+      font-size: 62px;
+      font-weight: 600;
+      @media (max-width: 767.7px) {
+        font-size: 42px;
       }
-      h2{
-          font-size: 62px;
-          font-weight: 600;
-          text-align: center;
-          span {
-            color: var(--primary);
-          }
-          @media (max-width: 499px){
-            font-size: 32px;
-          }
+      @media (max-width: 499px) {
+        font-size: 32px;
       }
     }
-    .bannerLinks {
-      display: flex;
-      cursor: pointer;
-      align-items: center;
-      .btn{
-        padding: 1.2rem 1.5rem;
-        cursor: pointer;
+    h2 {
+      font-size: 62px;
+      font-weight: 600;
+      text-align: center;
+      span {
+        color: var(--primary);
       }
-      .Video {
-          align-items: center;
-          display: flex;
-          margin-left: 3rem;
-        
-        .vIcon {
-          width: 21px;
-          height: 21px;
-        }
-        p {
-          font-size: 12px;
-          font-weight: 500;
-          padding-left: 5px;
-        }
-        @media (max-width: 499px){
-          margin: 0;
-          margin-top: 2rem;
-        }
+      @media (max-width: 767.7px) {
+        font-size: 42px;
       }
-      @media (max-width: 499px){
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      @media (max-width: 499px) {
+        font-size: 32px;
       }
     }
   }
-
-  //Services SCSS
-.serviceMain {
-    position: relative;
-    .serviceText {
-     width: 60%;
-     @media (max-width: 767.7px){
-      width: 100%;
-     }
-      p {
-        font-size: 16px;
-        color: var(--primary);
-        font-weight: 600;
-        padding: 1rem 0rem;
-      }
-      h1 {
-        font-family: Montserrat;
-        font-size: 40px;
-        font-weight: 500;
-        color: black;
-        @media (max-width: 499px){
-          font-size: 20px;
-        }
-      }
+  .bannerLinks {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    .btn {
+      padding: 1.2rem 1.5rem;
+      cursor: pointer;
     }
-    .serviceContainer {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    @media (max-width: 499px){
-      grid-template-columns: repeat(2,1fr);
-    }
-      .serviceCard {
-        padding: 2rem 2rem;
-        Image{
-          width: 140px;
-          height: 140px;
-          @media (max-width: 499px){
-            width: 100px;
-            height: 100px;
-          }
-        }
-        h2 {
-          font-size: 32px;
-          font-weight: 500;
-          color: var(--primary);
-          padding: 1.5rem 0rem;
-          @media (max-width: 499px){
-            font-size: 20px;
-          }
-        }
-        p{
-          color: #3F3F3F;
-          font-style: 16px;
-          font-weight: 400;
-          letter-spacing: 1px;
-          padding-bottom: 1rem;
-          @media (max-width: 499px){
-            font-size: 8px;
-          }
-        }
-        a{
-          color:  #0F0F0F;
-          font-weight: 500;
-          font-style: 16px;
-          @media (max-width: 499px){
-            font-size: 8px;
-          }
-        }
-      }
-    }
-    .exploreBtn{
+    .Video {
+      align-items: center;
       display: flex;
-      width: 100%;
+      margin-left: 3rem;
+
+      .vIcon {
+        width: 21px;
+        height: 21px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 500;
+        padding-left: 5px;
+      }
+      @media (max-width: 499px) {
+        margin: 0;
+        margin-top: 2rem;
+      }
+    }
+    @media (max-width: 499px) {
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 1rem;
     }
   }
+}
 
-  //Gallery Css
-.gallery_wrapper{
+//Services SCSS
+.serviceMain {
+  position: relative;
+  .serviceText {
+    width: 60%;
+
+    p {
+      font-size: 16px;
+      color: var(--primary);
+      font-weight: 600;
+      padding: 1rem 0rem;
+    }
+    h1 {
+      font-family: var(--mont);
+      font-size: 40px;
+      font-weight: 500;
+      color: black;
+      @media (max-width: 499px) {
+        font-size: 22px;
+      }
+      @media (max-width: 767.7px) {
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 767.7px) {
+      width: 100%;
+    }
+  }
+  .serviceContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 499px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .serviceCard {
+      padding: 2rem 2rem;
+      img {
+        width: 140px;
+        height: 140px;
+        @media (max-width: 499px) {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      h2 {
+        font-size: 32px;
+        font-weight: 500;
+        color: var(--primary);
+        padding: 1.5rem 0rem;
+        @media (max-width: 499px) {
+          font-size: 22px;
+          padding: 1rem 0rem;
+        }
+      }
+      p {
+        color: #3f3f3f;
+        font-style: 16px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding-bottom: 1rem;
+        @media (max-width: 499px) {
+          font-size: 10px;
+          padding: 0rem 0rem;
+        }
+      }
+      a {
+        color: #0f0f0f;
+        font-weight: 500;
+        font-style: 16px;
+        @media (max-width: 499px) {
+          font-size: 8px;
+        }
+      }
+      @media (max-width: 767.7px) {
+        padding: 2rem 1rem;
+      }
+    }
+  }
+  .exploreBtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+//Gallery Css
+.gallery_wrapper {
   background: var(--primary);
   padding: 2rem;
   // min-height: 500px;
 }
-.review{
+.review {
   margin-bottom: 5rem;
-  .reviewHeading{
+  .reviewHeading {
     padding: 2rem 0;
-    h3{
+    h3 {
       color: #000;
       font-size: 40px;
       font-weight: 500;
       font-family: var(--mont);
-      @media (max-width: 499px){
-        font-size: 23px;
+      @media (max-width: 499px) {
+        font-size: 22px;
       }
-      
     }
   }
-  .reviewCard{
-
-    background: #E1DBF6;
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-     padding: 2rem 2rem;
-     gap: 2rem;
-     @media (max-width: 499px){
+  .reviewCard {
+    background: #e1dbf6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 3rem;
+    gap: 2rem;
+    @media (max-width: 499px) {
       padding: 2rem 2rem;
     }
-     .reviewText{
-      h4{
-        color: #0F0F0F;
+    .reviewImg {
+      img {
+        @media (max-width: 499px) {
+          width: 170px;
+          height: 170px;
+        }
+        @media (max-width: 767.7px) {
+          width: 170px;
+          height: 170px;
+        }
+      }
+    }
+    .reviewText {
+      h4 {
+        color: #0f0f0f;
         font-size: 24px;
         font-weight: 500;
         font-family: var(--mont);
         padding-bottom: 4rem;
-        width: 80%;
-        @media (max-width: 499px){
+        width: 90%;
+        @media (max-width: 499px) {
           width: 100%;
+          font-size: 20px;
         }
       }
-      span{
+      span {
         color: var(--primary);
         font-size: 16px;
         font-weight: 500;
- 
+        @media (max-width: 499px) {
+          padding-bottom: 1rem;
+        }
       }
-      p{
+      p {
         font-size: 12px;
         font-weight: 400;
-        color: #0F0F0F;
+        color: #0f0f0f;
       }
-     }
-     @media (max-width: 499px){
+      @media (max-width: 499px) {
+        flex-direction: column-reverse;
+        display: flex;
+      }
+      @media (max-width: 767.7px) {
+        flex-direction: column-reverse;
+        display: flex;
+      }
+    }
+    @media (max-width: 499px) {
+      flex-direction: column;
+    }
+    @media (max-width: 767.7px) {
       flex-direction: column;
     }
   }
 }
 
-.gallery_inner{
+.gallery_inner {
   display: flex;
   margin-bottom: 3rem;
-  @media (max-width: 499px){
-flex-direction: column;
-align-items: center;  }
-  .containerText{
+  @media (max-width: 499px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 767.7px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerText {
     padding: 0 6rem 0 0;
     flex: 1;
-    h3{
+    h3 {
       font-size: clamp(16px, 4vw, 32px);
       color: #fff;
       line-height: normal;
       font-family: var(--mont);
     }
-    h2{
+    h2 {
       font-size: clamp(22px, 4vw, 42px);
       color: #fff;
       line-height: normal;
       font-family: var(--mont);
-      @media (max-width: 499px){
-padding-bottom: 1rem;      }
+      @media (max-width: 499px) {
+        padding-bottom: 1rem;
+      }
+      @media (max-width: 767.7px) {
+        padding-bottom: 1rem;
+      }
     }
   }
-  .cont_btn{
+  .cont_btn {
     flex: 1;
-    p{
+    p {
       font-size: clamp(16px, 4vw, 18px);
       color: #fff;
       font-weight: 400;
@@ -238,11 +285,11 @@ padding-bottom: 1rem;      }
       display: block;
       margin-bottom: 2rem;
     }
-    a{
+    a {
       display: inline-block;
     }
   }
 }
-.gallery_Holder{
+.gallery_Holder {
   min-height: 450px;
 }

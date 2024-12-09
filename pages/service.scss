@@ -19,6 +19,14 @@ margin-top: 83px;
       font-size: 40px;
       font-weight: 500;
       font-family: var(--mont);
+      @media (max-width: 767.7px) {
+        width: 100%;
+        font-size: 30px;
+      }
+      @media (max-width: 499px) {
+        width: 100%;
+        font-size: 24px;
+      }
      }
     }
 }
@@ -36,6 +44,12 @@ margin-top: 83px;
         color: var(--primary);
         padding: 1rem 0rem;
        
+        @media (max-width: 767.7px) {
+          font-size: 28px;
+        }
+        @media (max-width: 499px) {
+          font-size: 24px;
+        }
       }
       h3 {
         color: #0f0f0f;
@@ -43,6 +57,12 @@ margin-top: 83px;
         font-size: 20px;
         font-weight: 400;
         padding-bottom: 2rem;
+        @media (max-width: 767.7px) {
+          font-size: 18px;
+        }
+        @media (max-width: 499px) {
+          font-size: 16px;
+        }
       }
       .serviceDetail{
           display: grid;
@@ -50,10 +70,28 @@ margin-top: 83px;
           color: var(--primary);
           font-size: 16px;
           font-weight: 500;
+          @media (max-width: 767.7px) {
+            font-size: 15px;
+          }
+          @media (max-width: 499px) {
+            font-size: 12px;
+          }
           p{
             
               padding-bottom: 1rem;
           }
+      }
+    }
+    .contentImage {
+      img {
+        @media (max-width: 767.7px) {
+          height: 400px;
+          width: 350px;
+        }
+        @media (max-width: 499px) {
+          height: 300px;
+          width: 250px;
+        }
       }
     }
     .contentSection2{
@@ -63,6 +101,13 @@ margin-top: 83px;
         font-weight: 500;
         color: var(--primary);
         padding: 1rem 0rem;
+        
+      @media (max-width: 767.7px) {
+        font-size: 28px;
+      }
+      @media (max-width: 499px) {
+        font-size: 24px;
+      }
       }
       h3 {
         color: #0f0f0f;
@@ -70,6 +115,12 @@ margin-top: 83px;
         font-size: 20px;
         font-weight: 400;
         padding-bottom: 2rem;
+        @media (max-width: 767.7px) {
+          font-size: 18px;
+        }
+        @media (max-width: 499px) {
+          font-size: 16px;
+        }
       }
       .serviceDetail{
           display: grid;
@@ -77,12 +128,23 @@ margin-top: 83px;
           color: var(--primary);
           font-size: 16px;
           font-weight: 500;
+          @media (max-width: 767.7px) {
+            font-size: 15px;
+          }
+          @media (max-width: 499px) {
+            font-size: 12px;
+          }
           p{
             
               padding-bottom: 1rem;
           }
       }
     }
-    
+    @media (max-width: 767.7px) {
+      flex-direction: column-reverse;
+    }
+    @media (max-width: 499px) {
+      flex-direction: column-reverse;
+    }
   }
   

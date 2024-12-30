@@ -4,7 +4,7 @@ import "./homepage.scss";
 import { ReactTyped } from "react-typed";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import { faComputerMouse } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 import serviceImg1 from '../public/Images/serviceImg1.png';
 import useScreenSize from "../src/app/Hooks/useScreenSize";
@@ -101,12 +101,15 @@ const Homepage = () => {
                 <p>Watch our reel</p>
               </div> */}
             </div>
+            <Link href="#services" className="mouseHolder">
+            <FontAwesomeIcon icon={faComputerMouse} flip="vertical" style={{color: "#0b3543",}} />
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Services new section */}
-      <section className="sectionSpace">
+      <section className="sectionSpace" id="services">
         <div className="container">
           <div className="service_wrapper">
             <div className="section_heading">

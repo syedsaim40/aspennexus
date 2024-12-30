@@ -40,7 +40,7 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     z-index: 2;
     .bannerHeading {
@@ -83,6 +83,21 @@
         }
       }
   
+    }
+    .mouseHolder {
+      position: absolute;
+      bottom: 20px;
+      z-index: 1;
+      animation: mouseLag 2s infinite linear;
+      svg{
+        font-size: 50px;
+      }
+      @keyframes mouseLag {
+        10% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(15px); opacity: 0.7;}
+        50% { transform: translateY(0); opacity: 1; }
+        20% { transform: translateY(15px); opacity: 0.7;}
+      }
     }
   }
 

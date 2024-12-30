@@ -27,11 +27,50 @@ const Homepage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  var ServiceSlidersettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    centerMode: true,
+    initialSlide: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return (
     <>
       {/* // Home Banner */}
-      <section className="sectionSpace" style={{ height: winHeight }}>
+      <section className="sectionSpace bannerSec" style={{ height: winHeight }}>
         <div>
           {/* This is main banner */}
           <div className="mainBanner">
@@ -57,90 +96,48 @@ const Homepage = () => {
                   Explore our services →
                 </Link>
               </div>
-              <div className="Video">
+              {/* <div className="Video">
                 <FontAwesomeIcon className="vIcon" icon={faPlay} />
                 <p>Watch our reel</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section shocase on home */}
+      {/* Services new section */}
       <section className="sectionSpace">
         <div className="container">
-          {/* Service section */}
-          <div className="serviceMain">
-            {/* Service heading */}
-            <div className="serviceText">
-              <p>OUR SERVICES</p>
-              <h1>
-                Our agency experts will provide you with a full stack of
-                services
-              </h1>
+          <div className="service_wrapper">
+            <div className="section_heading">
+              <h2>What we do</h2>
+              <h4>For your <span>Business</span></h4>
             </div>
-            {/* Service container */}
-            <div className="serviceContainer">
-              {/* Service cards */}
-              <div className="serviceCard">
-                <Image src={serviceImg1} alt="alt" height={150} width={150} />
-                <h2>Strategy services</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lobortis luctus lacus. Nunc porta ipsum et tempor euismod.{" "}
-                </p>
-                <Link href="href">Learn More</Link>
-              </div>
-              <div className="serviceCard">
-                <Image src={serviceImg1} alt="alt" />
-                <h2>Marketing services</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lobortis luctus lacus. Nunc porta ipsum et tempor euismod.{" "}
-                </p>
-                <Link href="href">Learn More</Link>
-              </div>
-              <div className="serviceCard">
-                <Image src={serviceImg1} alt="alt" />
-                <h2>Design services</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lobortis luctus lacus. Nunc porta ipsum et tempor euismod.{" "}
-                </p>
-                <Link href="href">Learn More</Link>
-              </div>
-              <div className="serviceCard">
-                <Image src={serviceImg1} alt="alt" />
-                <h2>Development services</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lobortis luctus lacus. Nunc porta ipsum et tempor euismod.{" "}
-                </p>
-                <Link href="href">Learn More</Link>
-              </div>
-              <div className="serviceCard">
-                <Image src={serviceImg1} alt="alt" />
-                <h2>Development services</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lobortis luctus lacus. Nunc porta ipsum et tempor euismod.{" "}
-                </p>
-                <Link href="href">Learn More</Link>
-              </div>
-              <div className="serviceCard">
-                <Image src={serviceImg1} alt="alt" />
-                <h2>Development services</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lobortis luctus lacus. Nunc porta ipsum et tempor euismod.{" "}
-                </p>
-                <Link href="href">Learn More</Link>
-              </div>
-            </div>
-            <div className="exploreBtn">
-              <Link href="/service" className="btn2">
-                Explore All Services →
-              </Link>
+            <div className="service_slider">
+              {/* <div className="arrowSpace"></div> */}
+              <Slider {...ServiceSlidersettings}>
+                <Link href="/services/amazon" className="slideCard">
+                  <div className="slide_Img">
+                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80}/>
+                  </div>
+                  <h2>Amazon Automation</h2>
+                  <p>From refining product listings to launching impactful advertising campaigns, we ensure your brand excels in a competitive marketplace, driving both growth and success online.</p>
+                </Link>
+                <Link href="/services/amazon" className="slideCard">
+                  <div className="slide_Img">
+                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80}/>
+                  </div>
+                  <h2>Shopify Automation</h2>
+                  <p>From refining product listings to launching impactful advertising campaigns, we ensure your brand excels in a competitive marketplace, driving both growth and success online.</p>
+                </Link>
+                <Link href="/services/amazon" className="slideCard">
+                  <div className="slide_Img">
+                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80}/>
+                  </div>
+                  <h2>Web Development</h2>
+                  <p>From refining product listings to launching impactful advertising campaigns, we ensure your brand excels in a competitive marketplace, driving both growth and success online.</p>
+                </Link>
+              </Slider>
             </div>
           </div>
         </div>

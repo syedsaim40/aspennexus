@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'; // Hook to get the current path
 import './Header.scss';
+import Image from 'next/image';
 
 function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -31,7 +32,9 @@ function Header() {
     <header className="headerWrapper">
       {/* Left Side: Logo */}
       <div className="logo">
-        <Link href="/">MyLogo</Link>
+        <Link href="/">
+        <Image src="/Images/logo1.png" alt="alt" width={140} height={60} />
+        </Link>
       </div>
 
       {/* Center: Navbar */}

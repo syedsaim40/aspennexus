@@ -2,15 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: var(--primary);
     z-index: 1;
     box-shadow: 0 2px 31px -16px #0006;
-  
+    z-index: 10;
+    .logo{
+      max-width: 130px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
     .menuList {
       display: flex;
       align-items: center;
@@ -20,37 +27,33 @@
       .dropdownToggle {
         font-size: 16px;
         font-weight: 500;
-        color: var(--textColor);
+        color: var(--white);
         text-decoration: none;
         cursor: pointer;
-  
         &:hover {
-          color: var(--primary);
+          color: var(--secondary);
         }
       }
-  
       .active {
-        color: var(--primary); /* Active link color */
+        color: var(--secondary); /* Active link color */
         font-weight: 600; /* Optional: bold the active link */
       }
   
       .dropdown {
         position: relative;
-  
         .dropdownToggle {
           &:hover {
-            color: var(--primary);
+            color: var(--secondary);
           }
         }
-  
         .dropdownMenu {
             position: absolute;
             top: calc(100% + 0.5rem);
             right: auto;
-            background: #fff;
-            border: 1px solid #ddd;
+            background: var(--primary);
+            border: 1px solid var(--primary);
             border-radius: 6px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.211);
+            // box-shadow: 0 4px 10px rgb(255 150 0);
             display: flex;
             flex-direction: row;
             z-index: 1000;
@@ -68,7 +71,7 @@
             max-width: max-content;
             h3{
                 padding: 0.5rem 0;
-                color: var(--primary);
+                color: var(--white);
                 font-weight: 600;
                 font-size: 16px;
                 line-height: normal;
@@ -83,7 +86,7 @@
                     padding: 0.5rem 0 0.5rem 0;
                     font-size: 14px;
                     font-weight: 500;
-                    color: var(--textColor);
+                    color: var(--white);
                     text-decoration: none;
                     position: relative;
                     overflow: hidden;
@@ -95,12 +98,12 @@
                         right: 0;
                         height: 2px;
                         width: 100%;
-                        background: var(--primary);
+                        background: var(--secondary);
                         transform: translate(-100%, 0px);
                         transition: all linear 0.2s;
                     }
                     &:hover {
-                        color: var(--primary);
+                        color: var(--secondary);
                         &::before{
                             transition: all linear 0.2s;
                             transform: translate(0, 0px);
@@ -112,4 +115,3 @@
       }
     }
   }
-  

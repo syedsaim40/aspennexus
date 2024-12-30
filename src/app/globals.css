@@ -2,10 +2,15 @@
 
 *{
   transition: all ease-in-out 0.2s;
+  scroll-behavior: smooth;
 }
 :root {
---primary: #8447E9;
+/* --primary: #476096; */
+--primary: #0b3543;
+--secondary: #ff9600;
 --textColor: #0F0F0F;
+--white: #fff;
+--lightText: #595959;
 --mont: "Montserrat", serif;
 --didact: "Didact Gothic", serif;
 }
@@ -130,30 +135,30 @@
   font-size: 16px;
   font-weight: 500;
   color: white;
-  background: var(--primary);
+  background: var(--secondary);
   outline: none;
   border: none;
   letter-spacing: 1px;
   border: 2px solid transparent;
   &:hover{
-      background-color: white;
-      color: var(--primary);
-      border: 2px solid var(--primary);
+      background-color: var(--primary);
+      color: var(--white);
+      border: 2px solid var(--white);
   }
 }
 .btn2{
   padding: 1.2rem 1.3rem;
   font-size: 1rem;
   font-weight: 500;
-  border: 2px solid var(--primary);
-  color: var(--primary);
-  background-color: white;
+  border: 2px solid var(--secondary);
+  color: var(--white);
+  background-color: var(--secondary);
   outline: none;
  
   letter-spacing: 1px;
 
   &:hover{
-     
+     border-color: var(--primary);
       background-color: var(--primary);
       color: white;
     
@@ -172,7 +177,7 @@
 
   &:hover{
      
-      background-color: white;
+      background-color: var(--secondary);
       color: var(--primary);
     
   }
@@ -183,8 +188,8 @@
   font-size: 1rem;
   font-weight: 500;
   border: 2px solid var(--primary);
-  color: var(--primary);
-  background-color: white;
+  color: var(--white);
+  background-color: var(--secondary);
   outline: none;
  
   letter-spacing: 1px;
@@ -254,3 +259,33 @@ select{
   left: auto;
   right: auto;
 } */
+
+.section_heading{
+  h2{
+    font-size: 48px;
+    line-height: 58px;
+    color: #331b3b;
+    font-weight: 800;
+  }
+  h4{
+    font-size: 48px;
+    line-height: 58px;
+    color: #331b3b;
+    font-weight: 400;
+    span{
+      display: inline-block;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: " ";
+        bottom: 8px;
+        height: 6px;
+        width: 100%;
+        background: var(--secondary);
+        right: 0;
+        left: 0;
+        z-index: -1;
+      }
+    }
+  }
+}

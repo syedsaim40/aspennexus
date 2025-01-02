@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./homepage.scss";
 import { ReactTyped } from "react-typed";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComputerMouse } from '@fortawesome/free-solid-svg-icons'
+import { faComputerMouse, faArrowUpRightDots } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 import serviceImg1 from '../public/Images/serviceImg1.png';
 import useScreenSize from "../src/app/Hooks/useScreenSize";
@@ -13,14 +13,107 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Gallery from "../src/app/Components/Gallery";
+import CountUp from "react-countup";
+import useInView from "../src/app/Hooks/useInView";
+import FAQ from "../src/app/Components/FAQ";
+import faqImage from "../public/Images/faq.jpg";
 
 
 const Homepage = () => {
-  const { winHeight } = useScreenSize();
+  const { winHeight, winWidth } = useScreenSize();
 
   const [open, setOpen] = React.useState(false);
 
- let settings = {
+  const counterRef = useRef(null);
+  const isInView = useInView(counterRef);
+
+  // Object for data managing it testimonials
+  const testimonials = [
+    {
+      name: "John Carter",
+      username: "@johncarter",
+      content:
+        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+    },
+    {
+      name: "Jane Doe",
+      username: "@janedoe",
+      content:
+        "This service has transformed my business! Their team is professional, and the results are incredible.",
+    },
+    {
+      name: "Michael Smith",
+      username: "@michaelsmith",
+      content:
+        "Highly recommend! Their automation solutions saved me so much time and effort.",
+    },
+    {
+      name: "John Carter",
+      username: "@johncarter",
+      content:
+        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+    },
+    {
+      name: "Jane Doe",
+      username: "@janedoe",
+      content:
+        "This service has transformed my business! Their team is professional, and the results are incredible.",
+    },
+    {
+      name: "Michael Smith",
+      username: "@michaelsmith",
+      content:
+        "Highly recommend! Their automation solutions saved me so much time and effort.",
+    },
+    {
+      name: "John Carter",
+      username: "@johncarter",
+      content:
+        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+    },
+    {
+      name: "Jane Doe",
+      username: "@janedoe",
+      content:
+        "This service has transformed my business! Their team is professional, and the results are incredible.",
+    },
+    {
+      name: "Michael Smith",
+      username: "@michaelsmith",
+      content:
+        "Highly recommend! Their automation solutions saved me so much time and effort.",
+    },
+    {
+      name: "John Carter",
+      username: "@johncarter",
+      content:
+        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+    },
+    {
+      name: "Jane Doe",
+      username: "@janedoe",
+      content:
+        "This service has transformed my business! Their team is professional, and the results are incredible.",
+    },
+    {
+      name: "Michael Smith",
+      username: "@michaelsmith",
+      content:
+        "Highly recommend! Their automation solutions saved me so much time and effort.",
+    },
+  ];
+
+  // Function to generate random gradient
+  const generateRandomGradient = () => {
+    const randomColor = () => Math.floor(Math.random() * 256);
+    const color1 = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+    const color2 = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+    return `linear-gradient(45deg, ${color1}, ${color2})`;
+  };
+
+
+  // Sliders variable settings start
+  let settings = {
     dots: false,
     infinite: true,
     speed: 400,
@@ -30,15 +123,13 @@ const Homepage = () => {
   var ServiceSlidersettings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
     initialSlide: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    swipeToSlide: true,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -66,6 +157,47 @@ const Homepage = () => {
       }
     ]
   };
+  var testimonialsSlideSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    initialSlide: 1,
+    autoplay: true,
+    autoplaySpeed: 800,
+    cssEase: "ease",
+    swipeToSlide: true,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+  // Sliders variable settings end
 
   return (
     <>
@@ -102,7 +234,7 @@ const Homepage = () => {
               </div> */}
             </div>
             <Link href="#services" className="mouseHolder">
-            <FontAwesomeIcon icon={faComputerMouse} flip="vertical" style={{color: "#0b3543",}} />
+              <FontAwesomeIcon icon={faComputerMouse} flip="vertical" style={{ color: "#0b3543", }} />
             </Link>
           </div>
         </div>
@@ -121,26 +253,90 @@ const Homepage = () => {
               <Slider {...ServiceSlidersettings}>
                 <Link href="/services/amazon" className="slideCard">
                   <div className="slide_Img">
-                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80}/>
+                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80} />
                   </div>
                   <h2>Amazon Automation</h2>
                   <p>From refining product listings to launching impactful advertising campaigns, we ensure your brand excels in a competitive marketplace, driving both growth and success online.</p>
                 </Link>
                 <Link href="/services/amazon" className="slideCard">
                   <div className="slide_Img">
-                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80}/>
+                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80} />
                   </div>
                   <h2>Shopify Automation</h2>
                   <p>From refining product listings to launching impactful advertising campaigns, we ensure your brand excels in a competitive marketplace, driving both growth and success online.</p>
                 </Link>
                 <Link href="/services/amazon" className="slideCard">
                   <div className="slide_Img">
-                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80}/>
+                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80} />
                   </div>
                   <h2>Web Development</h2>
                   <p>From refining product listings to launching impactful advertising campaigns, we ensure your brand excels in a competitive marketplace, driving both growth and success online.</p>
                 </Link>
               </Slider>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ROI new section */}
+      <section className="roi_wrapper">
+        <div className="container">
+          <div className="roi_Box">
+            <div className="roi_Inner">
+              <div className="roi_content">
+                <div className="section_heading">
+                  <h2>Best ROIs</h2>
+                  <p>We are dedicated to provide maximum benefits to our clients with seamless strategies and best investment options.</p>
+                </div>
+              </div>
+              <div className="roi_pricing" ref={counterRef}>
+                {[
+                  { amount: 5573440, label: 'Generated In Revenue For Our Client (So Far)' },
+                  { amount: 1557300, label: 'Spent On Google & Facebook Advertising' },
+                  { amount: 600, label: 'Savings Realized' },
+                ].map((item, index) => (
+                  <div className="roi_counter" key={index}>
+                    <h3>
+                      {isInView ? <CountUp start={0} end={item.amount} duration={2.5} separator="," prefix="$" /> : '€0'}
+                    </h3>
+                    <h5>{item.label}</h5>
+                  </div>
+                ))}
+              </div>
+              <div className="roi_Tel">
+                <p>
+                  <span>Say Hi!</span> <a href={`tel:${+923209455811}`}>+92 320 9455811</a>
+                </p>
+              </div>
+            </div>
+            <div className="roi_Info">
+              <div className="roi_Card">
+                <div className="roi_Icon">
+                  <FontAwesomeIcon icon={faArrowUpRightDots} />
+                </div>
+                <div className="roi_Content">
+                  <h2>Growth Strategy</h2>
+                  <p>Ecom Pinnacle drives sustainable, high-impact growth with tailored, data-driven strategies focused on long term success.</p>
+                </div>
+              </div>
+              <div className="roi_Card">
+                <div className="roi_Icon">
+                  <FontAwesomeIcon icon={faArrowUpRightDots} />
+                </div>
+                <div className="roi_Content">
+                  <h2>Growth Strategy</h2>
+                  <p>Ecom Pinnacle drives sustainable, high-impact growth with tailored, data-driven strategies focused on long term success.</p>
+                </div>
+              </div>
+              <div className="roi_Card">
+                <div className="roi_Icon">
+                  <FontAwesomeIcon icon={faArrowUpRightDots} />
+                </div>
+                <div className="roi_Content">
+                  <h2>Growth Strategy</h2>
+                  <p>Ecom Pinnacle drives sustainable, high-impact growth with tailored, data-driven strategies focused on long term success.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -163,62 +359,58 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Review Section */}
-      <section className="sectionSpace">
+      {/* Testimonial Section */}
+      <section className="sectionSpace" id="testimonials">
         <div className="container">
-        
-          <div className="review">
-          <div className="reviewHeading">
-              <h3>What our great customers say</h3>
-            </div>
-            
-          <Slider {...settings}>
-            
-          <div className="courselReview">
-         
-            <div className="reviewCard">
-             <div className="reviewImg">
-              <Image src={ReviewImg} alt="ReviewImg" />
-             </div>
-             <div className="reviewText">
-              <h4 >Waves demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity.</h4>
-              <span>Jerome Bell</span>
-              <p>President of Sales (Binford Ltd.)</p>
-             </div>
-            </div>
+          <div className="section_heading text-center">
+            <h2>What our great customers say About us</h2>
           </div>
-          <div className="courselReview">
-         
-         <div className="reviewCard">
-          <div className="reviewImg">
-           <Image src={ReviewImg} alt="ReviewImg" />
-          </div>
-          <div className="reviewText">
-           <h4 >Waves demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity.</h4>
-           <span>Jerome Bell</span>
-           <p>President of Sales (Binford Ltd.)</p>
-          </div>
-         </div>
-       </div>
-       <div className="courselReview">
-         
-         <div className="reviewCard">
-          <div className="reviewImg">
-           <Image src={ReviewImg} alt="ReviewImg" />
-          </div>
-          <div className="reviewText">
-           <h4 >Waves demonstrates an excellent understanding of user needs and all of their designs are creative and elegant in their simplicity.</h4>
-           <span>Jerome Bell</span>
-           <p>President of Sales (Binford Ltd.)</p>
-          </div>
-         </div>
-       </div>
-          </Slider>
-          </div>
-        
-        
+          <div className="testimonial_slider">
+            <Slider {...testimonialsSlideSettings}>
+              {testimonials.map((testimonial, index) => (
+                <div className="testi_slide" key={index}>
+                  <div className="testi_user">
+                    <div className="testi_dp"
+                    style={{
+                      background: generateRandomGradient(),
+                      width: "32px",
+                      height: "32px",
+                      borderRadius: "100%",
+                    }}>
+                      {/* <img src={testimonial.image} alt={testimonial.name} /> */}
+                    </div>
+                    <div className="testi_name">
+                      <h3>{testimonial.name}</h3>
+                      <p>{testimonial.username}</p>
+                    </div>
+                  </div>
+                  <div className="testi_content">
+                    <p>{testimonial.content}</p>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+        </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="sectionSpace" id="faq">
+        <div className="container">
+          <div className="section_heading">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div className="faq_wrapper">
+            <div className="faq_Holder">
+              <FAQ />
+            </div>
+            <div className="faqImage">
+              <Image src={faqImage} alt="faqImage" />
+            </div>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 };

@@ -5,15 +5,60 @@ import facebookVec from '../../../public/Images/faceVector.png';
 import twitterVec from '../../../public/Images/TwitVector.png';
 import instaVec from '../../../public/Images/instaVector.png';
 import linkVec from '../../../public/Images/linkVector.png';
+import logo from "../../../public/Images/logo1.png";
 import Image from 'next/image';
 
 function Footer() {
     return (
         <div>
-            {/* Footer section */}
-            <div className='footerMain' >
+            <div className='footer'>
                 <div className='container'>
-                    {/* Footer */}
+                    <div className='footer_wrapper'>
+                        <div className='footer_logo'>
+                            <div className='logoWrapper'>
+                                <Image src={logo} alt="logo"/>
+                            </div>
+                            <div className='logo_content'>
+                                <h2>We handle the <span>hassle,</span></h2>
+                                <h2>so you can enjoy the <span>results!</span></h2>
+                            </div>
+                        </div>
+                        <div className='footer_outer'>
+                            <div className='footer_box'>
+                                <h3>Terms & Policies</h3>
+                                <ul className='footer_List'>
+                                    <li><Link href="#">Term of Service</Link></li>
+                                    <li><Link href="#">Privacy Policy</Link></li>
+                                </ul>
+                            </div>
+                            <div className='footer_box'>
+                                <h3>Company</h3>
+                                <ul className='footer_List'>
+                                    <li><Link href="#">Home</Link></li>
+                                    <li><Link href="#">About Us</Link></li>
+                                    <li><Link href="#">Contact Us</Link></li>
+                                </ul>
+                            </div>
+                            <div className='footer_box'>
+                                <h3>Contact</h3>
+                                <ul className='footer_List'>
+                                    <li><a href={`tel:${+923209455811}`}>+92 320 9455811</a></li>
+                                    <li><a href={`mailto:${'info@aspennexus.com'}`}>info@aspennexus.com</a></li>
+                                </ul>
+                            </div>
+                            <div className='footer_box'>
+                                <h3>Contact</h3>
+                                <ul className='footer_List'>
+                                    <li><address>Office 837, Prime Street, Washington DC, USA</address></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Footer section */}
+            {/* <div className='footerMain' >
+                <div className='container'>
                     <div className="footer">
                         <div className="footerList">
                             <div className="footLogo">
@@ -38,12 +83,8 @@ function Footer() {
                             <Link href="#"><p>© 2022 Waves. All rights reserved.</p></Link>
                         </div>
                     </div>
-                    {/* <div className="footerPopup" >
-                        <h1 className="">Ready for your project</h1>
-                        <Link href="/contact" className='btn'>Get in touch</Link>
-                    </div> */}
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

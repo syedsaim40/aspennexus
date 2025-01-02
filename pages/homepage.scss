@@ -1,14 +1,14 @@
 .bannerSec{
-  background-image: url(../public/women.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  // background-image: url(../public/women.jpg);
+  // background-size: cover;
+  // background-position: 50% 50%;
+  // background-repeat: no-repeat;
   position: relative;
 }
 .bannerSec::before{
   position: absolute;
   content: " ";
-  background-image: url(../public/women.jpg);
+  background-image: url(../public/Images/markvid.gif);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -323,6 +323,204 @@
     .slick-next:before{
       color: var(--primary);
       font-size: 40px;
+    }
+  }
+}
+.roi_wrapper{
+  background-image: url(../public/Images/bgROI.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 8rem 4rem;
+  position: relative;
+  z-index: 0;
+  &::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: #ff960029;
+    z-index: -1;
+  }
+  .roi_Box {
+    display: flex;
+    align-items: center;
+    .roi_Inner{
+      flex: 3;
+      padding: 0 3rem 0 0;
+      .roi_content {
+        width: 60%;
+        margin-bottom: 15%;
+        .section_heading{
+          h2{
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      .roi_pricing {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        margin-bottom: 10%;
+        .roi_counter{
+          padding-right: 3rem;
+          h3{
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            line-height: 38px;
+          }
+          h5{
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 24px;
+          }
+        }
+      }
+      .roi_Tel{
+        p{
+          font-weight: 500;
+          span{
+            padding-left: 5px;
+            display: inline-block;
+          }
+          a{
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+    .roi_Info{
+      flex: 1;
+      .roi_Card {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        background: #fff;
+        border-radius: 6px;
+        border: 1px solid #00002e1f;
+        padding: 1rem;
+        .roi_Content{
+          h2{
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 10px;
+            font-size: 600;
+            color: var(--heading);
+          }
+          p{
+            font-size: 16px;
+            line-height: 24px;
+            font-size: 400;
+            color: var(--heading);
+          }
+        }
+        .roi_Icon {
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background: var(--primary);
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            fill: var(--secondary);
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+}
+// Testimonials Styles
+#testimonials{
+  .section_heading{
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .testimonial_slider{
+    padding: 2rem 0;
+    
+  .slick-slide{
+    padding: 1rem !important;
+    &.slick-current{
+      transform: scale(1.09);
+      .testi_slide{
+        box-shadow: 0px 0px 15px 3px #0b354316;
+      }
+    }
+  }
+    .testi_slide{
+      border-radius: 6px;
+      border: 1px solid #00002e1f;
+      background: #fff;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 130px;
+      max-height: 150px;
+      height: 150px;
+      overflow-y: auto;
+      .testi_user{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 1rem;
+        .testi_dp{
+          width: 32px;
+          height: 32px;
+          border-radius: 100%;
+          background: #000;
+        }
+        .testi_name{
+          display: flex;
+          flex-direction: column;
+          h3{
+            margin-bottom: 5px;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 600;
+          }
+          p{
+            font-size: 10px;
+            line-height: 10px;
+            font-weight: 400;
+          }
+        }
+      }
+      .testi_content{
+        p{
+          font-size: 14px;
+          line-height: 14px;
+          font-weight: 400;
+          // overflow: hidden;
+          // text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+// faq section style
+.faq_wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  .faq_Holder{
+    flex: 2;
+  }
+  .faqImage{
+    flex: 1;
+    height: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    img{
+      height: auto;
+      object-fit: cover;
     }
   }
 }

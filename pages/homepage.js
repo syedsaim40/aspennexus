@@ -15,6 +15,7 @@ import CountUp from "react-countup";
 import useInView from "../src/app/Hooks/useInView";
 import FAQ from "../src/app/Components/FAQ";
 import faqImage from "../public/Images/faq.jpg";
+import Testimonials from "../src/app/Components/Testimonials";
 
 
 const Homepage = () => {
@@ -26,88 +27,88 @@ const Homepage = () => {
   const isInView = useInView(counterRef);
 
   // Object for data managing it testimonials
-  const testimonials = [
-    {
-      name: "John Carter",
-      username: "@johncarter",
-      content:
-        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
-    },
-    {
-      name: "Jane Doe",
-      username: "@janedoe",
-      content:
-        "This service has transformed my business! Their team is professional, and the results are incredible.",
-    },
-    {
-      name: "Michael Smith",
-      username: "@michaelsmith",
-      content:
-        "Highly recommend! Their automation solutions saved me so much time and effort.",
-    },
-    {
-      name: "John Carter",
-      username: "@johncarter",
-      content:
-        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
-    },
-    {
-      name: "Jane Doe",
-      username: "@janedoe",
-      content:
-        "This service has transformed my business! Their team is professional, and the results are incredible.",
-    },
-    {
-      name: "Michael Smith",
-      username: "@michaelsmith",
-      content:
-        "Highly recommend! Their automation solutions saved me so much time and effort.",
-    },
-    {
-      name: "John Carter",
-      username: "@johncarter",
-      content:
-        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
-    },
-    {
-      name: "Jane Doe",
-      username: "@janedoe",
-      content:
-        "This service has transformed my business! Their team is professional, and the results are incredible.",
-    },
-    {
-      name: "Michael Smith",
-      username: "@michaelsmith",
-      content:
-        "Highly recommend! Their automation solutions saved me so much time and effort.",
-    },
-    {
-      name: "John Carter",
-      username: "@johncarter",
-      content:
-        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
-    },
-    {
-      name: "Jane Doe",
-      username: "@janedoe",
-      content:
-        "This service has transformed my business! Their team is professional, and the results are incredible.",
-    },
-    {
-      name: "Michael Smith",
-      username: "@michaelsmith",
-      content:
-        "Highly recommend! Their automation solutions saved me so much time and effort.",
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     name: "John Carter",
+  //     username: "@johncarter",
+  //     content:
+  //       "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+  //   },
+  //   {
+  //     name: "Jane Doe",
+  //     username: "@janedoe",
+  //     content:
+  //       "This service has transformed my business! Their team is professional, and the results are incredible.",
+  //   },
+  //   {
+  //     name: "Michael Smith",
+  //     username: "@michaelsmith",
+  //     content:
+  //       "Highly recommend! Their automation solutions saved me so much time and effort.",
+  //   },
+  //   {
+  //     name: "John Carter",
+  //     username: "@johncarter",
+  //     content:
+  //       "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+  //   },
+  //   {
+  //     name: "Jane Doe",
+  //     username: "@janedoe",
+  //     content:
+  //       "This service has transformed my business! Their team is professional, and the results are incredible.",
+  //   },
+  //   {
+  //     name: "Michael Smith",
+  //     username: "@michaelsmith",
+  //     content:
+  //       "Highly recommend! Their automation solutions saved me so much time and effort.",
+  //   },
+  //   {
+  //     name: "John Carter",
+  //     username: "@johncarter",
+  //     content:
+  //       "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+  //   },
+  //   {
+  //     name: "Jane Doe",
+  //     username: "@janedoe",
+  //     content:
+  //       "This service has transformed my business! Their team is professional, and the results are incredible.",
+  //   },
+  //   {
+  //     name: "Michael Smith",
+  //     username: "@michaelsmith",
+  //     content:
+  //       "Highly recommend! Their automation solutions saved me so much time and effort.",
+  //   },
+  //   {
+  //     name: "John Carter",
+  //     username: "@johncarter",
+  //     content:
+  //       "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+  //   },
+  //   {
+  //     name: "Jane Doe",
+  //     username: "@janedoe",
+  //     content:
+  //       "This service has transformed my business! Their team is professional, and the results are incredible.",
+  //   },
+  //   {
+  //     name: "Michael Smith",
+  //     username: "@michaelsmith",
+  //     content:
+  //       "Highly recommend! Their automation solutions saved me so much time and effort.",
+  //   },
+  // ];
 
   // Function to generate random gradient
-  const generateRandomGradient = () => {
-    const randomColor = () => Math.floor(Math.random() * 256);
-    const color1 = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
-    const color2 = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
-    return `linear-gradient(45deg, ${color1}, ${color2})`;
-  };
+  // const generateRandomGradient = () => {
+  //   const randomColor = () => Math.floor(Math.random() * 256);
+  //   const color1 = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+  //   const color2 = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+  //   return `linear-gradient(45deg, ${color1}, ${color2})`;
+  // };
 
 
   // Sliders variable settings start
@@ -358,39 +359,7 @@ const Homepage = () => {
       </section>
 
       {/* Testimonial Section */}
-      <section className="sectionSpace" id="testimonials">
-        <div className="container">
-          <div className="section_heading text-center">
-            <h2>What our great customers say About us</h2>
-          </div>
-          <div className="testimonial_slider">
-            <Slider {...testimonialsSlideSettings}>
-              {testimonials.map((testimonial, index) => (
-                <div className="testi_slide" key={index}>
-                  <div className="testi_user">
-                    <div className="testi_dp"
-                    style={{
-                      background: generateRandomGradient(),
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "100%",
-                    }}>
-                      {/* <img src={testimonial.image} alt={testimonial.name} /> */}
-                    </div>
-                    <div className="testi_name">
-                      <h3>{testimonial.name}</h3>
-                      <p>{testimonial.username}</p>
-                    </div>
-                  </div>
-                  <div className="testi_content">
-                    <p>{testimonial.content}</p>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-        </div>
-        </div>
-      </section>
+      <Testimonials />
 
       {/* FAQ Section */}
       <section className="sectionSpace" id="faq">

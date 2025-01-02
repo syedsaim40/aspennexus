@@ -326,6 +326,7 @@
     }
   }
 }
+// ROI Section styles
 .roi_wrapper{
   background-image: url(../public/Images/bgROI.png);
   background-size: cover;
@@ -432,74 +433,6 @@
             fill: var(--secondary);
             color: var(--secondary);
           }
-        }
-      }
-    }
-  }
-}
-// Testimonials Styles
-#testimonials{
-  .section_heading{
-    max-width: 70%;
-    margin: 0 auto;
-  }
-  .testimonial_slider{
-    padding: 2rem 0;
-    
-  .slick-slide{
-    padding: 1rem !important;
-    &.slick-current{
-      transform: scale(1.09);
-      .testi_slide{
-        box-shadow: 0px 0px 15px 3px #0b354316;
-      }
-    }
-  }
-    .testi_slide{
-      border-radius: 6px;
-      border: 1px solid #00002e1f;
-      background: #fff;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      min-height: 130px;
-      max-height: 150px;
-      height: 150px;
-      overflow-y: auto;
-      .testi_user{
-        display: flex;
-        justify-content: flex-start;
-        gap: 10px;
-        margin-bottom: 1rem;
-        .testi_dp{
-          width: 32px;
-          height: 32px;
-          border-radius: 100%;
-          background: #000;
-        }
-        .testi_name{
-          display: flex;
-          flex-direction: column;
-          h3{
-            margin-bottom: 5px;
-            font-size: 14px;
-            line-height: 14px;
-            font-weight: 600;
-          }
-          p{
-            font-size: 10px;
-            line-height: 10px;
-            font-weight: 400;
-          }
-        }
-      }
-      .testi_content{
-        p{
-          font-size: 14px;
-          line-height: 14px;
-          font-weight: 400;
-          // overflow: hidden;
-          // text-overflow: ellipsis;
         }
       }
     }

@@ -1,0 +1,174 @@
+import React from 'react'
+import Slider from "react-slick";
+import "./Testimonial.scss";
+
+const Testimonials = () => {
+    
+  // Object for data managing it testimonials
+  const testimonials = [
+    {
+      name: "John Carter",
+      username: "@johncarter",
+      content:
+        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+    },
+    {
+      name: "Jane Doe",
+      username: "@janedoe",
+      content:
+        "This service has transformed my business! Their team is professional, and the results are incredible.",
+    },
+    {
+      name: "Michael Smith",
+      username: "@michaelsmith",
+      content:
+        "Highly recommend! Their automation solutions saved me so much time and effort.",
+    },
+    {
+      name: "John Carter",
+      username: "@johncarter",
+      content:
+        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+    },
+    {
+      name: "Jane Doe",
+      username: "@janedoe",
+      content:
+        "This service has transformed my business! Their team is professional, and the results are incredible.",
+    },
+    {
+      name: "Michael Smith",
+      username: "@michaelsmith",
+      content:
+        "Highly recommend! Their automation solutions saved me so much time and effort.",
+    },
+    {
+      name: "John Carter",
+      username: "@johncarter",
+      content:
+        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+    },
+    {
+      name: "Jane Doe",
+      username: "@janedoe",
+      content:
+        "This service has transformed my business! Their team is professional, and the results are incredible.",
+    },
+    {
+      name: "Michael Smith",
+      username: "@michaelsmith",
+      content:
+        "Highly recommend! Their automation solutions saved me so much time and effort.",
+    },
+    {
+      name: "John Carter",
+      username: "@johncarter",
+      content:
+        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+    },
+    {
+      name: "Jane Doe",
+      username: "@janedoe",
+      content:
+        "This service has transformed my business! Their team is professional, and the results are incredible.",
+    },
+    {
+      name: "Michael Smith",
+      username: "@michaelsmith",
+      content:
+        "Highly recommend! Their automation solutions saved me so much time and effort.",
+    },
+  ];
+
+  
+  var testimonialsSlideSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    initialSlide: 1,
+    autoplay: true,
+    autoplaySpeed: 800,
+    cssEase: "ease",
+    swipeToSlide: true,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  // Function to generate random gradient
+  const generateRandomGradient = () => {
+    const randomColor = () => Math.floor(Math.random() * 256);
+    const color1 = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+    const color2 = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+    return `linear-gradient(45deg, ${color1}, ${color2})`;
+  };
+
+
+  return (
+    <div>
+      {/* Testimonial Section */}
+      <section className="sectionSpace" id="testimonials">
+        <div className="container">
+          <div className="section_heading text-center">
+            <h2>What our great customers say About us</h2>
+          </div>
+          <div className="testimonial_slider">
+            <Slider {...testimonialsSlideSettings}>
+              {testimonials.map((testimonial, index) => (
+                <div className="testi_slide" key={index}>
+                  <div className="testi_user">
+                    <div className="testi_dp"
+                    style={{
+                      background: generateRandomGradient(),
+                      width: "32px",
+                      height: "32px",
+                      borderRadius: "100%",
+                    }}>
+                      {/* <img src={testimonial.image} alt={testimonial.name} /> */}
+                    </div>
+                    <div className="testi_name">
+                      <h3>{testimonial.name}</h3>
+                      <p>{testimonial.username}</p>
+                    </div>
+                  </div>
+                  <div className="testi_content">
+                    <p>{testimonial.content}</p>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+        </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default Testimonials

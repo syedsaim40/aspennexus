@@ -6,9 +6,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComputerMouse, faArrowUpRightDots } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
-import serviceImg1 from '../public/Images/serviceImg1.png';
 import useScreenSize from "../src/app/Hooks/useScreenSize";
-import ReviewImg from "../public/Images/reviewImg.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";

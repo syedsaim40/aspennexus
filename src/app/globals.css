@@ -6,8 +6,8 @@
 }
 :root {
 /* --primary: #476096; */
---primary: #0b3543;
---secondary: #ff9600;
+--primary: #3d5a80;
+--secondary: #ee6c4d;
 --textColor: #0F0F0F;
 --white: #fff;
 --lightText: #595959;
@@ -334,7 +334,7 @@ select{
 
 .faq-question {
   &:is(:hover, :focus){
-    background: #0b3543;
+    background: var(--primary);
     color: #fff;
     svg{
       color: #fff;

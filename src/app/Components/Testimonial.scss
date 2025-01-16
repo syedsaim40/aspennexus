@@ -4,6 +4,9 @@
     .section_heading{
       max-width: 70%;
       margin: 0 auto;
+      @media (max-width: 575px){
+          max-width: 80%;
+      }
     }
     .testimonial_slider{
       padding: 2rem 0;
@@ -47,6 +50,9 @@
               font-size: 14px;
               line-height: 14px;
               font-weight: 600;
+              @media (max-width: 575px){
+                font-size: 13px;
+              }
             }
             p{
               font-size: 10px;
@@ -62,6 +68,9 @@
             font-weight: 400;
             // overflow: hidden;
             // text-overflow: ellipsis;
+            @media (max-width: 575px){
+              font-size: 12px;
+            }
           }
         }
       }

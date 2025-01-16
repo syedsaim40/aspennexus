@@ -20,6 +20,12 @@ function Header() {
       setIsDropdownOpen(false);
     }
   };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleServices = () => setIsServicesOpen(!isServicesOpen);
+
 
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
@@ -74,11 +80,34 @@ function Header() {
       </nav>
 
       {/* Right Side: Contact Us Button */}
-      <div className="contact">
+      <div className="contact contactBtn">
         <Link href="/contact" className="btn">
           Contact →
         </Link>
       </div>
+      <button className="menuToggle" onClick={toggleMenu}>
+            mobile button
+          </button>
+          {isMenuOpen && (
+      <div className='mobile_Menu'>
+        <nav className="mobileMenu">
+          <ul>
+            <li>Home</li>
+            <li>
+              <button className="accordionButton" onClick={toggleServices}>
+                Services
+              </button>
+              {isServicesOpen && (
+                <ul className="dropdown">
+                  <li>Web Development</li>
+                  <li>App Development</li>
+                </ul>
+              )}
+            </li>
+          </ul>
+        </nav>
+      </div>
+      )}
     </header>
   );
 }

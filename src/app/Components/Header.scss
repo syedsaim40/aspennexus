@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 10px 1.5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,7 +22,6 @@
       display: flex;
       align-items: center;
       gap: 2rem;
-  
       a,
       .dropdownToggle {
         font-size: 16px;
@@ -113,5 +112,106 @@
             }
         }
       }
+      @media (max-width: 767.9px){
+        display: none;
+      }
     }
   }
+.contactBtn{
+  @media (max-width: 999px){
+    display: none;
+  }
+}
+
+.mobile_Menu {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #444;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .menuToggle {
+    background: none;
+    border: none;
+    color: #444;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    @media (max-width: 999px){
+      display: block;
+    }
+  }
+
+  .mobileMenu {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 10px 20px;
+        border-bottom: 1px solid #555;
+
+        .accordionButton {
+          background: none;
+          border: none;
+          color: white;
+          width: 100%;
+          text-align: left;
+          padding: 10px 0;
+          cursor: pointer;
+        }
+
+        .dropdown {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          background-color: #555;
+
+          li {
+            padding: 10px 40px;
+            border-bottom: 1px solid #666;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile-specific styles
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block; // Show toggle button on small screens
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}
+
+.menuToggle {
+  display: none;
+  @media (max-width: 999px){
+    display: block;
+  }
+}

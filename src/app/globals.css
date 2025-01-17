@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
+* {
   transition: all ease-in-out 0.2s;
   scroll-behavior: smooth;
 }
@@ -28,6 +28,10 @@
   }
   @media (min-width: 576px) {
     max-width: 100%;
+   
+      padding-left: 0;
+      padding-right: 0;
+    
   }
   @media (min-width: 768px) {
     max-width: 100%;
@@ -120,7 +124,7 @@
 .sectionSpace {
   display: block;
   margin-bottom: 4rem;
-  @media (max-width: 767.9px){
+  @media (max-width: 767.9px) {
     margin-bottom: 2rem;
   }
 }
@@ -130,18 +134,18 @@
 .item-center {
   align-items: center;
 }
-ul{
+ul {
   all: unset;
   list-style-type: none;
 }
-img{
+img {
   max-width: 100%;
   display: inline-block;
 }
 /* section{
   padding-bottom: 5rem;
 } */
-.btn{
+.btn {
   padding: 0.7rem 1.4rem;
   font-size: 16px;
   font-weight: 500;
@@ -151,13 +155,17 @@ img{
   border: none;
   letter-spacing: 1px;
   border: 2px solid transparent;
-  &:hover{
-      background-color: var(--primary);
-      color: var(--white);
-      border: 2px solid var(--white);
+  &:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
+  @media (max-width: 768px) {
+    padding: 0.5rem 1.2rem;
+    font-size: 12px;
   }
 }
-.btn2{
+.btn2 {
   padding: 1.2rem 1.3rem;
   font-size: 1rem;
   font-weight: 500;
@@ -165,36 +173,33 @@ img{
   color: var(--white);
   background-color: var(--secondary);
   outline: none;
- 
+
   letter-spacing: 1px;
 
-  &:hover{
-     border-color: var(--primary);
-      background-color: var(--primary);
-      color: white;
-    
+  &:hover {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: white;
   }
 }
-.btn3{
+.btn3 {
   padding: 1.2rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
   border: 2px solid white;
   color: white;
- background: transparent;
+  background: transparent;
   outline: none;
- 
+
   letter-spacing: 1px;
 
-  &:hover{
-     
-      background-color: var(--secondary);
-      color: var(--primary);
-    
+  &:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
   }
 }
 
-.btn4{
+.btn4 {
   padding: 1.2rem 1.3rem;
   font-size: 1rem;
   font-weight: 500;
@@ -202,14 +207,21 @@ img{
   color: var(--white);
   background-color: var(--secondary);
   outline: none;
- 
+
   letter-spacing: 1px;
 
-  &:hover{
-     border-color: #fff;
-      background-color: var(--primary);
-      color: white;
-    
+  &:hover {
+    border-color: #fff;
+    background-color: var(--primary);
+    color: white;
+  }
+  @media (max-width: 767.7px) {
+    padding: 1rem 1.1rem;
+  font-size: 0.8rem;
+  }
+  @media (max-width: 575px) {
+    padding: 0.8rem 1rem;
+  font-size: 0.5rem;
   }
 }
 
@@ -251,7 +263,7 @@ a {
   }
 }
 
-.contact_form{
+.contact_form {
   width: 100%;
   margin: 0 auto;
 }
@@ -262,7 +274,7 @@ input,
 select{
  all: unset;
 } */
- 
+
 /* .yarl__thumbnails_thumbnail{
   position: relative;
   top: 80vh;
@@ -271,22 +283,31 @@ select{
   right: auto;
 } */
 
-.section_heading{
-  h2{
+.section_heading {
+  h2 {
     font-size: 48px;
     line-height: 58px;
     color: #331b3b;
     font-weight: 800;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
   }
-  h4{
+
+  h4 {
     font-size: 48px;
     line-height: 58px;
     color: #331b3b;
     font-weight: 400;
-    span{
+    span {
       display: inline-block;
       position: relative;
-      &::before{
+      &::before {
         position: absolute;
         content: " ";
         bottom: 8px;
@@ -297,6 +318,12 @@ select{
         left: 0;
         z-index: -1;
       }
+    }
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+    @media (max-width: 576px) {
+      font-size: 24px;
     }
   }
 }
@@ -314,7 +341,7 @@ select{
   border-bottom: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
-  &:is(:hover, :focus){
+  &:is(:hover, :focus) {
     border-color: var(--primary);
   }
 }
@@ -338,7 +365,7 @@ select{
   &:is(:hover, :focus){
     background: var(--primary);
     color: #fff;
-    svg{
+    svg {
       color: #fff;
     }
   }

@@ -5,11 +5,11 @@
   scroll-behavior: smooth;
 }
 :root {
-/* --primary: #476096; */
+--primary: #476096;
 /* --primary: #3d5a80; */
---primary: #002c58;
-/* --secondary: #ee6c4d; */
---secondary: #0043f1;
+/* --primary: #002c58; */
+--secondary: #ee6c4d;
+/* --secondary: #0043f1; */
 --textColor: #0F0F0F;
 --white: #fff;
 --lightText: #595959;

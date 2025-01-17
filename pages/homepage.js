@@ -198,6 +198,17 @@ const Homepage = () => {
   };
   // Sliders variable settings end
 
+  // Content for the Service Slider Content
+
+  const servicescontent = [
+    {
+      link: "/services/amazon",
+      img: "/Images/amazon.svg",
+      heading: "Web development services",
+      description: "Functionality and innovation are the two key features we incorporate in our web development services.",
+    },
+  ];
+
   return (
     <>
       {/* // Home Banner */}
@@ -207,24 +218,27 @@ const Homepage = () => {
           <div className="mainBanner">
             {/* Banner main heading  */}
             <div className="bannerHeading">
-              <h1> Global Brandmakers </h1>
               <h2>
-                {" "}
-                making{" "}
                 <ReactTyped
-                  strings={["Waves", "Services", "Company"]}
+                  strings={["Innovate", "Thrive", "Succeed"]}
                   typeSpeed={100}
                   loop
                   backSpeed={20}
                   showCursor={true}
                 />
+                {" "}
+                with Aspen Nexus’s{" "}
               </h2>
+              <h1>exceptional automations!</h1>
+            </div>
+            <div className="banner_desp">
+              <p>Aspen Nexus; a tech driven company bringing you allthe solutions, be it store setup, automations or selling digital products online through eye catching web designs, our experts use updated technology and tools to help you grow.</p>
             </div>
             {/* Banner links */}
             <div className="bannerLinks">
               <div>
                 <Link className="btn" href="/service">
-                  Explore our services →
+                  Explore Our Services →
                 </Link>
               </div>
               {/* <div className="Video">
@@ -233,7 +247,7 @@ const Homepage = () => {
               </div> */}
             </div>
             <Link href="#services" className="mouseHolder">
-              <FontAwesomeIcon icon={faComputerMouse} flip="vertical" style={{ color: "#0b3543", }} />
+              <FontAwesomeIcon icon={faComputerMouse} flip="vertical" style={{ color: "#ee6c4d", }} />
             </Link>
           </div>
         </div>
@@ -250,27 +264,15 @@ const Homepage = () => {
             <div className="service_slider">
               {/* <div className="arrowSpace"></div> */}
               <Slider {...ServiceSlidersettings}>
-                <Link href="/services/amazon" className="slideCard">
+                {servicescontent.map((servicescontent, index) => (
+                <Link href={servicescontent.link} className="slideCard">
                   <div className="slide_Img">
-                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80} />
+                    <Image src={servicescontent.img} alt="service image" width={80} height={80} />
                   </div>
-                  <h2>Amazon Automation</h2>
-                  <p>From refining product listings to launching impactful advertising campaigns, we ensure your brand excels in a competitive marketplace, driving both growth and success online.</p>
+                  <h2>{servicescontent.heading}</h2>
+                  <p>{servicescontent.description}</p>
                 </Link>
-                <Link href="/services/amazon" className="slideCard">
-                  <div className="slide_Img">
-                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80} />
-                  </div>
-                  <h2>Shopify Automation</h2>
-                  <p>From refining product listings to launching impactful advertising campaigns, we ensure your brand excels in a competitive marketplace, driving both growth and success online.</p>
-                </Link>
-                <Link href="/services/amazon" className="slideCard">
-                  <div className="slide_Img">
-                    <Image src="/Images/amazon.svg" alt="service image" width={80} height={80} />
-                  </div>
-                  <h2>Web Development</h2>
-                  <p>From refining product listings to launching impactful advertising campaigns, we ensure your brand excels in a competitive marketplace, driving both growth and success online.</p>
-                </Link>
+                ))}
               </Slider>
             </div>
           </div>

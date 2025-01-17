@@ -61,15 +61,17 @@ function Header() {
             <div className="dropdownMenu">
               <div className='innerItemParent'>
                 {/* <h3>Amazon</h3> */}
-                <Link href="/services/shopify">Shopify automatically</Link>
-                <Link href="/services/amazon">Amazon Automation</Link>
+                <Link href="/services/shopify">Shopify Automation</Link>
                 <Link href="/services/tiktok">Tiktok Shop Automation</Link>
-                <Link href="/services/digitalMarketing">Digital Marketing</Link>
+                <Link href="/services/amazon">Amazon Automation</Link>
+                <Link href="/services/walmart">Wal-Mart Automation</Link>
+                <Link href="/services/ebay">Ebay Automation</Link>
               </div>
               <div className='innerItemParent'>
-                <Link href="/services/graphicDesign">Graphic Designing</Link>
-                <Link href="/services/privateLabel">Private Labeling</Link>
+                <Link href="/services/others">Other services</Link>
+                <Link href="/services/etsy">Etsy Automation</Link>
                 <Link href="/services/websiteDevelop">Website development</Link>
+                <Link href="/services/digitalMarketing">Digital Marketing</Link>
               </div>
             </div>
           )}
@@ -86,9 +88,9 @@ function Header() {
         </Link>
       </div>
       <button className="menuToggle" onClick={toggleMenu}>
-            mobile button
-          </button>
-          {isMenuOpen && (
+        mobile button
+      </button>
+      {isMenuOpen && (
       <div className='mobile_Menu'>
         <nav className="mobileMenu">
           <ul>

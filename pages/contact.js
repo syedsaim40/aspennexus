@@ -539,14 +539,8 @@ const Contact = () => {
         <div className="section topSpace">
           <div className="contact">
             <div className="contactText">
-              <h1>Interested?</h1>
-              <h1>Let’s talk!</h1>
-              <p>
-                Just fill this form and we will contact you promptly to discuss
-                your project. Hate forms? Drop us a message at{" "}
-                <Link href="#">info@waves.com</Link> or{" "}
-                <Link href="#">hello@waves.com</Link>
-              </p>
+              <h1>WANT TO SHARE THOSE IDEAS AND RESOLVE ALL YOUR QUERRIES?</h1>
+              <p>Fill out the form below and get a free consultation with our team.</p>
             </div>
             <form onSubmit={handleSubmit}>
               <input

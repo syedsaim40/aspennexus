@@ -5,8 +5,9 @@
   scroll-behavior: smooth;
 }
 :root {
---primary: #476096;
+/* --primary: #476096; */
 /* --primary: #3d5a80; */
+--primary: #ee6c4d;
 /* --primary: #002c58; */
 --secondary: #ee6c4d;
 /* --secondary: #0043f1; */
@@ -123,7 +124,7 @@
 }
 .sectionSpace {
   display: block;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   @media (max-width: 767.9px) {
     margin-bottom: 2rem;
   }
@@ -155,6 +156,7 @@ img {
   border: none;
   letter-spacing: 1px;
   border: 2px solid transparent;
+  cursor: pointer;
   &:hover {
     background-color: var(--primary);
     color: var(--white);
@@ -173,9 +175,8 @@ img {
   color: var(--white);
   background-color: var(--secondary);
   outline: none;
-
+  cursor: pointer;
   letter-spacing: 1px;
-
   &:hover {
     border-color: var(--primary);
     background-color: var(--primary);
@@ -190,7 +191,7 @@ img {
   color: white;
   background: transparent;
   outline: none;
-
+  cursor: pointer;
   letter-spacing: 1px;
 
   &:hover {
@@ -203,13 +204,12 @@ img {
   padding: 1.2rem 1.3rem;
   font-size: 1rem;
   font-weight: 500;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--white);
   color: var(--white);
   background-color: var(--secondary);
   outline: none;
-
+  cursor: pointer;
   letter-spacing: 1px;
-
   &:hover {
     border-color: #fff;
     background-color: var(--primary);
@@ -310,7 +310,7 @@ select{
       &::before {
         position: absolute;
         content: " ";
-        bottom: 8px;
+        bottom: 2px;
         height: 6px;
         width: 100%;
         background: var(--secondary);

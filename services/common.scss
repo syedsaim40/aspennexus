@@ -1,5 +1,5 @@
 .mainHeading{
-    margin-top: 83px;
+    margin-top: 74px;
       .serviceHeading{
         height: 383px;
         display: flex;
@@ -29,17 +29,21 @@
         gap: 2rem;
         margin: 5rem 0;
         .contentSection {
-         
+            flex: 2;
+        }
+        .contentImage {
+            flex: 1;
+        }
+        .contentSection {
           h1 {
             font-size: 32px;
             font-weight: 500;
             color: var(--primary);
             padding: 1rem 0rem;
-           
           }
           h3 {
             color: #0f0f0f;
-             padding-top: 0.5rem;
+            padding-top: 0.5rem;
             font-size: 20px;
             font-weight: 400;
             padding-bottom: 2rem;
@@ -51,13 +55,11 @@
               font-size: 16px;
               font-weight: 500;
               p{
-                
                   padding-bottom: 1rem;
               }
           }
         }
         .contentSection2{
-         
           h1 {
             font-size: 32px;
             font-weight: 500;

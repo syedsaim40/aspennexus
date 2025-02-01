@@ -39,7 +39,7 @@ function Header() {
       {/* Left Side: Logo */}
       <div className="logo">
         <Link href="/">
-        <Image src="/Images/logo1.png" alt="alt" width={140} height={60} />
+        <Image src="/Images/logo3.svg" alt="alt" width={140} height={60} />
         </Link>
       </div>
 
@@ -65,10 +65,9 @@ function Header() {
                 <Link href="/services/tiktok">Tiktok Shop Automation</Link>
                 <Link href="/services/amazon">Amazon Automation</Link>
                 <Link href="/services/walmart">Wal-Mart Automation</Link>
-                <Link href="/services/ebay">Ebay Automation</Link>
               </div>
               <div className='innerItemParent'>
-                <Link href="/services/others">Other services</Link>
+                <Link href="/services/ebay">Ebay Automation</Link>
                 <Link href="/services/etsy">Etsy Automation</Link>
                 <Link href="/services/websiteDevelop">Website development</Link>
                 <Link href="/services/digitalMarketing">Digital Marketing</Link>

@@ -202,10 +202,34 @@ const Homepage = () => {
 
   const servicescontent = [
     {
+      link: "/services/shopify",
+      img: "/Images/amazon.svg",
+      heading: "Shopify Automation",
+      description: "Have a hassle-free work experience through our shopify automations!",
+    },
+    {
+      link: "/services/tiktok",
+      img: "/Images/amazon.svg",
+      heading: "TikTok Shop Automation",
+      description: "Our experts foster a way for brands to stay ahead on the ever-changing TikTok trends",
+    },
+    {
       link: "/services/amazon",
       img: "/Images/amazon.svg",
-      heading: "Web development services",
+      heading: "Amazon Automation",
+      description: "Overview our automation services to learn how you can expand on world’s largest digital platform.",
+    },
+    {
+      link: "/services/websiteDevelop.js",
+      img: "/Images/amazon.svg",
+      heading: "Web development Services",
       description: "Functionality and innovation are the two key features we incorporate in our web development services.",
+    },
+    {
+      link: "/services/digitalMarketing",
+      img: "/Images/amazon.svg",
+      heading: "Digital marketing Services",
+      description: "A good marketing technique and strategy amplify your brand’s growth in no time. Here’s how it works!",
     },
   ];
 
@@ -220,7 +244,21 @@ const Homepage = () => {
             <div className="bannerHeading">
               <h2>
                 <ReactTyped
-                  strings={["Innovate", "Thrive", "Succeed"]}
+                  strings={[
+                    "Innovate",
+                    "Thrive",
+                    "Succeed",
+                    "Simplify ",
+                    "Elevate",
+                    "Achieve",
+                    "Streamline",
+                    "Transform",
+                    "Empower",
+                    "Advance",
+                    "Optimize",
+                    "Revolutionize",
+                    "Excel",
+                  ]}
                   typeSpeed={100}
                   loop
                   backSpeed={20}
@@ -238,7 +276,7 @@ const Homepage = () => {
             <div className="bannerLinks">
               <div>
                 <Link className="btn" href="/service">
-                  Explore Our Services →
+                  Explore Us →
                 </Link>
               </div>
               {/* <div className="Video">
@@ -258,20 +296,20 @@ const Homepage = () => {
         <div className="container">
           <div className="service_wrapper">
             <div className="section_heading">
-              <h2>What we do</h2>
-              <h4>For your <span>Business</span></h4>
+              <h2>EXPLORE OUR</h2>
+              <h4><span>SERVICES AND SOLUTIONS!</span></h4>
             </div>
             <div className="service_slider">
               {/* <div className="arrowSpace"></div> */}
               <Slider {...ServiceSlidersettings}>
-                {servicescontent.map((servicescontent, index) => (
-                <Link href={servicescontent.link} className="slideCard">
-                  <div className="slide_Img">
-                    <Image src={servicescontent.img} alt="service image" width={80} height={80} />
-                  </div>
-                  <h2>{servicescontent.heading}</h2>
-                  <p>{servicescontent.description}</p>
-                </Link>
+                {servicescontent.map((servicescontent, serindex) => (
+                  <Link href={servicescontent.link} className="slideCard">
+                    <div className="slide_Img">
+                      <Image src={servicescontent.img} alt="service image" width={80} height={80} />
+                    </div>
+                    <h2>{servicescontent.heading}</h2>
+                    <p>{servicescontent.description}</p>
+                  </Link>
                 ))}
               </Slider>
             </div>
@@ -287,14 +325,14 @@ const Homepage = () => {
               <div className="roi_content">
                 <div className="section_heading">
                   <h2>Best ROIs</h2>
-                  <p>We are dedicated to provide maximum benefits to our clients with seamless strategies and best investment options.</p>
+                  <p>Aspen Nexus; a tech driven company bringing you all the solutions, be it store setup, automations or selling digital products online through eye catching web designs, our experts use updated technology and tools to help you grow</p>
                 </div>
               </div>
               <div className="roi_pricing" ref={counterRef}>
                 {[
-                  { amount: 5573440, label: 'Generated In Revenue For Our Client (So Far)' },
-                  { amount: 1557300, label: 'Spent On Google & Facebook Advertising' },
-                  { amount: 600, label: 'Savings Realized' },
+                  { amount: 2862440, label: 'Generated In Revenue For Our Client (So Far)' },
+                  { amount: 1753300, label: 'Spent On Google & Facebook Advertising' },
+                  { amount: 23453, label: 'Savings Realized' },
                 ].map((item, index) => (
                   <div className="roi_counter" key={index}>
                     <h3>
@@ -316,8 +354,11 @@ const Homepage = () => {
                   <FontAwesomeIcon icon={faArrowUpRightDots} />
                 </div>
                 <div className="roi_Content">
-                  <h2>Growth Strategy</h2>
-                  <p>Ecom Pinnacle drives sustainable, high-impact growth with tailored, data-driven strategies focused on long term success.</p>
+                  <h2>Cost Optimization</h2>
+                  <p>We streamline operations,
+                    automate processes, and renegotiate vendor
+                    contracts to reduce costs and improve
+                    efficiency, enabling higher profitability.</p>
                 </div>
               </div>
               <div className="roi_Card">
@@ -325,8 +366,12 @@ const Homepage = () => {
                   <FontAwesomeIcon icon={faArrowUpRightDots} />
                 </div>
                 <div className="roi_Content">
-                  <h2>Growth Strategy</h2>
-                  <p>Ecom Pinnacle drives sustainable, high-impact growth with tailored, data-driven strategies focused on long term success.</p>
+                  <h2>Customer Retention & Engagement</h2>
+                  <p>By
+                    leveraging data analytics, we personalize
+                    customer experiences, create loyalty
+                    programs, and enhance support to increase
+                    retention and lifetime value, boosting ROI.</p>
                 </div>
               </div>
               <div className="roi_Card">
@@ -334,8 +379,10 @@ const Homepage = () => {
                   <FontAwesomeIcon icon={faArrowUpRightDots} />
                 </div>
                 <div className="roi_Content">
-                  <h2>Growth Strategy</h2>
-                  <p>Ecom Pinnacle drives sustainable, high-impact growth with tailored, data-driven strategies focused on long term success.</p>
+                  <h2>Market Expansion</h2>
+                  <p> We identify high-potential markets and
+                    execute targeted strategies to help businesses expand,
+                    ensuring successful entry and maximized revenue streams.</p>
                 </div>
               </div>
             </div>
@@ -348,10 +395,15 @@ const Homepage = () => {
         <div className="container gallery_inner">
           <div className="containerText">
             <h3>See The Results</h3>
-            <h2>Check out some of our past results</h2>
+            <h2>Our Success is
+              Your Success
+            </h2>
           </div>
           <div className="cont_btn">
-            <p>Integrate your Amazon and Shopify stores seamlessly with our automation services. Automate inventory updates and gain real-time data insights, leading to streamlined operations, heightened productivity, and enhanced customer experiences.</p>
+            <p>At Aspen Nexus we define our success by the success of our clients. We take pride in
+              fostering long-term partnerships and helping businesses of all sizes achieve their ecommerce goals. Whether it's launching a new brand, scaling existing operations, or
+              increasing profitability, we're here to empower you to thrive in the ever-evolving online
+              marketplace.</p>
             <Link className="btn4" href={"/contact"}>Book a Free Consultation</Link>
           </div>
         </div>

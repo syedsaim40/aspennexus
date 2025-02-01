@@ -7,76 +7,19 @@ const Testimonials = () => {
   // Object for data managing it testimonials
   const testimonials = [
     {
-      name: "John Carter",
-      username: "@johncarter",
-      content:
-        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
+      name: "Martha Evans",
+      username: "Marketing Executive",
+      content: "Aspen Nexus has us amazed with theirtargeting marketing skills. Theirteam have multiple ideas for your campaign and have helped us connect with our audience like never before",
     },
     {
-      name: "Jane Doe",
-      username: "@janedoe",
-      content:
-        "This service has transformed my business! Their team is professional, and the results are incredible.",
+      name: "Mark Bennett",
+      username: "CEO design solutions",
+      content: "Aspen Nexus transformed our outdated website with a modern design. We have tracked a noticeable difference in reach",
     },
     {
-      name: "Michael Smith",
-      username: "@michaelsmith",
-      content:
-        "Highly recommend! Their automation solutions saved me so much time and effort.",
-    },
-    {
-      name: "John Carter",
-      username: "@johncarter",
-      content:
-        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
-    },
-    {
-      name: "Jane Doe",
-      username: "@janedoe",
-      content:
-        "This service has transformed my business! Their team is professional, and the results are incredible.",
-    },
-    {
-      name: "Michael Smith",
-      username: "@michaelsmith",
-      content:
-        "Highly recommend! Their automation solutions saved me so much time and effort.",
-    },
-    {
-      name: "John Carter",
-      username: "@johncarter",
-      content:
-        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
-    },
-    {
-      name: "Jane Doe",
-      username: "@janedoe",
-      content:
-        "This service has transformed my business! Their team is professional, and the results are incredible.",
-    },
-    {
-      name: "Michael Smith",
-      username: "@michaelsmith",
-      content:
-        "Highly recommend! Their automation solutions saved me so much time and effort.",
-    },
-    {
-      name: "John Carter",
-      username: "@johncarter",
-      content:
-        "The Amazon Automation service is top-notch. I've been able to scale my store effortlessly and see consistent profits. Thank you for making this possible!",
-    },
-    {
-      name: "Jane Doe",
-      username: "@janedoe",
-      content:
-        "This service has transformed my business! Their team is professional, and the results are incredible.",
-    },
-    {
-      name: "Michael Smith",
-      username: "@michaelsmith",
-      content:
-        "Highly recommend! Their automation solutions saved me so much time and effort.",
+      name: "Emily Carter",
+      username: "Shopify store owner",
+      content: "Their product hunting and sourcing is a game changer! Introduced new productto our store and the sales are never ending",
     },
   ];
 

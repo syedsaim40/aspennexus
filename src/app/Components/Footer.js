@@ -5,7 +5,7 @@ import facebookVec from '../../../public/Images/faceVector.png';
 import twitterVec from '../../../public/Images/TwitVector.png';
 import instaVec from '../../../public/Images/instaVector.png';
 import linkVec from '../../../public/Images/linkVector.png';
-import logo from "../../../public/Images/logo1.png";
+import logo from "../../../public/Images/logo3.svg";
 import Image from 'next/image';
 
 function Footer() {
@@ -19,8 +19,8 @@ function Footer() {
                                 <Image src={logo} alt="logo"/>
                             </div>
                             <div className='logo_content'>
-                                <h2>We handle the <span>hassle,</span></h2>
-                                <h2>so you can enjoy the <span>results!</span></h2>
+                                <h2> we do the <span>hard work,</span></h2>
+                                <h2>you sit back <span>relax!</span></h2>
                             </div>
                         </div>
                         <div className='footer_outer'>

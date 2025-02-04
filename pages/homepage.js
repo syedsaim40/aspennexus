@@ -265,9 +265,9 @@ const Homepage = () => {
                   showCursor={true}
                 />
                 {" "}
-                with Aspen Nexus’s{" "}
+                with Aspen Nexus{" "}
               </h2>
-              <h1>exceptional automations!</h1>
+             
             </div>
             <div className="banner_desp">
               <p>Aspen Nexus; a tech driven company bringing you allthe solutions, be it store setup, automations or selling digital products online through eye catching web designs, our experts use updated technology and tools to help you grow.</p>
@@ -285,7 +285,7 @@ const Homepage = () => {
               </div> */}
             </div>
             <Link href="#services" className="mouseHolder">
-              <FontAwesomeIcon icon={faComputerMouse} flip="vertical" style={{ color: "#ee6c4d", }} />
+              <FontAwesomeIcon icon={faComputerMouse} flip="vertical" style={{ color: "#fff", }} />
             </Link>
           </div>
         </div>
@@ -304,10 +304,12 @@ const Homepage = () => {
               <Slider {...ServiceSlidersettings}>
                 {servicescontent.map((servicescontent, serindex) => (
                   <Link href={servicescontent.link} className="slideCard">
-                    <div className="slide_Img">
+                   <div className="card_heading">
+                   <div className="slide_Img">
                       <Image src={servicescontent.img} alt="service image" width={80} height={80} />
                     </div>
                     <h2>{servicescontent.heading}</h2>
+                   </div>
                     <p>{servicescontent.description}</p>
                   </Link>
                 ))}

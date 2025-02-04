@@ -24,7 +24,7 @@
 .bannerSec::after {
   position: absolute;
   content: " ";
-  background: rgb(255 255 246 / 65%);
+  background: linear-gradient(180deg, #F56300 0%, #FFA531 60%);
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -32,6 +32,7 @@
   right: 0;
   left: 0;
   bottom: 0;
+  opacity: 0.8;
 }
 // Banner css
 .mainBanner {
@@ -42,7 +43,9 @@
   align-items: center;
   height: 100vh;
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  
+ 
   .bannerHeading {
     padding-bottom: 3rem;
     h1 {
@@ -60,9 +63,10 @@
       font-size: 58px;
       font-weight: 600;
       text-align: center;
+      color: white;
 
       span {
-        color: var(--secondary);
+        color: black;
       }
       @media (max-width: 768px) {
         font-size: 42px;
@@ -78,10 +82,10 @@
     text-align: center;
     margin-bottom: 5rem;
     p{
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 18px;
+      font-weight: 600;
       line-height: 26px;
-      color: #626262;
+      color: #ffff;
     }
   }
   .bannerLinks {
@@ -120,8 +124,10 @@
     bottom: 20px;
     z-index: 1;
     animation: mouseLag 2s infinite linear;
+ 
     svg {
       font-size: 50px;
+      fill: white;
     }
     @keyframes mouseLag {
       10% {
@@ -409,6 +415,11 @@
       min-height: 310px;
       @media (max-width: 768px) {
         padding: 2rem;
+      }
+      .card_heading{
+        display: flex;
+        justify-content: center;
+        
       }
       .slide_Img {
         width: 80px;

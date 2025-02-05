@@ -16,6 +16,7 @@ import useInView from "../src/app/Hooks/useInView";
 import FAQ from "../src/app/Components/FAQ";
 import faqImage from "../public/Images/faq.jpg";
 import Testimonials from "../src/app/Components/Testimonials";
+import overview from "../public/Images/overview.png";
 
 
 const Homepage = () => {
@@ -290,6 +291,24 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+
+    {/* New Roi section */}
+    <section className="overview">
+       <div className="container">
+        <div className="overview_section">
+          <div className="overview_img">
+          <Image src={overview} alt="service image" width={650} height={600} />
+          </div>
+          <div className="overview_content">
+            <h2>Amazon | Shopify | TikTok</h2>
+            <h1>Join Forces with Leading Experts</h1>
+            <p>Elevate and fine-tune your e-commerce operations for maximum success. Whether you’re aiming to succeed on Amazon, Shopify, Walmart, or TikTok, our comprehensive support ensures you excel in any marketplace. Working with a tight budget for a side hustle? We’ve got solutions. Dreaming of dominating your niche in e-commerce? We’ll bring your vision to life. Whatever your goals, we’re here to turn your ideas into reality and help you stay ahead of the competition.</p>
+            <button className="btn btn-over"  >Ready? Set? LetsGo</button>
+          </div>
+        </div>
+       </div>
+    </section>
+
 
       {/* Services new section */}
       <section className="sectionSpace" id="services">

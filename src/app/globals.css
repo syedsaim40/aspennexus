@@ -139,10 +139,10 @@ ul {
   all: unset;
   list-style-type: none;
 }
-img {
+/* img {
   max-width: 100%;
   display: inline-block;
-}
+} */
 /* section{
   padding-bottom: 5rem;
 } */

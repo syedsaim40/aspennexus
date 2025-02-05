@@ -150,6 +150,54 @@
   }
 }
 
+.overview{
+  margin: 2rem 0;
+  height: 100vh;
+  .overview_section{
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+  
+    .overview_img{
+      border-radius: 50px;
+       img{
+        border-radius: 50px;
+       
+       }
+      
+    }
+    .overview_content{
+      gap: 10px;
+      padding-top: 2rem;
+       h2{
+        font-size: 25px;
+        color: var(--primary);
+       padding-bottom: 1rem;
+       }
+       h1{
+        font-size: 60px;
+        font-weight: 700;
+        padding-bottom: 2rem;
+       }
+       p{
+        font-size: 20px;
+        color: #3f3f3f;
+        margin-bottom: 2rem;
+        line-height: 2.2rem;
+        padding-bottom: 1rem;
+       }
+       button{
+        padding-top: 2rem;
+        padding: 1rem 2.2rem;
+   
+
+       }
+    }
+  }
+
+}
+
+
 //Services SCSS
 .serviceMain {
   position: relative;
@@ -375,7 +423,7 @@
   min-height: 450px;
 }
 .service_wrapper{
-  background: #ee6c4d2e;
+  background: #ee6c4d73;
   padding: 6rem 0rem 1rem 4rem;
   border-top-right-radius: 500px;
   overflow: hidden;

@@ -145,14 +145,16 @@ const Homepage = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 2,
+          dots:false
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots:false
         }
       }
     ]
@@ -292,17 +294,18 @@ const Homepage = () => {
         </div>
       </section>
 
-    {/* New Roi section */}
+    {/* New Overview section */}
     <section className="overview">
        <div className="container">
         <div className="overview_section">
           <div className="overview_img">
-          <Image src={overview} alt="service image" width={650} height={600} />
+          <Image src={overview} alt="service image" width={553} height={500} />
           </div>
           <div className="overview_content">
             <h2>Amazon | Shopify | TikTok</h2>
-            <h1>Join Forces with Leading Experts</h1>
-            <p>Elevate and fine-tune your e-commerce operations for maximum success. Whether you’re aiming to succeed on Amazon, Shopify, Walmart, or TikTok, our comprehensive support ensures you excel in any marketplace. Working with a tight budget for a side hustle? We’ve got solutions. Dreaming of dominating your niche in e-commerce? We’ll bring your vision to life. Whatever your goals, we’re here to turn your ideas into reality and help you stay ahead of the competition.</p>
+            <h1>Work With The Best Leaders In The Field To Innovate Your E-Store Advanced Strategy</h1>
+            <p>
+            Get tips that make sense to you to grow your online store. If you are establishing your online business on Amazon, Shopify, eBay, Walmart, or creating a custom website, we will equip you with everything you need to become successful. From starting a side gig on a tight budget, we have website design services that can help you kick off without breaking the bank. Looking to dominate your niche and stand out from the crowd? Let us help you make that vision a reality. We will guide you every step of the way to ensure that your e-commerce business achieves success. No matter the stage you are at in your journey, we will turn your goals into reality and position you above your competition.</p>
             <button className="btn btn-over"  >Ready? Set? LetsGo</button>
           </div>
         </div>

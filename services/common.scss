@@ -1,90 +1,149 @@
-.mainHeading{
-    margin-top: 74px;
-      .serviceHeading{
-        height: 383px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-         background: #E1DBF6;
-         p{
-          font-size: 16px;
-          color: var(--primary);
-          font-weight: 600;
-          font-family: var(--mont);
-          padding-bottom: 1rem;
-         }
-         h2{
-          color:#0f0f0f;
-          width: 80%;
-          font-size: 40px;
-          font-weight: 500;
-          font-family: var(--mont);
-         }
-        }
+.service_banner {
+  margin-top: 5rem;
+  height: 90vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20rem;
+  padding: 2rem;
+
+  .service_content {
+    gap: 1rem;
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 500;
+      --tw-text-opacity: 1;
+      color: rgb(89 89 89);
     }
-    .section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
-        margin: 5rem 0;
-        .contentSection {
-            flex: 2;
-        }
-        .contentImage {
-            flex: 1;
-        }
-        .contentSection {
-          h1 {
-            font-size: 32px;
-            font-weight: 500;
-            color: var(--primary);
-            padding: 1rem 0rem;
-          }
-          h3 {
-            color: #0f0f0f;
-            padding-top: 0.5rem;
-            font-size: 20px;
-            font-weight: 400;
-            padding-bottom: 2rem;
-          }
-          .serviceDetail{
-              display: grid;
-              grid-template-columns: repeat(2,1fr);
-              color: var(--primary);
-              font-size: 16px;
-              font-weight: 500;
-              p{
-                  padding-bottom: 1rem;
-              }
-          }
-        }
-        .contentSection2{
-          h1 {
-            font-size: 32px;
-            font-weight: 500;
-            color: var(--primary);
-            padding: 1rem 0rem;
-          }
-          h3 {
-            color: #0f0f0f;
-             padding-top: 0.5rem;
-            font-size: 20px;
-            font-weight: 400;
-            padding-bottom: 2rem;
-          }
-          .serviceDetail{
-              display: grid;
-              grid-template-columns: repeat(2,1fr);
-              color: var(--primary);
-              font-size: 16px;
-              font-weight: 500;
-              p{
-                
-                  padding-bottom: 1rem;
-              }
-          }
-        }
-        
+
+    h1 {
+      padding-top: 2rem;
+      font-size: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      padding-top: 1rem;
+      --tw-text-opacity: 1;
+      color: rgb(89 89 89);
+
+    }
+
+    p {
+      padding-top: 1rem;
+      font-size: 1.1rem;
+      --tw-text-opacity: 1;
+      color: rgb(89 89 89);
+
+
+    }
+
+    button {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      padding: 1rem 2.2rem;
+    }
+  }
+
+  .service_image {
+    img {
+      border-radius: 0.75rem;
+    }
+  }
+}
+
+.nav_heading {
+  margin: auto;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 1.5rem;
+
+    color: rgb(89 89 89);
+    font-weight: 600;
+
+
+  }
+
+  h1 {
+    padding: 1rem 0;
+    font-size: 3rem;
+
+    font-weight: 700;
+  }
+
+  p {
+
+    font-size: 1rem;
+  }
+}
+
+.service_Holder {
+  display: flex;
+  position: relative;
+  height: 100vh;
+
+  .service_Nav {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .nav_Item {
+      position: sticky;
+      top: 200px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+
+      h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: gray;
+        padding-left: 3rem;
       }
-      
+    }
+  }
+
+  .service_Text {
+    flex: 3;
+
+    .nav_Content {
+      height: 800px;
+
+      p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        width: 90%;
+        color: rgb(33 33 33)
+      }
+
+      .nav_gallery {
+        padding-top: 2rem;
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 2rem;
+
+        .nav_img {
+          border-radius: 0.5rem;
+          height: 240px;
+          width: 404px;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

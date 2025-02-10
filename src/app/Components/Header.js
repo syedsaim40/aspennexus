@@ -69,7 +69,7 @@ function Header() {
               <div className='innerItemParent'>
                 <Link href="/services/ebay">Ebay Automation</Link>
                 <Link href="/services/etsy">Etsy Automation</Link>
-                <Link href="/services/websiteDevelop">Website development</Link>
+                <Link href="/services/development">Website development</Link>
                 <Link href="/services/digitalMarketing">Digital Marketing</Link>
               </div>
             </div>

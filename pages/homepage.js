@@ -7,8 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComputerMouse, faArrowUpRightDots } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 import useScreenSize from "../src/app/Hooks/useScreenSize";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Gallery from "../src/app/Components/Gallery";
 import CountUp from "react-countup";
@@ -155,46 +153,6 @@ const Homepage = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots:false
-        }
-      }
-    ]
-  };
-  var testimonialsSlideSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    initialSlide: 1,
-    autoplay: true,
-    autoplaySpeed: 800,
-    cssEase: "ease",
-    swipeToSlide: true,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
         }
       }
     ]

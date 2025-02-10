@@ -147,7 +147,7 @@ ul {
   padding-bottom: 5rem;
 } */
 .btn {
-  padding: 0.7rem 1.4rem;
+  padding: 1rem 1.4rem;
   font-size: 16px;
   font-weight: 500;
   color: var(--white);
@@ -157,6 +157,7 @@ ul {
   letter-spacing: 1px;
   border: 2px solid transparent;
   cursor: pointer;
+  display: inline-block;
   &:hover {
     background-color: var(--white);
     color: var(--primary);
@@ -388,4 +389,10 @@ select{
 .faq-answer.open {
   max-height: 100px; /* Adjust based on your answer content */
   padding: 2rem 1rem;
+}
+
+.service_Header{
+  .headerWrapper {
+    width: calc(100% - 16px);
+  }
 }

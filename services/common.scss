@@ -4,7 +4,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  gap: 20rem;
+  gap: 18rem;
   padding: 2rem;
 
   .service_content {
@@ -17,9 +17,10 @@
     }
 
     h1 {
-      padding-top: 2rem;
+      padding-top: 1rem;
       font-size: 3rem;
       padding-bottom: 1rem;
+      line-height: 3.5rem;
     }
 
     p {

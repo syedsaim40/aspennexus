@@ -78,7 +78,11 @@ export default function walmart() {
                     </div>
                   </div>
                   <p>
-                  Involves a range of tasks, including optimizing product listings, managing inventory, processing orders, providing customer service, and analyzing performance metrics. These activities are crucial for ensuring efficient operations and driving sales growth on the Walmart marketplace.
+                    Involves a range of tasks, including optimizing product
+                    listings, managing inventory, processing orders, providing
+                    customer service, and analyzing performance metrics. These
+                    activities are crucial for ensuring efficient operations and
+                    driving sales growth on the Walmart marketplace.
                   </p>
                 </div>
               </div>
@@ -96,15 +100,17 @@ export default function walmart() {
                     </div>
                   </div>
                   <p>
-                  Personalized and tailored online store layout specifically designed for the Walmart marketplace. This includes customized product displays, and tailored navigation features to enhance brand presentation, improve user experience, and drive sales.
+                    Personalized and tailored online store layout specifically
+                    designed for the Walmart marketplace. This includes
+                    customized product displays, and tailored navigation
+                    features to enhance brand presentation, improve user
+                    experience, and drive sales.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Product Listing
-Optimization
-</h2>
+                  <h2>Product Listing Optimization</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -116,8 +122,30 @@ Optimization
                     </div>
                   </div>
                   <p>
-                  Focuses on enhancing product listings to elevate visibility and performance on e-commerce platforms. This process involves refining product titles, descriptions, images, keywords, and pricing to attract more customers, improve search rankings, and increase conversions. The aim is to make the product more appealing and easier for potential buyers to find.
+                    Focuses on enhancing product listings to elevate visibility
+                    and performance on e-commerce platforms. This process
+                    involves refining product titles, descriptions, images,
+                    keywords, and pricing to attract more customers, improve
+                    search rankings, and increase conversions. The aim is to
+                    make the product more appealing and easier for potential
+                    buyers to find.
                   </p>
+                </div>
+              </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Why Choose Aspen Nexus?</h2>
+                </div>
+                <div className="nav_Content">
+                  <ul>
+                    <li>End-to-End Solutions tailored for sellers.</li>
+                    <li>Data-Driven Strategies thatincrease sales.</li>
+                    <li>Time-Saving Automation .</li>
+                    <li>Proven Results.</li>
+                    <p>
+                      Join Aspen Nexus to automate your WALLMART to success!
+                    </p>
+                  </ul>
                 </div>
               </div>
               <div className="service_Box">
@@ -134,7 +162,12 @@ Optimization
                     </div>
                   </div>
                   <p>
-                  This process includes informative and attractive labels that convey essential product details and developing packaging that safeguards the product, enhances its visual appeal, and meets regulatory requirements. Effective labeling and packaging are vital for branding, differentiating products, and improving the customer experience.
+                    This process includes informative and attractive labels that
+                    convey essential product details and developing packaging
+                    that safeguards the product, enhances its visual appeal, and
+                    meets regulatory requirements. Effective labeling and
+                    packaging are vital for branding, differentiating products,
+                    and improving the customer experience.
                   </p>
                 </div>
               </div>
@@ -152,7 +185,9 @@ Optimization
                     </div>
                   </div>
                   <p>
-                  We automates your Walmart store, handling product sourcing, inventory, fulfillment, and marketing. Scale effortlessly while we maximize efficiency and profits for you!
+                    We automates your Walmart store, handling product sourcing,
+                    inventory, fulfillment, and marketing. Scale effortlessly
+                    while we maximize efficiency and profits for you!
                   </p>
                 </div>
               </div>

@@ -166,6 +166,45 @@ export default function tiktokAuto() {
                   </p>
                 </div>
               </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Performance Analysis & Reporting
+                  </h2>
+                </div>
+                <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={tik2} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={tik9} alt="alt" />
+                    </div>
+                  </div>
+                  <p>
+                  We provide detailed analytics reports regularly tracking your store’s performance with key metrics and campaign results.
+                  This approach helps you stay in control and make key decisions to improve continuously.
+                  </p>
+                </div>
+              </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Why Choose Aspen Nexus for TikTok Shop Automation?</h2>
+                </div>
+                <div className="nav_Content">
+                  <ul>
+                    <li>Trend-Driven Strategies to stay ahead of Tik Tok trends.</li>
+                    <li>
+                    Comprehensive Services to manage everything from store setup to marketing and purchase.
+
+                    </li>
+                    <li>Audience Engagementthrough targeted solutions that drive sales.</li>
+                    <li>Proven Results.</li>
+                    <p>
+                    Take your TikTok shop a step ahead with Aspen Nexus!
+                    </p>
+                  </ul>
+                </div>
+              </div>
             </div>
             <section className="plans__container">
               <div className="plans">

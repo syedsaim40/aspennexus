@@ -6,6 +6,7 @@
   justify-content: space-between;
   gap: 18rem;
   padding: 2rem;
+  // background: linear-gradient(180deg, #F56300 0%, #FFA531 60%);
 
   .service_content {
     gap: 1rem;
@@ -28,7 +29,6 @@
       padding-top: 1rem;
       margin-bottom: 2rem;
       color: rgb(89 89 89);
-
     }
 
     p {
@@ -36,8 +36,6 @@
       font-size: 1.1rem;
       --tw-text-opacity: 1;
       color: rgb(89 89 89);
-
-
     }
 
     button {
@@ -68,8 +66,6 @@
 
     color: rgb(89 89 89);
     font-weight: 600;
-
-
   }
 
   h1 {
@@ -80,7 +76,6 @@
   }
 
   p {
-
     font-size: 1rem;
   }
 }
@@ -110,14 +105,14 @@
 
   .service_Text {
     width: 100%;
-    .service_Box{
+    .service_Box {
       display: flex;
       align-items: flex-start; /* Align content properly */
       gap: 20px;
       position: relative;
       margin-bottom: 10%;
       flex-direction: column;
-      &:last-child{
+      &:last-child {
         margin-bottom: 3rem;
       }
       .nav_Item {
@@ -137,7 +132,7 @@
           color: gray;
           padding-left: 3rem;
           position: relative;
-          &::before{
+          &::before {
             position: absolute;
             content: " ";
             top: 0;
@@ -153,13 +148,27 @@
         flex: 3; /* Take remaining space */
         padding: 10px;
         padding-top: 2rem;
+        ul {
+          li {
+            list-style: disc;
+            font-size: 1rem;
+            line-height: 1.75rem;
+            width: 90%;
+            color: rgb(33 33 33);
+            margin-bottom: 1rem;
+          }
+          p {
+            margin-top: 2rem;
+            width: 100%;
+          }
+        }
         p {
           font-size: 1.25rem;
           line-height: 1.75rem;
           width: 90%;
-          color: rgb(33 33 33)
+          color: rgb(33 33 33);
         }
-  
+
         .nav_gallery {
           padding-top: 2rem;
           display: grid;
@@ -183,16 +192,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
@@ -529,6 +528,6 @@ body {
   }
 }
 
-.faq_Wrap{
+.faq_Wrap {
   margin-bottom: 4rem;
 }

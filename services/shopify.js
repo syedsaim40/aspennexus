@@ -44,14 +44,14 @@ export default function shopifyAuto() {
                   <p>
                     At Aspen Nexus, we specialize in building, optimizing, and
                     automating high-converting Shopify stores that help
-                    businesses scale effortlessly. 
+                    businesses scale effortlessly.
                   </p>
                   <a href={"/contact"} className="btn btn-over">
                     Book a free Consultation
                   </a>
                 </div>
                 <div className="service_image">
-                  <Image src={shp1} height={480} width={320} />
+                  <Image src={shp2} height={480} width={320} />
                 </div>
               </div>
               <div className="nav_heading">
@@ -68,7 +68,7 @@ export default function shopifyAuto() {
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp2} alt="alt" />
+                      <Image src={shp1} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
                       <Image src={shp3} alt="alt" />
@@ -166,6 +166,44 @@ export default function shopifyAuto() {
                     product pages and effective digital campaigns through social
                     media marketing and email marketing.
                   </p>
+                </div>
+              </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Customer Support Automation</h2>
+                </div>
+                <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={shp9} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={shp7} alt="alt" />
+                    </div>
+                  </div>
+                  <p>
+                    Ourteam helps you stay responsive with our automated tools
+                    like chatbots and ticketing systems, ensuring exceptional
+                    customer service and strong customerrelationships.
+                  </p>
+                </div>
+              </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Why Choose Aspen Nexus for Shopify Automation?</h2>
+                </div>
+                <div className="nav_Content">
+                  <ul>
+                    <li>Tailored Solutions and services thatfit your needs.</li>
+                    <li>
+                      Efficiency & Scalability through automated processes.
+                    </li>
+                    <li>Expert Support offering services 24/7.</li>
+                    <li>Proven Results.</li>
+                    <p>
+                      Partner with Aspen Nexus and enjoy hassle free returns!
+                    </p>
+                  </ul>
                 </div>
               </div>
             </div>

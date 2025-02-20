@@ -1,7 +1,7 @@
 "use client";
-import React from 'react';
+import React from "react";
 import Header from "../src/app/Components/Header";
-import Footer from '../src/app/Components/Footer';
+import Footer from "../src/app/Components/Footer";
 import Strategy from "../public/Images/Strategy.png";
 import Marketing from "../public/Images/Marketing.png";
 import Design from "../public/Images/Design.png";
@@ -12,8 +12,8 @@ import "../src/app/globals.css";
 import "./common.scss";
 import faqImage from "../public/Images/faq.jpg";
 import serviceNav1 from "../public/Images/serviceNav2.svg";
-import Testimonials from '../src/app/Components/Testimonials';
-import FAQ from '../src/app/Components/FAQ';
+import Testimonials from "../src/app/Components/Testimonials";
+import FAQ from "../src/app/Components/FAQ";
 import dev1 from "../public/Images/development/dev1.png";
 import dev2 from "../public/Images/development/dev2.png";
 import dev3 from "../public/Images/development/dev3.png";
@@ -29,21 +29,28 @@ export default function development() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <div className='service_Header'>
+        <div className="service_Header">
           <Header />
         </div>
         <section>
-          <div className='service_Holder'>
+          <div className="service_Holder">
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
                   <h2>
-                    Making businesses standout with ourtailored web development services!
+                    Making businesses standout with ourtailored web development
+                    services!
                   </h2>
                   <h1>WEB DEVELOPMENT</h1>
-                  <p>At Aspen Nexus, our experts craft your digital presence with functional and cutting-edge web development services. Our
-                  team ensures your website meets the latesttrends & needs and stays on top in the dynamic market.</p>
-                  <a href={'/contact'} className='btn btn-over'>Book a free Consultation</a>
+                  <p>
+                    At Aspen Nexus, our experts craft your digital presence with
+                    functional and cutting-edge web development services. Our
+                    team ensures your website meets the latesttrends & needs and
+                    stays on top in the dynamic market.
+                  </p>
+                  <a href={"/contact"} className="btn btn-over">
+                    Book a free Consultation
+                  </a>
                 </div>
                 <div className="service_image">
                   <Image src={dev10} height={480} width={320} />
@@ -55,85 +62,162 @@ export default function development() {
                 <p>Services</p>
               </div>
             </div>
-            <div className='container service_Text'>
-              <div className='service_Box'>
-                <div className='nav_Item'><h2>CMS Web Development</h2></div>
-                <div className='nav_Content'>
+            <div className="container service_Text">
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>CMS Web Development</h2>
+                </div>
+                <div className="nav_Content">
                   <div className="nav_gallery">
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev2} alt="alt" /></div>
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev3} alt="alt" /></div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev2} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev3} alt="alt" />
+                    </div>
                   </div>
-                  <p>Make content management easy with our custom-built CMS platforms designed to empower businesses online. From
-Joomla to WordPress, our CMS services offertailored solutions to meet your needs and streamline updates so you can
-have full control over your website.</p>
+                  <p>
+                    Make content management easy with our custom-built CMS
+                    platforms designed to empower businesses online. From Joomla
+                    to WordPress, our CMS services offertailored solutions to
+                    meet your needs and streamline updates so you can have full
+                    control over your website.
+                  </p>
                 </div>
               </div>
-              <div className='service_Box'>
-                <div className='nav_Item'><h2>B2C Web Development</h2></div>
-                <div className='nav_Content'>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>B2C Web Development</h2>
+                </div>
+                <div className="nav_Content">
                   <div className="nav_gallery">
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev4} alt="alt" /></div>
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev5} alt="alt" /></div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev4} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev5} alt="alt" />
+                    </div>
                   </div>
-                  <p>Offering visually appealing and engaging B2C websites to attract your customers. Our services caterto every kind of
-customer, helping you target your desired audience. We drive conversions by creating userfriendly interfaces.
-</p>
+                  <p>
+                    Offering visually appealing and engaging B2C websites to
+                    attract your customers. Our services caterto every kind of
+                    customer, helping you target your desired audience. We drive
+                    conversions by creating userfriendly interfaces.
+                  </p>
                 </div>
               </div>
-              <div className='service_Box'>
-                <div className='nav_Item'><h2>PHP Web Development</h2></div>
-                <div className='nav_Content'>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>PHP Web Development</h2>
+                </div>
+                <div className="nav_Content">
                   <div className="nav_gallery">
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev6} alt="alt" /></div>
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev7} alt="alt" /></div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev6} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev7} alt="alt" />
+                    </div>
                   </div>
-                  <p>We offerrobust and feature rich web solutions by leveraging PHP frameworks like Laravel and CodeIgniter, providing you
-                  seamless functionality from custom applications to dynamic websites</p>
+                  <p>
+                    We offerrobust and feature rich web solutions by leveraging
+                    PHP frameworks like Laravel and CodeIgniter, providing you
+                    seamless functionality from custom applications to dynamic
+                    websites
+                  </p>
                 </div>
               </div>
-              <div className='service_Box'>
-                <div className='nav_Item'><h2>WordPress Web Development</h2></div>
-                <div className='nav_Content'>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>WordPress Web Development</h2>
+                </div>
+                <div className="nav_Content">
                   <div className="nav_gallery">
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev8} alt="alt" /></div>
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev9} alt="alt" /></div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev8} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev9} alt="alt" />
+                    </div>
                   </div>
-                  <p>From a simple blog to a complex ecommerce platform, we unlock the potential of your website with our WordPress web
-development services. Our experts help you build a site thatis both secured and fully optimized for search engines.
-</p>
+                  <p>
+                    From a simple blog to a complex ecommerce platform, we
+                    unlock the potential of your website with our WordPress web
+                    development services. Our experts help you build a site
+                    thatis both secured and fully optimized for search engines.
+                  </p>
                 </div>
               </div>
-              <div className='service_Box'>
-                <div className='nav_Item'><h2>B2B Portal Development</h2></div>
-                <div className='nav_Content'>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>B2B Portal Development</h2>
+                </div>
+                <div className="nav_Content">
                   <div className="nav_gallery">
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev1} alt="alt" /></div>
-                      <div className="nav_img rounded-lg object-cover"><Image src={dev10} alt="alt" /></div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev1} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev10} alt="alt" />
+                    </div>
                   </div>
-                  <p>We transform your business with a customized B2B portal. We promote efficiency and fosterlong term partnerships by
-developing platforms that streamline interactions. Whetheritis order management system or product catalogues, we
-provide tailored portals meeting your needs.</p>
+                  <p>
+                    We transform your business with a customized B2B portal. We
+                    promote efficiency and fosterlong term partnerships by
+                    developing platforms that streamline interactions.
+                    Whetheritis order management system or product catalogues,
+                    we provide tailored portals meeting your needs.
+                  </p>
+                </div>
+              </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>We Offer</h2>
+                </div>
+                <div className="nav_Content">
+                  <ul>
+                    <li>Custom Solutions: Tailored to your needs.</li>
+                    <li>Responsive Designs: Compatible for all devices.</li>
+                    <li>
+                      SEO-Friendly Platforms: Elevate your visibility online. .
+                    </li>
+                    <li>
+                      Ongoing Support: Dedicated customer service and updates.
+                    </li>
+                    <p>
+                      “Have queries about web development services? Connect with
+                      Aspen Nexus today; where innovation meets functionality!”
+                    </p>
+                  </ul>
                 </div>
               </div>
             </div>
             <section className="plans__container">
               <div className="plans">
                 <div className="plansHero">
-                  <h1 className="plansHero__title">Simple, transparent pricing</h1>
-                  <p className="plansHero__subtitle">No contracts. No suprise fees.</p>
+                  <h1 className="plansHero__title">
+                    Simple, transparent pricing
+                  </h1>
+                  <p className="plansHero__subtitle">
+                    No contracts. No suprise fees.
+                  </p>
                 </div>
                 <div className="planItem__container">
                   <div className="planItem planItem--free">
-
                     <div className="card">
                       <div className="card__header">
                         <div className="card__icon symbol symbol--rounded"></div>
                         <h2>Free</h2>
                       </div>
-                      <div className="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+                      <div className="card__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do
+                      </div>
                     </div>
 
-                    <div className="price">$0<span>/ month</span></div>
+                    <div className="price">
+                      $0<span>/ month</span>
+                    </div>
 
                     <ul className="featureList">
                       <li>2 links</li>
@@ -152,10 +236,15 @@ provide tailored portals meeting your needs.</p>
                         <h2>Pro</h2>
                         <div className="card__label label">Best Value</div>
                       </div>
-                      <div className="card__desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+                      <div className="card__desc">
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris
+                      </div>
                     </div>
 
-                    <div className="price">$18<span>/ month</span></div>
+                    <div className="price">
+                      $18<span>/ month</span>
+                    </div>
 
                     <ul className="featureList">
                       <li>2 links</li>
@@ -174,7 +263,10 @@ provide tailored portals meeting your needs.</p>
                         <div className="card__icon"></div>
                         <h2>Enterprise</h2>
                       </div>
-                      <div className="card__desc">Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</div>
+                      <div className="card__desc">
+                        Nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor
+                      </div>
                     </div>
 
                     <div className="price">Let's Talk</div>
@@ -188,19 +280,21 @@ provide tailored portals meeting your needs.</p>
                       <li>Customize Panel</li>
                     </ul>
 
-                    <button className="button button--white">Get Started</button>
+                    <button className="button button--white">
+                      Get Started
+                    </button>
                   </div>
-
                 </div>
               </div>
             </section>
             <Testimonials />
-            <div className='container faq_Wrap'>
-            <FAQ />
+            <div className="container faq_Wrap">
+              <FAQ />
             </div>
             <Footer />
           </div>
         </section>
       </main>
-    </div>)
+    </div>
+  );
 }

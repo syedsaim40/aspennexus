@@ -166,6 +166,28 @@ export default function amazon() {
                   </p>
                 </div>
               </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Why Choose Aspen Nexus?
+                  </h2>
+                </div>
+                <div className="nav_Content">
+                  <ul>
+                    <li>End-to-End Solutions tailored for Amazon sellers.
+                    </li>
+                    <li>
+                    Data-Driven Strategies thatincrease sales.
+                    </li>
+                    <li>Time-Saving Automation
+                    .</li>
+                    <li>Proven Results.</li>
+                    <p>
+                    Join Aspen Nexus to automate your amazon store to success!
+
+                    </p>
+                  </ul>
+                </div>
+              </div>
             </div>
             <section className="plans__container">
               <div className="plans">

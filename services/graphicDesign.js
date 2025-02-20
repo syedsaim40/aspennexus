@@ -20,7 +20,6 @@ export default function ebay() {
       <main className={styles.main}>
         <div className="service_Header">
           <Header />
-         
         </div>
         <section>
           <div className="service_Holder">
@@ -43,7 +42,7 @@ export default function ebay() {
                   </a>
                 </div>
                 <div className="service_image">
-                  <Image src={faqImage} height={480} width={320} />
+                  <Image src={dev10} height={480} width={320} />
                 </div>
               </div>
               <div className="nav_heading">
@@ -58,6 +57,14 @@ export default function ebay() {
                   <h2>CMS Web Development</h2>
                 </div>
                 <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev2} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev3} alt="alt" />
+                    </div>
+                  </div>
                   <p>
                     Make content management easy with our custom-built CMS
                     platforms designed to empower businesses online. From Joomla
@@ -65,20 +72,6 @@ export default function ebay() {
                     meet your needs and streamline updates so you can have full
                     control over your website.
                   </p>
-                  <div className="nav_gallery">
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                  </div>
                 </div>
               </div>
               <div className="service_Box">
@@ -86,26 +79,20 @@ export default function ebay() {
                   <h2>B2C Web Development</h2>
                 </div>
                 <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev4} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev5} alt="alt" />
+                    </div>
+                  </div>
                   <p>
                     Offering visually appealing and engaging B2C websites to
                     attract your customers. Our services caterto every kind of
                     customer, helping you target your desired audience. We drive
                     conversions by creating userfriendly interfaces.
                   </p>
-                  <div className="nav_gallery">
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                  </div>
                 </div>
               </div>
               <div className="service_Box">
@@ -113,26 +100,20 @@ export default function ebay() {
                   <h2>PHP Web Development</h2>
                 </div>
                 <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev6} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev7} alt="alt" />
+                    </div>
+                  </div>
                   <p>
                     We offerrobust and feature rich web solutions by leveraging
                     PHP frameworks like Laravel and CodeIgniter, providing you
                     seamless functionality from custom applications to dynamic
                     websites
                   </p>
-                  <div className="nav_gallery">
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                  </div>
                 </div>
               </div>
               <div className="service_Box">
@@ -140,26 +121,20 @@ export default function ebay() {
                   <h2>WordPress Web Development</h2>
                 </div>
                 <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev8} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev9} alt="alt" />
+                    </div>
+                  </div>
                   <p>
                     From a simple blog to a complex ecommerce platform, we
                     unlock the potential of your website with our WordPress web
                     development services. Our experts help you build a site
                     thatis both secured and fully optimized for search engines.
                   </p>
-                  <div className="nav_gallery">
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                  </div>
                 </div>
               </div>
               <div className="service_Box">
@@ -167,6 +142,14 @@ export default function ebay() {
                   <h2>B2B Portal Development</h2>
                 </div>
                 <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev1} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={dev10} alt="alt" />
+                    </div>
+                  </div>
                   <p>
                     We transform your business with a customized B2B portal. We
                     promote efficiency and fosterlong term partnerships by
@@ -174,20 +157,6 @@ export default function ebay() {
                     Whetheritis order management system or product catalogues,
                     we provide tailored portals meeting your needs.
                   </p>
-                  <div className="nav_gallery">
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={serviceNav1} alt="alt" />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

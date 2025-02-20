@@ -52,7 +52,7 @@ export default function digitalMarketing() {
                   </a>
                 </div>
                 <div className="service_image">
-                  <Image src={mrk10} height={480} width={320} />
+                  <Image src={mrk2} height={480} width={320} />
                 </div>
               </div>
               <div className="nav_heading">
@@ -69,7 +69,7 @@ export default function digitalMarketing() {
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={mrk2} alt="alt" />
+                      <Image src={mrk1} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
                       <Image src={mrk3} alt="alt" />
@@ -165,6 +165,51 @@ export default function digitalMarketing() {
                     traffic and increasing returns through our content marketing
                     skills.
                   </p>
+                </div>
+              </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Video Marketing</h2>
+                </div>
+                <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={mrk6} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={mrk7} alt="alt" />
+                    </div>
+                  </div>
+                  <p>
+                    We captivate the audience by catching theirinterestthrough
+                    our creative video content. From tutorials and live streams
+                    to reels and promotional videos, our services convey your
+                    message effectively.
+                  </p>
+                </div>
+              </div>
+
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Why Choose Aspen Nexus?</h2>
+                </div>
+                <div className="nav_Content">
+                  <ul>
+                    <li>Tailored Strategies for each ofthe campaigns.</li>
+                    <li>
+                      Data-Driven Approach through analyzing and optimizing
+                      campaigns.
+                    </li>
+                    <li>
+                      Full-Service Team handling allthe hassles from data
+                      analytics to marketing.
+                    </li>
+                    <li>Proven Results.</li>
+                    <p>
+                      Aspen Nexus;the best digital marketing agency near
+                      you!Join us and start your success story!
+                    </p>
+                  </ul>
                 </div>
               </div>
             </div>

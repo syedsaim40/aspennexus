@@ -13,19 +13,18 @@ import Testimonials from "../src/app/Components/Testimonials";
 import FAQ from "../src/app/Components/FAQ";
 import faqImage from "../public/Images/faq.jpg";
 import serviceNav1 from "../public/Images/serviceNav2.svg";
+import dev1 from "../public/Images/development/dev1.png";
+import dev2 from "../public/Images/development/dev2.png";
+import dev3 from "../public/Images/development/dev3.png";
+import dev4 from "../public/Images/development/dev4.png";
+import dev5 from "../public/Images/development/dev5.png";
+import dev6 from "../public/Images/development/dev6.png";
+import dev7 from "../public/Images/development/dev7.png";
+import dev8 from "../public/Images/development/dev8.png";
+import dev9 from "../public/Images/development/dev9.png";
+import dev10 from "../public/Images/development/dev10.png";
 
-import ebay1 from "../public/Images/Ebay/ebay1.png";
-import ebay2 from "../public/Images/Ebay/ebay2.png";
-import ebay3 from "../public/Images/Ebay/ebay3.png";
-import ebay4 from "../public/Images/Ebay/ebay4.png";
-import ebay5 from "../public/Images/Ebay/ebay5.png";
-import ebay6 from "../public/Images/Ebay/ebay6.png";
-import ebay7 from "../public/Images/Ebay/ebay7.png";
-import ebay8 from "../public/Images/Ebay/ebay8.png";
-import ebay9 from "../public/Images/Ebay/ebay9.png";
-import ebay10 from "../public/Images/Ebay/ebay10.png";
-
-export default function shopify() {
+export default function ebay() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -38,18 +37,14 @@ export default function shopify() {
               <div className="service_banner">
                 <div className="service_content">
                   <h2>
-                    Finding it challenging to grow your business on eBay?
-                    Balancing the creation of compelling listings, inventory
-                    management, and customer inquiries can drain your resources
-                    and shift your focus away from your core business
-                    objectives.
+                  We handle everything from listings to fulfillment, so you can focus on growing your business.
                   </h2>
-                  <h1>EBAY AUTOMATION </h1>
+                  <h1>ETSY AUTOMATION</h1>
                   <p>
-                    Enhance Growth and Profitability with Professional eBay
-                    Consulting. Our end-to-end services are crafted to increase
-                    sales, promote sustainable development, and elevate your
-                    eBay store into a successful and thriving business.
+                    At Aspen Nexus,Etsy Automation simplifies your shop
+                    management by handling listings, order fulfillment, and
+                    daily operations, allowing you to focus on growing your
+                    brand and maximizing sales effortlessly.
                   </p>
                   <a href={"/contact"} className="btn btn-over">
                     Book a free Consultation
@@ -61,14 +56,14 @@ export default function shopify() {
               </div>
               <div className="nav_heading">
                 <h2>Our Process to Kickstart Your</h2>
-                <h1>EBAY AUTOMATION </h1>
+                <h1>ETSY AUTOMATION</h1>
                 <p>Services</p>
               </div>
             </div>
             <div className="container service_Text">
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>EBay Competitor</h2>
+                  <h2>Store Setup & Optimization</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -80,19 +75,16 @@ export default function shopify() {
                     </div>
                   </div>
                   <p>
-                    eBay competitor research involves analyzing other sellers on
-                    the platform to understand their strategies, strengths, and
-                    weaknesses. This includes examining their product listings,
-                    pricing, customer reviews, and marketing tactics. The
-                    insights gained help in identifying market trends,
-                    optimizing your own listings, and developing strategies to
-                    outperform competitors and capture a larger market share.
+                    We create a standout Etsy shop that attracts and converts
+                    visitors. From a user-friendly layout and keyword-optimized
+                    descriptions to high-quality images and clear policies, we
+                    set you up for success.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Product Sourcing and Posting</h2>
+                  <h2>Winning Product Research & Listings</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -104,15 +96,16 @@ export default function shopify() {
                     </div>
                   </div>
                   <p>
-                    We list handpicked SEO optimized products that are highly
-                    sought after and profitable, ensuring a better ranking on
-                    eBay search results.
+                    We use advanced tools to identify trending products,
+                    optimize pricing strategies, and create compelling listings
+                    with attention-grabbing titles, descriptions, and tags to
+                    boost visibility and sales.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Marketing Strategies</h2>
+                  <h2>Seamless Order Management</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -124,16 +117,16 @@ export default function shopify() {
                     </div>
                   </div>
                   <p>
-                    We offerrobust and feature rich web solutions by leveraging
-                    PHP frameworks like Laravel and CodeIgniter, providing you
-                    seamless functionality from custom applications to dynamic
-                    websites
+                    Manually processing orders takes up valuable time—but we’ll
+                    automate the entire order process for you. From tracking
+                    sales to ensuring timely delivery, we’ll make sure
+                    everything runs smoothly behind the scenes.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Product Order Fulfilment</h2>
+                  <h2>Marketing & Promotions That Work</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -145,15 +138,15 @@ export default function shopify() {
                     </div>
                   </div>
                   <p>
-                    We take full control of order management ensuring fast
-                    shipping, order tracking, and return processing. Forget the
-                    need to be constantly involved in your project.
+                    We boost your shop’s visibility with targeted Etsy Ads,
+                    strategic discounts, seasonal promotions, and social media
+                    tactics to drive traffic and maximize sales.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Process Automation</h2>
+                  <h2>Automated Inventory Management</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -165,44 +158,9 @@ export default function shopify() {
                     </div>
                   </div>
                   <p>
-                    Our advanced automation AI handles the mundane tasks while
-                    freeing you to focus on the higher level strategic thinking
-                  </p>
-                </div>
-              </div>
-              <div className="service_Box">
-                <div className="nav_Item">
-                  <h2>Dedicated Customer Support</h2>
-                </div>
-                <div className="nav_Content">
-                  <div className="nav_gallery">
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev10} alt="alt" />
-                    </div>
-                  </div>
-                  <p>
-                  Your buyers are in good hands! Our team ensures timely responses to inquiries, handles returns, and maintains excellent feedback to protect your reputation.
-                  </p>
-                </div>
-              </div>
-              <div className="service_Box">
-                <div className="nav_Item">
-                  <h2>Real-Time Analytics & Insights</h2>
-                </div>
-                <div className="nav_Content">
-                  <div className="nav_gallery">
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev1} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev10} alt="alt" />
-                    </div>
-                  </div>
-                  <p>
-                  Get detailed insights into your store’s performance, including sales, revenue, and profit margins, so you can make informed decisions effortlessly.
+                    Stay stocked and stress-free with real-time tracking,
+                    low-stock alerts, and automatic Etsy updates—so you never
+                    oversell or run out of inventory again.
                   </p>
                 </div>
               </div>

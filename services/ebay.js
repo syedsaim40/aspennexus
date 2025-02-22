@@ -14,7 +14,18 @@ import FAQ from "../src/app/Components/FAQ";
 import faqImage from "../public/Images/faq.jpg";
 import serviceNav1 from "../public/Images/serviceNav2.svg";
 
-export default function ebay() {
+import ebay1 from "../public/Images/Ebay/ebay1.png";
+import ebay2 from "../public/Images/Ebay/ebay2.png";
+import ebay3 from "../public/Images/Ebay/ebay3.png";
+import ebay4 from "../public/Images/Ebay/ebay4.png";
+import ebay5 from "../public/Images/Ebay/ebay5.png";
+import ebay6 from "../public/Images/Ebay/ebay6.png";
+import ebay7 from "../public/Images/Ebay/ebay7.png";
+import ebay8 from "../public/Images/Ebay/ebay8.png";
+import ebay9 from "../public/Images/Ebay/ebay9.png";
+import ebay10 from "../public/Images/Ebay/ebay10.png";
+
+export default function etsy() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -27,85 +38,85 @@ export default function ebay() {
               <div className="service_banner">
                 <div className="service_content">
                   <h2>
-                    Making businesses standout with ourtailored web development
-                    services!
+                  Managing listings, inventory, and customer inquiries can drain resources and distract from core business goals.
                   </h2>
-                  <h1>WEB DEVELOPMENT</h1>
+                  <h1>EBAY AUTOMATION </h1>
                   <p>
-                    At Aspen Nexus, our experts craft your digital presence with
-                    functional and cutting-edge web development services. Our
-                    team ensures your website meets the latesttrends & needs and
-                    stays on top in the dynamic market.
+                    Enhance Growth and Profitability with Professional eBay
+                    Consulting. Our end-to-end services are crafted to increase
+                    sales, promote sustainable development, and elevate your
+                    eBay store into a successful and thriving business.
                   </p>
                   <a href={"/contact"} className="btn btn-over">
                     Book a free Consultation
                   </a>
                 </div>
                 <div className="service_image">
-                  <Image src={dev10} height={480} width={320} />
+                  <Image src={ebay1} height={480} width={320} />
                 </div>
               </div>
               <div className="nav_heading">
                 <h2>Our Process to Kickstart Your</h2>
-                <h1>Webiste Development</h1>
+                <h1>EBAY AUTOMATION </h1>
                 <p>Services</p>
               </div>
             </div>
             <div className="container service_Text">
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>CMS Web Development</h2>
+                  <h2>EBay Competitor</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev2} alt="alt" />
+                      <Image src={ebay2} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev3} alt="alt" />
+                      <Image src={ebay3} alt="alt" />
                     </div>
                   </div>
                   <p>
-                    Make content management easy with our custom-built CMS
-                    platforms designed to empower businesses online. From Joomla
-                    to WordPress, our CMS services offertailored solutions to
-                    meet your needs and streamline updates so you can have full
-                    control over your website.
+                    eBay competitor research involves analyzing other sellers on
+                    the platform to understand their strategies, strengths, and
+                    weaknesses. This includes examining their product listings,
+                    pricing, customer reviews, and marketing tactics. The
+                    insights gained help in identifying market trends,
+                    optimizing your own listings, and developing strategies to
+                    outperform competitors and capture a larger market share.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>B2C Web Development</h2>
+                  <h2>Product Sourcing and Posting</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev4} alt="alt" />
+                      <Image src={ebay4} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev5} alt="alt" />
+                      <Image src={ebay5} alt="alt" />
                     </div>
                   </div>
                   <p>
-                    Offering visually appealing and engaging B2C websites to
-                    attract your customers. Our services caterto every kind of
-                    customer, helping you target your desired audience. We drive
-                    conversions by creating userfriendly interfaces.
+                    We list handpicked SEO optimized products that are highly
+                    sought after and profitable, ensuring a better ranking on
+                    eBay search results.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>PHP Web Development</h2>
+                  <h2>Marketing Strategies</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev6} alt="alt" />
+                      <Image src={ebay6} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev7} alt="alt" />
+                      <Image src={ebay7} alt="alt" />
                     </div>
                   </div>
                   <p>
@@ -118,45 +129,95 @@ export default function ebay() {
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>WordPress Web Development</h2>
+                  <h2>Product Order Fulfilment</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev8} alt="alt" />
+                      <Image src={ebay8} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev9} alt="alt" />
+                      <Image src={ebay9} alt="alt" />
                     </div>
                   </div>
                   <p>
-                    From a simple blog to a complex ecommerce platform, we
-                    unlock the potential of your website with our WordPress web
-                    development services. Our experts help you build a site
-                    thatis both secured and fully optimized for search engines.
+                    We take full control of order management ensuring fast
+                    shipping, order tracking, and return processing. Forget the
+                    need to be constantly involved in your project.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>B2B Portal Development</h2>
+                  <h2>Process Automation</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev1} alt="alt" />
+                      <Image src={ebay3} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={dev10} alt="alt" />
+                      <Image src={ebay4} alt="alt" />
                     </div>
                   </div>
                   <p>
-                    We transform your business with a customized B2B portal. We
-                    promote efficiency and fosterlong term partnerships by
-                    developing platforms that streamline interactions.
-                    Whetheritis order management system or product catalogues,
-                    we provide tailored portals meeting your needs.
+                    Our advanced automation AI handles the mundane tasks while
+                    freeing you to focus on the higher level strategic thinking
                   </p>
+                </div>
+              </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Dedicated Customer Support</h2>
+                </div>
+                <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={ebay1} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={ebay10} alt="alt" />
+                    </div>
+                  </div>
+                  <p>
+                  Your buyers are in good hands! Our team ensures timely responses to inquiries, handles returns, and maintains excellent feedback to protect your reputation.
+                  </p>
+                </div>
+              </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Real-Time Analytics & Insights</h2>
+                </div>
+                <div className="nav_Content">
+                  <div className="nav_gallery">
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={ebay5} alt="alt" />
+                    </div>
+                    <div className="nav_img rounded-lg object-cover">
+                      <Image src={ebay8} alt="alt" />
+                    </div>
+                  </div>
+                  <p>
+                  Get detailed insights into your store’s performance, including sales, revenue, and profit margins, so you can make informed decisions effortlessly.
+                  </p>
+                </div>
+              </div>
+              <div className="service_Box">
+                <div className="nav_Item">
+                  <h2>Why Choose Aspen Nexus for EBAY Automation?</h2>
+                </div>
+                <div className="nav_Content">
+                  <ul>
+                    <li>Tailored Solutions and services thatfit your needs.</li>
+                    <li>
+                      Efficiency & Scalability through automated processes.
+                    </li>
+                    <li>Expert Support offering services 24/7.</li>
+                    <li>Proven Results.</li>
+                    <p>
+                      Partner with Aspen Nexus and enjoy hassle free returns!
+                    </p>
+                  </ul>
                 </div>
               </div>
             </div>

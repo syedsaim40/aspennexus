@@ -7,7 +7,10 @@
   gap: 18rem;
   padding: 2rem;
   // background: linear-gradient(180deg, #F56300 0%, #FFA531 60%);
-
+  @media (max-width: 768px) {
+   flex-direction: column-reverse;
+  }
+ 
   .service_content {
     gap: 1rem;
 
@@ -175,6 +178,10 @@
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 2rem;
           margin-bottom: 3rem;
+          @media (max-width: 560px) {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 3rem;
+           }
           .nav_img {
             border-radius: 0.5rem;
             height: 240px;

@@ -39,9 +39,11 @@
     }
   }
   .about_exp{
- 
+      margin-bottom: 5rem;
     background: var(--primary);
     padding: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
     h1{
         padding-top: 1rem;
         font-size: 3rem;
@@ -58,5 +60,9 @@
             color: white;
         }
     }
+  }
+  #faq{
+    margin-bottom: 10rem;
+    margin-top: 7rem;
   }
 }

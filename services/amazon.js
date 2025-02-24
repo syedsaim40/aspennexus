@@ -168,22 +168,16 @@ export default function amazon() {
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Why Choose Aspen Nexus?
-                  </h2>
+                  <h2>Why Choose Aspen Nexus?</h2>
                 </div>
                 <div className="nav_Content">
                   <ul>
-                    <li>End-to-End Solutions tailored for Amazon sellers.
-                    </li>
-                    <li>
-                    Data-Driven Strategies thatincrease sales.
-                    </li>
-                    <li>Time-Saving Automation
-                    .</li>
+                    <li>End-to-End Solutions tailored for Amazon sellers.</li>
+                    <li>Data-Driven Strategies thatincrease sales.</li>
+                    <li>Time-Saving Automation .</li>
                     <li>Proven Results.</li>
                     <p>
-                    Join Aspen Nexus to automate your amazon store to success!
-
+                      Join Aspen Nexus to automate your amazon store to success!
                     </p>
                   </ul>
                 </div>
@@ -204,24 +198,30 @@ export default function amazon() {
                     <div className="card">
                       <div className="card__header">
                         <div className="card__icon symbol symbol--rounded"></div>
-                        <h2>Free</h2>
+                        <h2>1 Month <br></br> Essential </h2>
                       </div>
                       <div className="card__desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do
+                        <p>
+                          Kickstart your Amazon business with a strong
+                          foundation.
+                        </p>
                       </div>
                     </div>
 
                     <div className="price">
-                      $0<span>/ month</span>
+                      $1300<span>/ month</span>
                     </div>
 
                     <ul className="featureList">
-                      <li>2 links</li>
-                      <li>Own analytics platform</li>
-                      <li className="disabled">Chat support</li>
-                      <li className="disabled">Mobile application</li>
-                      <li className="disabled">Unlimited users</li>
+                      <li>Amazon Seller Central Account Setup</li>
+                      <li>Product Research (up to 5 products)</li>
+                      <li>
+                        Basic Product Listing Optimization (up to 5 listings)
+                      </li>
+                      <li>
+                        Store Launch and Inventory Management (initial setup)
+                      </li>
+                      <li>Ongoing Aftersales Support (limited to 1 month)</li>
                     </ul>
 
                     <button className="button">Get Started</button>
@@ -230,25 +230,34 @@ export default function amazon() {
                     <div className="card">
                       <div className="card__header">
                         <div className="card__icon symbol"></div>
-                        <h2>Pro</h2>
+                        <h2>3 MONTHS PLUS</h2>
                         <div className="card__label label">Best Value</div>
                       </div>
                       <div className="card__desc">
-                        Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris
+                        <p>Launch, optimize, and scale with expert support.</p>
                       </div>
                     </div>
 
                     <div className="price">
-                      $18<span>/ month</span>
+                      $2500<span>/ month</span>
                     </div>
 
                     <ul className="featureList">
-                      <li>2 links</li>
-                      <li>Own analytics platform</li>
-                      <li>Chat support</li>
-                      <li className="disabled">Mobile application</li>
-                      <li className="disabled">Unlimited users</li>
+                      <li>Amazon Seller Central Account Setup</li>
+                      <li>
+                        Marketplace Approvals and Reseller Certificate
+                        Acquisition
+                      </li>
+                      <li>Product Research (up to 10 products)</li>
+                      <li>
+                        Advance Product Listing Optimization (up to 10 listings)
+                      </li>
+                      <li>Pre-Marketing Strategies</li>
+                      <li>
+                        Store Launch, Inventory Management, and Order
+                        Fulfillment
+                      </li>
+                      <li>Ongoing Aftersales Support (3 months)</li>
                     </ul>
 
                     <button className="button button--pink">Get Started</button>
@@ -258,23 +267,42 @@ export default function amazon() {
                     <div className="card">
                       <div className="card__header">
                         <div className="card__icon"></div>
-                        <h2>Enterprise</h2>
+                        <h2>6 MONTHS PREMIUM</h2>
                       </div>
                       <div className="card__desc">
-                        Nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor
+                        <p>
+                          Maximize growth with expert guidance and advanced
+                          optimization.
+                        </p>
                       </div>
                     </div>
 
-                    <div className="price">Let's Talk</div>
+                    <div className="price">
+                      {" "}
+                      $4500<span>/ month</span>
+                    </div>
 
                     <ul className="featureList">
-                      <li>2 links</li>
-                      <li>Own analytics platform</li>
-                      <li>Chat support</li>
-                      <li>Mobile application</li>
-                      <li>Unlimited users</li>
-                      <li>Customize Panel</li>
+                      <li>Amazon Seller Central Account Setup</li>
+                      <li>
+                        Marketplace Approvals and Reseller Certificate
+                        Acquisition
+                      </li>
+                      <li>
+                        Comprehensive Product Research (up to 15 products)
+                      </li>
+                      <li>
+                        Full Product Listing Optimization (up to 15 listings)
+                      </li>
+                      <li>Tailored Pre-Marketing Strategies</li>
+                      <li>
+                        Store Launch, Inventory Management, and Order
+                        Fulfillment
+                      </li>
+                      <li>Ongoing Aftersales Support (6 months)</li>
+                      <li>
+                        Virtual Assistance for Inventory Management (6 month)
+                      </li>
                     </ul>
 
                     <button className="button button--white">

@@ -221,7 +221,7 @@ export default function tiktokAuto() {
                     <div className="card">
                       <div className="card__header">
                         <div className="card__icon symbol symbol--rounded"></div>
-                        <h2>Free</h2>
+                        <h2>1 Month <br></br> Essential </h2>
                       </div>
                       <div className="card__desc">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -230,15 +230,15 @@ export default function tiktokAuto() {
                     </div>
 
                     <div className="price">
-                      $0<span>/ month</span>
+                      $1300<span>/ month</span>
                     </div>
 
                     <ul className="featureList">
-                      <li>2 links</li>
-                      <li>Own analytics platform</li>
-                      <li className="disabled">Chat support</li>
-                      <li className="disabled">Mobile application</li>
-                      <li className="disabled">Unlimited users</li>
+                      <li>TikTok Shop Account Setup</li>
+                      <li>Basic Product Research (up to 5 products)</li>
+                      <li>Initial Product Listing Optimization (up to 5 listings)</li>
+                      <li>Store Launch Assistance</li>
+                      <li>Basic Aftersales Support (1 month)</li>
                     </ul>
 
                     <button className="button">Get Started</button>
@@ -247,7 +247,7 @@ export default function tiktokAuto() {
                     <div className="card">
                       <div className="card__header">
                         <div className="card__icon symbol"></div>
-                        <h2>Pro</h2>
+                        <h2>3 MONTHS PLUS  </h2>
                         <div className="card__label label">Best Value</div>
                       </div>
                       <div className="card__desc">
@@ -257,15 +257,17 @@ export default function tiktokAuto() {
                     </div>
 
                     <div className="price">
-                      $18<span>/ month</span>
+                      $1999<span>/ month</span>
                     </div>
 
                     <ul className="featureList">
-                      <li>2 links</li>
-                      <li>Own analytics platform</li>
-                      <li>Chat support</li>
-                      <li className="disabled">Mobile application</li>
-                      <li className="disabled">Unlimited users</li>
+                      <li>TikTok Shop Account Setup</li>
+                      <li>Marketplace Approvals and Reseller Certificate Acquisition</li>
+                      <li>Product Research (up to 10 products)</li>
+                      <li>Advance Product Listing Optimization (up to 10 listings)</li>
+                      <li>Pre-Marketing Strategies for TikTok</li>
+                      <li>Store Launch and Inventory Management Support</li>
+                      <li>Aftersales Support (3 months)</li>
                     </ul>
 
                     <button className="button button--pink">Get Started</button>
@@ -275,7 +277,7 @@ export default function tiktokAuto() {
                     <div className="card">
                       <div className="card__header">
                         <div className="card__icon"></div>
-                        <h2>Enterprise</h2>
+                        <h2>6 MONTHS PREMIUM </h2>
                       </div>
                       <div className="card__desc">
                         Nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -283,15 +285,17 @@ export default function tiktokAuto() {
                       </div>
                     </div>
 
-                    <div className="price">Let's Talk</div>
+                    <div className="price">  $4500<span>/ month</span></div>
 
                     <ul className="featureList">
-                      <li>2 links</li>
-                      <li>Own analytics platform</li>
-                      <li>Chat support</li>
-                      <li>Mobile application</li>
-                      <li>Unlimited users</li>
-                      <li>Customize Panel</li>
+                      <li>TikTok Shop Account Setup</li>
+                      <li>Marketplace Approvals and Reseller Certificate Acquisition</li>
+                      <li>Comprehensive Product Research (up to 15 products)</li>
+                      <li>Full Product Listing Optimization (up to 15 listings)</li>
+                      <li>Customized Pre-Marketing Strategies and Content Planning</li>
+                      <li>Complete Store Launch, Inventory Management, and Order Fulfillment</li>
+                      <li>Ongoing Aftersales Support (6 months)</li>
+                      <li>Virtual Assistance for Marketing and Customer Engagement (3 month)</li>
                     </ul>
 
                     <button className="button button--white">

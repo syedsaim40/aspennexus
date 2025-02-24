@@ -12,6 +12,9 @@ import Image from "next/image";
 import banner from "../public/Images/Marketing/mrk1.png";
 import "./homepage.scss";
 import CountUp from "react-countup";
+import FAQ from "../src/app/Components/FAQ";
+import faqImage from "../public/Images/faq.jpg";
+import Footer from "../src/app/Components/Footer";
 
 
 function about() {
@@ -162,7 +165,23 @@ function about() {
           </ul>
           
         </div>
+        <section className="sectionSpace" id="faq">
+        <div className="container">
+          <div className="section_heading">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div className="faq_wrapper">
+            <div className="faq_Holder">
+              <FAQ />
+            </div>
+            <div className="faqImage">
+              <Image src={faqImage} alt="faqImage" />
+            </div>
+          </div>
+        </div>
+      </section>
       </div>
+      <Footer/>
     </div>
   );
 }

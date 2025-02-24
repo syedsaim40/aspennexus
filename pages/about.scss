@@ -1,6 +1,62 @@
-.About-section{
-    background: var(--primary);
+.About-section {
+
+
+
+  .about_banner {
+    display: flex;
     height: 100vh;
-    font-size: 2rem;
-    color: white;
+ 
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      padding-top: 1rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      color: rgb(89 89 89);
+    }
+    p {
+      font-size: 1.1rem;
+      padding-top: 1rem;
+      margin-bottom: 2rem;
+      color: rgb(89 89 89);
+      line-height: 1.8rem;
+    }
+  }
+  .section_banner {
+   text-align: center;
+   margin: 2rem 0 3rem 0;
+    h1 {
+        color: rgb(89 89 89);
+      font-size: 2.3rem;
+      line-height: 3.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      padding-top: 1rem;
+      margin-bottom: 2rem;
+      color: rgb(89 89 89);
+    }
+  }
+  .about_exp{
+ 
+    background: var(--primary);
+    padding: 2rem;
+    h1{
+        padding-top: 1rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        color: rgb(89 89 89);
+        padding-bottom: 2rem;
+    }
+    ul{
+        li{
+            list-style: disc;
+            font-size: 1.1rem;
+           
+            margin-bottom: 1rem;
+            color: white;
+        }
+    }
+  }
 }

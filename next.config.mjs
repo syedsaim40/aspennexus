@@ -1,9 +1,7 @@
-import path from 'path';
-
 const nextConfig = {
-  reactStrictMode: true,
-  // Set distDir to a relative path from the project root
-  distDir: 'build', 
+  output: "export",
+  basePath: process.env.BASE_PATH ? process.env.BASE_PATH : "",
+  assetPrefix: process.env.URL ? process.env.URL : undefined,
 };
 
 export default nextConfig;

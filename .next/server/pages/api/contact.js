@@ -1,0 +1,13 @@
+"use strict";(()=>{var e={};e.id=91,e.ids=[91],e.modules={20145:e=>{e.exports=require("next/dist/compiled/next-server/pages-api.runtime.prod.js")},56249:(e,t)=>{Object.defineProperty(t,"l",{enumerable:!0,get:function(){return function e(t,n){return n in t?t[n]:"then"in t&&"function"==typeof t.then?t.then(t=>e(t,n)):"function"==typeof t&&"default"===n?t:void 0}}})},63862:(e,t,n)=>{n.r(t),n.d(t,{config:()=>d,default:()=>u,routeModule:()=>p});var o={};n.r(o),n.d(o,{default:()=>c});var r=n(26794),s=n(46114),a=n(56249);let i=require("nodemailer");var l=n.n(i);async function c(e,t){if("POST"!==e.method)return t.setHeader("Allow",["POST"]),t.status(405).end(`Method ${e.method} Not Allowed`);{let{name:n,email:o,phone:r,interest:s,date:a,time:i,message:c}=e.body,u=l().createTransport({host:process.env.SMTP_HOST,port:process.env.SMTP_PORT,auth:{user:process.env.SMTP_USER,pass:process.env.SMTP_PASS},logger:!0,debug:!0});try{console.log("Testing SMTP connection..."),await u.verify(),console.log("SMTP connection successful")}catch(e){return console.error("SMTP connection failed:",e),t.status(500).json({error:"SMTP connection failed"})}let d=`
+      <div style="font-family: Arial, sans-serif; padding: 20px;">
+        <h1>Contact Form Submission</h1>
+        <p><strong>Name:</strong> ${n}</p>
+        <p><strong>Email:</strong> ${o}</p>
+        <p><strong>Phone:</strong> ${r}</p>
+        <p><strong>Interest:</strong> ${s}</p>
+        <p><strong>Date:</strong> ${a}</p>
+        <p><strong>Time:</strong> ${i}</p>
+        <p><strong>Message:</strong></p>
+        <p>${c}</p>
+      </div>
+    `;try{return console.log("Sending email..."),await u.sendMail({from:o,to:"syedsaim40@gmail.com",subject:`Contact form submission from ${n}`,text:c,html:d}),console.log("Email sent successfully"),t.status(200).json({message:"Message sent successfully!"})}catch(e){return console.error("Error sending email:",e),t.status(500).json({error:"Failed to send message"})}}}let u=(0,a.l)(o,"default"),d=(0,a.l)(o,"config"),p=new r.PagesAPIRouteModule({definition:{kind:s.x.PAGES_API,page:"/api/contact",pathname:"/api/contact",bundlePath:"",filename:""},userland:o})},46114:(e,t)=>{var n;Object.defineProperty(t,"x",{enumerable:!0,get:function(){return n}}),function(e){e.PAGES="PAGES",e.PAGES_API="PAGES_API",e.APP_PAGE="APP_PAGE",e.APP_ROUTE="APP_ROUTE",e.IMAGE="IMAGE"}(n||(n={}))},26794:(e,t,n)=>{e.exports=n(20145)}};var t=require("../../webpack-api-runtime.js");t.C(e);var n=t(t.s=63862);module.exports=n})();

@@ -1,9 +1,9 @@
-import path from 'path';
+/**
+* @type {import('next').NextConfig} 
+*/
 
 const nextConfig = {
-  reactStrictMode: true,
-  // Set distDir to a relative path from the project root
-  distDir: 'build', 
+  output: 'export',
 };
 
 export default nextConfig;

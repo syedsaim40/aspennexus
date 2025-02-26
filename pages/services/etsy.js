@@ -1,30 +1,26 @@
 import React from "react";
-import Header from "../src/app/Components/Header";
-import Footer from "../src/app/Components/Footer";
-import Strategy from "../public/Images/Strategy.png";
-import Marketing from "../public/Images/Marketing.png";
-import Design from "../public/Images/Design.png";
-import Development from "../public/Images/Development.png";
+import Header from "../../src/app/Components/Header";
+import Footer from "../../src/app/Components/Footer";
 import Image from "next/image";
-import styles from "../src/app/page.module.css";
-import "../src/app/globals.css";
+import styles from "../../src/app/page.module.css";
+import "../../src/app/globals.css";
 import "./common.scss";
-import Testimonials from "../src/app/Components/Testimonials";
-import FAQ from "../src/app/Components/FAQ";
-import faqImage from "../public/Images/faq.jpg";
-import serviceNav1 from "../public/Images/serviceNav2.svg";
-import shp1 from "../public/Images/Shopify/shp1.png";
-import shp2 from "../public/Images/Shopify/shp2.png";
-import shp3 from "../public/Images/Shopify/shp3.png";
-import shp4 from "../public/Images/Shopify/shp4.png";
-import shp5 from "../public/Images/Shopify/shp5.png";
-import shp6 from "../public/Images/Shopify/shp6.png";
-import shp7 from "../public/Images/Shopify/shp7.png";
-import shp8 from "../public/Images/Shopify/shp8.png";
-import shp9 from "../public/Images/Shopify/shp9.png";
-import shp10 from "../public/Images/Shopify/shp10.png";
+import Testimonials from "../../src/app/Components/Testimonials";
+import FAQ from "../../src/app/Components/FAQ";
+import faqImage from "../../public/Images/faq.jpg";
+import serviceNav1 from "../../public/Images/serviceNav2.svg";
+import dev1 from "../../public/Images/development/dev1.png";
+import dev2 from "../../public/Images/development/dev2.png";
+import dev3 from "../../public/Images/development/dev3.png";
+import dev4 from "../../public/Images/development/dev4.png";
+import dev5 from "../../public/Images/development/dev5.png";
+import dev6 from "../../public/Images/development/dev6.png";
+import dev7 from "../../public/Images/development/dev7.png";
+import dev8 from "../../public/Images/development/dev8.png";
+import dev9 from "../../public/Images/development/dev9.png";
+import dev10 from "../../public/Images/development/dev10.png";
 
-export default function shopifyAuto() {
+export default function ebay() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -37,160 +33,136 @@ export default function shopifyAuto() {
               <div className="service_banner">
                 <div className="service_content">
                   <h2>
-                    ‘’Transforming stores into revenue generating powerhouses
-                    with our automation services!’’
+                  We handle everything from listings to fulfillment, so you can focus on growing your business.
                   </h2>
-                  <h1>Shopify Automation</h1>
+                  <h1>ETSY AUTOMATION</h1>
                   <p>
-                    At Aspen Nexus, we specialize in building, optimizing, and
-                    automating high-converting Shopify stores that help
-                    businesses scale effortlessly.
+                    At Aspen Nexus,Etsy Automation simplifies your shop
+                    management by handling listings, order fulfillment, and
+                    daily operations, allowing you to focus on growing your
+                    brand and maximizing sales effortlessly.
                   </p>
                   <a href={"/contact"} className="btn btn-over">
                     Book a free Consultation
                   </a>
                 </div>
                 <div className="service_image">
-                  <Image src={shp2} height={480} width={320} />
+                  <Image src={dev10} height={480} width={320} />
                 </div>
               </div>
               <div className="nav_heading">
                 <h2>Our Process to Kickstart Your</h2>
-                <h1>Shopify Automation</h1>
+                <h1>ETSY AUTOMATION</h1>
                 <p>Services</p>
               </div>
             </div>
             <div className="container service_Text">
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Product Research & Sourcing</h2>
+                  <h2>Store Setup & Optimization</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp1} alt="alt" />
+                      <Image src={dev2} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp3} alt="alt" />
+                      <Image src={dev3} alt="alt" />
                     </div>
                   </div>
                   <p>
-                    Our shopify drop shipping services unleash your brand’s
-                    potential by sourcing the right products at competitive
-                    prices, so high trending products with maximum potential
-                    profit are ensured to meet your customer demands and
-                    expectations.
+                    We create a standout Etsy shop that attracts and converts
+                    visitors. From a user-friendly layout and keyword-optimized
+                    descriptions to high-quality images and clear policies, we
+                    set you up for success.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Store Setup & Customization</h2>
+                  <h2>Winning Product Research & Listings</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp4} alt="alt" />
+                      <Image src={dev4} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp5} alt="alt" />
+                      <Image src={dev5} alt="alt" />
                     </div>
                   </div>
                   <p>
-                    From crafting a visually appealing store to ensuring a
-                    seamless user experience, Aspen Nexus ensures a tailored
-                    approach that aligns with your brand’s vision. Ourteam
-                    designs eye catching and engaging layouts that convert users
-                    to long term buyers.
+                    We use advanced tools to identify trending products,
+                    optimize pricing strategies, and create compelling listings
+                    with attention-grabbing titles, descriptions, and tags to
+                    boost visibility and sales.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Inventory Management & Updates</h2>
+                  <h2>Seamless Order Management</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp6} alt="alt" />
+                      <Image src={dev6} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp7} alt="alt" />
+                      <Image src={dev7} alt="alt" />
                     </div>
                   </div>
                   <p>
-                    Our automation tools are here to relieve you of your stock
-                    related headaches. From monitoring inventory to update stock
-                    levels, ourtechnology makes your store run swiftly.
+                    Manually processing orders takes up valuable time—but we’ll
+                    automate the entire order process for you. From tracking
+                    sales to ensuring timely delivery, we’ll make sure
+                    everything runs smoothly behind the scenes.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Order Processing & Fulfillment</h2>
+                  <h2>Marketing & Promotions That Work</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp8} alt="alt" />
+                      <Image src={dev8} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp9} alt="alt" />
+                      <Image src={dev9} alt="alt" />
                     </div>
                   </div>
                   <p>
-                    We streamline your store operations focusing on smooth
-                    orderfulfillment process and coordination to the suppliers.
-                    Our systems include ordertracking and delivery, offering
-                    users a hassle-free experience.
+                    We boost your shop’s visibility with targeted Etsy Ads,
+                    strategic discounts, seasonal promotions, and social media
+                    tactics to drive traffic and maximize sales.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>SEO & Marketing Integration</h2>
+                  <h2>Automated Inventory Management</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp1} alt="alt" />
+                      <Image src={dev1} alt="alt" />
                     </div>
                     <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp10} alt="alt" />
+                      <Image src={dev10} alt="alt" />
                     </div>
                   </div>
                   <p>
-                    Enhance your store’s visibility through our effective SEO
-                    and digital marketing strategies. We ensure your store
-                    captures the target audience with our optimized content on
-                    product pages and effective digital campaigns through social
-                    media marketing and email marketing.
+                    Stay stocked and stress-free with real-time tracking,
+                    low-stock alerts, and automatic Etsy updates—so you never
+                    oversell or run out of inventory again.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Customer Support Automation</h2>
-                </div>
-                <div className="nav_Content">
-                  <div className="nav_gallery">
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp9} alt="alt" />
-                    </div>
-                    <div className="nav_img rounded-lg object-cover">
-                      <Image src={shp7} alt="alt" />
-                    </div>
-                  </div>
-                  <p>
-                    Ourteam helps you stay responsive with our automated tools
-                    like chatbots and ticketing systems, ensuring exceptional
-                    customer service and strong customerrelationships.
-                  </p>
-                </div>
-              </div>
-              <div className="service_Box">
-                <div className="nav_Item">
-                  <h2>Why Choose Aspen Nexus for Shopify Automation?</h2>
+                  <h2>Why Choose Aspen Nexus for EBAY Automation?</h2>
                 </div>
                 <div className="nav_Content">
                   <ul>

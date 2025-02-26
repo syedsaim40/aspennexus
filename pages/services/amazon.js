@@ -1,24 +1,24 @@
 import React from "react";
-import Header from "../src/app/Components/Header";
-import Footer from "../src/app/Components/Footer";
+import Header from "../../src/app/Components/Header";
+import Footer from "../../src/app/Components/Footer";
 import Image from "next/image";
-import styles from "../src/app/page.module.css";
-import "../src/app/globals.css";
+import styles from "../../src/app/page.module.css";
+import "../../src/app/globals.css";
 import "./common.scss";
-import faqImage from "../public/Images/faq.jpg";
-import serviceNav1 from "../public/Images/serviceNav2.svg";
-import Testimonials from "../src/app/Components/Testimonials";
-import FAQ from "../src/app/Components/FAQ";
-import amz1 from "../public/Images/Amazon/amz1.png";
-import amz2 from "../public/Images/Amazon/amz2.png";
-import amz3 from "../public/Images/Amazon/amz3.png";
-import amz4 from "../public/Images/Amazon/amz4.png";
-import amz5 from "../public/Images/Amazon/amz5.png";
-import amz6 from "../public/Images/Amazon/amz6.png";
-import amz7 from "../public/Images/Amazon/amz7.png";
-import amz8 from "../public/Images/Amazon/amz8.png";
-import amz9 from "../public/Images/Amazon/amz9.png";
-import amz10 from "../public/Images/Amazon/amz10.png";
+import faqImage from "../../public/Images/faq.jpg";
+import serviceNav1 from "../../public/Images/serviceNav2.svg";
+import Testimonials from "../../src/app/Components/Testimonials";
+import FAQ from "../../src/app/Components/FAQ";
+import amz1 from "../../public/Images/Amazon/amz1.png";
+import amz2 from "../../public/Images/Amazon/amz2.png";
+import amz3 from "../../public/Images/Amazon/amz3.png";
+import amz4 from "../../public/Images/Amazon/amz4.png";
+import amz5 from "../../public/Images/Amazon/amz5.png";
+import amz6 from "../../public/Images/Amazon/amz6.png";
+import amz7 from "../../public/Images/Amazon/amz7.png";
+import amz8 from "../../public/Images/Amazon/amz8.png";
+import amz9 from "../../public/Images/Amazon/amz9.png";
+import amz10 from "../../public/Images/Amazon/amz10.png";
 
 export default function amazon() {
   return (

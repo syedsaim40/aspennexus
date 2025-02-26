@@ -1,29 +1,29 @@
 import React from "react";
-import Header from "../src/app/Components/Header";
-import Footer from "../src/app/Components/Footer";
-import Strategy from "../public/Images/Strategy.png";
-import Marketing from "../public/Images/Marketing.png";
-import Design from "../public/Images/Design.png";
-import Development from "../public/Images/Development.png";
+import Header from "../../src/app/Components/Header";
+import Footer from "../../src/app/Components/Footer";
+import Strategy from "../../public/Images/Strategy.png";
+import Marketing from "../../public/Images/Marketing.png";
+import Design from "../../public/Images/Design.png";
+import Development from "../../public/Images/Development.png";
 import Image from "next/image";
-import styles from "../src/app/page.module.css";
-import "../src/app/globals.css";
+import styles from "../../src/app/page.module.css";
+import "../../src/app/globals.css";
 import "./common.scss";
-import Testimonials from "../src/app/Components/Testimonials";
-import FAQ from "../src/app/Components/FAQ";
-import faqImage from "../public/Images/faq.jpg";
-import serviceNav1 from "../public/Images/serviceNav2.svg";
+import Testimonials from "../../src/app/Components/Testimonials";
+import FAQ from "../../src/app/Components/FAQ";
+import faqImage from "../../public/Images/faq.jpg";
+import serviceNav1 from "../../public/Images/serviceNav2.svg";
 
-import ebay1 from "../public/Images/Ebay/ebay1.png";
-import ebay2 from "../public/Images/Ebay/ebay2.png";
-import ebay3 from "../public/Images/Ebay/ebay3.png";
-import ebay4 from "../public/Images/Ebay/ebay4.png";
-import ebay5 from "../public/Images/Ebay/ebay5.png";
-import ebay6 from "../public/Images/Ebay/ebay6.png";
-import ebay7 from "../public/Images/Ebay/ebay7.png";
-import ebay8 from "../public/Images/Ebay/ebay8.png";
-import ebay9 from "../public/Images/Ebay/ebay9.png";
-import ebay10 from "../public/Images/Ebay/ebay10.png";
+import ebay1 from "../../public/Images/Ebay/ebay1.png";
+import ebay2 from "../../public/Images/Ebay/ebay2.png";
+import ebay3 from "../../public/Images/Ebay/ebay3.png";
+import ebay4 from "../../public/Images/Ebay/ebay4.png";
+import ebay5 from "../../public/Images/Ebay/ebay5.png";
+import ebay6 from "../../public/Images/Ebay/ebay6.png";
+import ebay7 from "../../public/Images/Ebay/ebay7.png";
+import ebay8 from "../../public/Images/Ebay/ebay8.png";
+import ebay9 from "../../public/Images/Ebay/ebay9.png";
+import ebay10 from "../../public/Images/Ebay/ebay10.png";
 
 export default function etsy() {
   return (

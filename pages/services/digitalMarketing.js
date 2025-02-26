@@ -1,28 +1,22 @@
 import React from "react";
-import Header from "../src/app/Components/Header";
-import Footer from "../src/app/Components/Footer";
-import Strategy from "../public/Images/Strategy.png";
-import Marketing from "../public/Images/Marketing.png";
-import Design from "../public/Images/Design.png";
-import Development from "../public/Images/Development.png";
+import Header from "../../src/app/Components/Header";
+import Footer from "../../src/app/Components/Footer";
 import Image from "next/image";
-import styles from "../src/app/page.module.css";
-import "../src/app/globals.css";
+import styles from "../../src/app/page.module.css";
+import "../../src/app/globals.css";
 import "./common.scss";
-import Testimonials from "../src/app/Components/Testimonials";
-import FAQ from "../src/app/Components/FAQ";
-import faqImage from "../public/Images/faq.jpg";
-import serviceNav1 from "../public/Images/serviceNav2.svg";
-import mrk1 from "../public/Images/Marketing/mrk1.png";
-import mrk2 from "../public/Images/Marketing/mrk2.png";
-import mrk3 from "../public/Images/Marketing/mrk3.png";
-import mrk4 from "../public/Images/Marketing/mrk4.png";
-import mrk5 from "../public/Images/Marketing/mrk5.png";
-import mrk6 from "../public/Images/Marketing/mrk6.png";
-import mrk7 from "../public/Images/Marketing/mrk7.png";
-import mrk8 from "../public/Images/Marketing/mrk8.png";
-import mrk9 from "../public/Images/Marketing/mrk9.png";
-import mrk10 from "../public/Images/Marketing/mrk10.png";
+import Testimonials from "../../src/app/Components/Testimonials";
+import FAQ from "../../src/app/Components/FAQ";
+import mrk1 from "../../public/Images/Marketing/mrk1.png";
+import mrk2 from "../../public/Images/Marketing/mrk2.png";
+import mrk3 from "../../public/Images/Marketing/mrk3.png";
+import mrk4 from "../../public/Images/Marketing/mrk4.png";
+import mrk5 from "../../public/Images/Marketing/mrk5.png";
+import mrk6 from "../../public/Images/Marketing/mrk6.png";
+import mrk7 from "../../public/Images/Marketing/mrk7.png";
+import mrk8 from "../../public/Images/Marketing/mrk8.png";
+import mrk9 from "../../public/Images/Marketing/mrk9.png";
+import mrk10 from "../../public/Images/Marketing/mrk10.png";
 
 export default function digitalMarketing() {
   return (

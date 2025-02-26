@@ -1,29 +1,23 @@
 import React from "react";
-import Header from "../src/app/Components/Header";
-import Footer from "../src/app/Components/Footer";
-import Strategy from "../public/Images/Strategy.png";
-import Marketing from "../public/Images/Marketing.png";
-import Design from "../public/Images/Design.png";
-import Development from "../public/Images/Development.png";
+import Header from "../../src/app/Components/Header";
+import Footer from "../../src/app/Components/Footer";
 import Image from "next/image";
-import styles from "../src/app/page.module.css";
-import "../src/app/globals.css";
+import styles from "../../src/app/page.module.css";
+import "../../src/app/globals.css";
 import "./common.scss";
-import Testimonials from "../src/app/Components/Testimonials";
-import FAQ from "../src/app/Components/FAQ";
-import faqImage from "../public/Images/faq.jpg";
-import serviceNav1 from "../public/Images/serviceNav2.svg";
+import Testimonials from "../../src/app/Components/Testimonials";
+import FAQ from "../../src/app/Components/FAQ";
 
-import wal1 from "../public/Images/Walmart/wal1.png";
-import wal2 from "../public/Images/Walmart/wal2.png";
-import wal3 from "../public/Images/Walmart/wal3.png";
-import wal4 from "../public/Images/Walmart/wal4.png";
-import wal5 from "../public/Images/Walmart/wal5.png";
-import wal6 from "../public/Images/Walmart/wal6.png";
-import wal7 from "../public/Images/Walmart/wal7.png";
-import wal8 from "../public/Images/Walmart/wal8.png";
-import wal9 from "../public/Images/Walmart/wal9.png";
-import wal10 from "../public/Images/Walmart/wal10.png";
+import wal1 from "../../public/Images/Walmart/wal1.png";
+import wal2 from "../../public/Images/Walmart/wal2.png";
+import wal3 from "../../public/Images/Walmart/wal3.png";
+import wal4 from "../../public/Images/Walmart/wal4.png";
+import wal5 from "../../public/Images/Walmart/wal5.png";
+import wal6 from "../../public/Images/Walmart/wal6.png";
+import wal7 from "../../public/Images/Walmart/wal7.png";
+import wal8 from "../../public/Images/Walmart/wal8.png";
+import wal9 from "../../public/Images/Walmart/wal9.png";
+import wal10 from "../../public/Images/Walmart/wal10.png";
 
 export default function walmart() {
   return (

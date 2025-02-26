@@ -1,30 +1,25 @@
+"use client";
 import React from "react";
-import Header from "../src/app/Components/Header";
-import Footer from "../src/app/Components/Footer";
-import Strategy from "../public/Images/Strategy.png";
-import Marketing from "../public/Images/Marketing.png";
-import Design from "../public/Images/Design.png";
-import Development from "../public/Images/Development.png";
+import Header from "../../src/app/Components/Header";
+import Footer from "../../src/app/Components/Footer";
 import Image from "next/image";
-import styles from "../src/app/page.module.css";
-import "../src/app/globals.css";
+import styles from "../../src/app/page.module.css";
+import "../../src/app/globals.css";
 import "./common.scss";
-import Testimonials from "../src/app/Components/Testimonials";
-import FAQ from "../src/app/Components/FAQ";
-import faqImage from "../public/Images/faq.jpg";
-import serviceNav1 from "../public/Images/serviceNav2.svg";
-import dev1 from "../public/Images/development/dev1.png";
-import dev2 from "../public/Images/development/dev2.png";
-import dev3 from "../public/Images/development/dev3.png";
-import dev4 from "../public/Images/development/dev4.png";
-import dev5 from "../public/Images/development/dev5.png";
-import dev6 from "../public/Images/development/dev6.png";
-import dev7 from "../public/Images/development/dev7.png";
-import dev8 from "../public/Images/development/dev8.png";
-import dev9 from "../public/Images/development/dev9.png";
-import dev10 from "../public/Images/development/dev10.png";
+import Testimonials from "../../src/app/Components/Testimonials";
+import FAQ from "../../src/app/Components/FAQ";
+import dev1 from "../../public/Images/development/dev1.png";
+import dev2 from "../../public/Images/development/dev2.png";
+import dev3 from "../../public/Images/development/dev3.png";
+import dev4 from "../../public/Images/development/dev4.png";
+import dev5 from "../../public/Images/development/dev5.png";
+import dev6 from "../../public/Images/development/dev6.png";
+import dev7 from "../../public/Images/development/dev7.png";
+import dev8 from "../../public/Images/development/dev8.png";
+import dev9 from "../../public/Images/development/dev9.png";
+import dev10 from "../../public/Images/development/dev10.png";
 
-export default function ebay() {
+export default function development() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -37,14 +32,15 @@ export default function ebay() {
               <div className="service_banner">
                 <div className="service_content">
                   <h2>
-                  We handle everything from listings to fulfillment, so you can focus on growing your business.
+                    Making businesses standout with ourtailored web development
+                    services!
                   </h2>
-                  <h1>ETSY AUTOMATION</h1>
+                  <h1>WEB DEVELOPMENT</h1>
                   <p>
-                    At Aspen Nexus,Etsy Automation simplifies your shop
-                    management by handling listings, order fulfillment, and
-                    daily operations, allowing you to focus on growing your
-                    brand and maximizing sales effortlessly.
+                    At Aspen Nexus, our experts craft your digital presence with
+                    functional and cutting-edge web development services. Our
+                    team ensures your website meets the latesttrends & needs and
+                    stays on top in the dynamic market.
                   </p>
                   <a href={"/contact"} className="btn btn-over">
                     Book a free Consultation
@@ -56,14 +52,14 @@ export default function ebay() {
               </div>
               <div className="nav_heading">
                 <h2>Our Process to Kickstart Your</h2>
-                <h1>ETSY AUTOMATION</h1>
+                <h1>Webiste Development</h1>
                 <p>Services</p>
               </div>
             </div>
             <div className="container service_Text">
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Store Setup & Optimization</h2>
+                  <h2>CMS Web Development</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -75,16 +71,17 @@ export default function ebay() {
                     </div>
                   </div>
                   <p>
-                    We create a standout Etsy shop that attracts and converts
-                    visitors. From a user-friendly layout and keyword-optimized
-                    descriptions to high-quality images and clear policies, we
-                    set you up for success.
+                    Make content management easy with our custom-built CMS
+                    platforms designed to empower businesses online. From Joomla
+                    to WordPress, our CMS services offertailored solutions to
+                    meet your needs and streamline updates so you can have full
+                    control over your website.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Winning Product Research & Listings</h2>
+                  <h2>B2C Web Development</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -96,16 +93,16 @@ export default function ebay() {
                     </div>
                   </div>
                   <p>
-                    We use advanced tools to identify trending products,
-                    optimize pricing strategies, and create compelling listings
-                    with attention-grabbing titles, descriptions, and tags to
-                    boost visibility and sales.
+                    Offering visually appealing and engaging B2C websites to
+                    attract your customers. Our services caterto every kind of
+                    customer, helping you target your desired audience. We drive
+                    conversions by creating userfriendly interfaces.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Seamless Order Management</h2>
+                  <h2>PHP Web Development</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -117,16 +114,16 @@ export default function ebay() {
                     </div>
                   </div>
                   <p>
-                    Manually processing orders takes up valuable time—but we’ll
-                    automate the entire order process for you. From tracking
-                    sales to ensuring timely delivery, we’ll make sure
-                    everything runs smoothly behind the scenes.
+                    We offerrobust and feature rich web solutions by leveraging
+                    PHP frameworks like Laravel and CodeIgniter, providing you
+                    seamless functionality from custom applications to dynamic
+                    websites
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Marketing & Promotions That Work</h2>
+                  <h2>WordPress Web Development</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -138,15 +135,16 @@ export default function ebay() {
                     </div>
                   </div>
                   <p>
-                    We boost your shop’s visibility with targeted Etsy Ads,
-                    strategic discounts, seasonal promotions, and social media
-                    tactics to drive traffic and maximize sales.
+                    From a simple blog to a complex ecommerce platform, we
+                    unlock the potential of your website with our WordPress web
+                    development services. Our experts help you build a site
+                    thatis both secured and fully optimized for search engines.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Automated Inventory Management</h2>
+                  <h2>B2B Portal Development</h2>
                 </div>
                 <div className="nav_Content">
                   <div className="nav_gallery">
@@ -158,26 +156,31 @@ export default function ebay() {
                     </div>
                   </div>
                   <p>
-                    Stay stocked and stress-free with real-time tracking,
-                    low-stock alerts, and automatic Etsy updates—so you never
-                    oversell or run out of inventory again.
+                    We transform your business with a customized B2B portal. We
+                    promote efficiency and fosterlong term partnerships by
+                    developing platforms that streamline interactions.
+                    Whetheritis order management system or product catalogues,
+                    we provide tailored portals meeting your needs.
                   </p>
                 </div>
               </div>
               <div className="service_Box">
                 <div className="nav_Item">
-                  <h2>Why Choose Aspen Nexus for EBAY Automation?</h2>
+                  <h2>We Offer</h2>
                 </div>
                 <div className="nav_Content">
                   <ul>
-                    <li>Tailored Solutions and services thatfit your needs.</li>
+                    <li>Custom Solutions: Tailored to your needs.</li>
+                    <li>Responsive Designs: Compatible for all devices.</li>
                     <li>
-                      Efficiency & Scalability through automated processes.
+                      SEO-Friendly Platforms: Elevate your visibility online. .
                     </li>
-                    <li>Expert Support offering services 24/7.</li>
-                    <li>Proven Results.</li>
+                    <li>
+                      Ongoing Support: Dedicated customer service and updates.
+                    </li>
                     <p>
-                      Partner with Aspen Nexus and enjoy hassle free returns!
+                      “Have queries about web development services? Connect with
+                      Aspen Nexus today; where innovation meets functionality!”
                     </p>
                   </ul>
                 </div>

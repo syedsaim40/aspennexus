@@ -42,14 +42,14 @@ function Footer() {
                             <div className='footer_box'>
                                 <h3>Contact</h3>
                                 <ul className='footer_List'>
-                                    <li><a href={`tel:${+923209455811}`}>+92 320 9455811</a></li>
+                                    <li><a href={`tel:${8884017530}`}>(888) 401-7530</a></li>
                                     <li><a href={`mailto:${'info@aspennexus.com'}`}>info@aspennexus.com</a></li>
                                 </ul>
                             </div>
                             <div className='footer_box'>
                                 <h3>Contact</h3>
                                 <ul className='footer_List'>
-                                    <li><address>Office 837, Prime Street, Washington DC, USA</address></li>
+                                    <li><address>2785, 447 Broadway, 2nd Floor, New York, NY, New York, US, 10013</address></li>
                                 </ul>
                             </div>
                         </div>

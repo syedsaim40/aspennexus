@@ -42,8 +42,9 @@ export default async function handler(req, res) {
     try {
       console.log('Sending email...');
       await transporter.sendMail({
-        from: email,
-        to: 'syedsaim40@gmail.com',
+        from: `"Aspen Nexus Contact Form" <info@aspennexus.com>`,  // ✅ Use your domain email
+        to: "info@aspennexus.com",  // ✅ Your receiving email
+        replyTo: email,  // ✅ User's email, so you can reply directly
         subject: `Contact form submission from ${name}`,
         text: message,
         html: htmlContent,

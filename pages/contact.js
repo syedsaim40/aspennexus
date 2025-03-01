@@ -688,7 +688,8 @@ const Contact = () => {
                 Send Request →
               </button>
             </form>
-            {status && <p>{status}</p>}
+            <div className="status_Box">
+            {status && <p>{status}</p>}</div>
           </div>
         </div>
       </div>

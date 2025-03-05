@@ -248,7 +248,7 @@ export default function digitalMarketing() {
                       <li className="disabled">Unlimited users</li>
                     </ul>
 
-                    <button className="button">Get Started</button>
+                    <a href="/contact" className="button">Get Started</a>
                   </div>
                   <div className="planItem planItem--pro">
                     <div className="card">
@@ -275,7 +275,7 @@ export default function digitalMarketing() {
                       <li className="disabled">Unlimited users</li>
                     </ul>
 
-                    <button className="button button--pink">Get Started</button>
+                    <a href="/contact" className="button button--pink">Get Started</a>
                   </div>
 
                   <div className="planItem planItem--entp">
@@ -301,9 +301,7 @@ export default function digitalMarketing() {
                       <li>Customize Panel</li>
                     </ul>
 
-                    <button className="button button--white">
-                      Get Started
-                    </button>
+                    <a href="/contact" className="button button--white">Get Started</a>
                   </div>
                 </div>
               </div>

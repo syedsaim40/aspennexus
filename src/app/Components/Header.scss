@@ -12,9 +12,9 @@
     z-index: 1;
     box-shadow: 0 2px 31px -16px #0006;
     z-index: 10;
-    // @media (max-width: 767.9px){
-    //   display: none;
-    // }
+    @media (max-width: 768px){
+      width: 100% !important;
+    }
     .logo{
       max-width: 150px;
       img{

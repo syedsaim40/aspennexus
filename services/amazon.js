@@ -224,7 +224,7 @@ export default function amazon() {
                       <li>Ongoing Aftersales Support (limited to 1 month)</li>
                     </ul>
 
-                    <button className="button">Get Started</button>
+                    <a href="/contact" className="button">Get Started</a>
                   </div>
                   <div className="planItem planItem--pro">
                     <div className="card">
@@ -260,7 +260,7 @@ export default function amazon() {
                       <li>Ongoing Aftersales Support (3 months)</li>
                     </ul>
 
-                    <button className="button button--pink">Get Started</button>
+                    <a href="/contact" className="button button--pink">Get Started</a>
                   </div>
 
                   <div className="planItem planItem--entp">
@@ -304,10 +304,8 @@ export default function amazon() {
                         Virtual Assistance for Inventory Management (6 month)
                       </li>
                     </ul>
-
-                    <button className="button button--white">
-                      Get Started
-                    </button>
+                    
+                    <a href="/contact" className="button button--white">Get Started</a>
                   </div>
                 </div>
               </div>

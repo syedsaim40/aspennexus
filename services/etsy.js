@@ -218,7 +218,7 @@ export default function ebay() {
                       <li className="disabled">Unlimited users</li>
                     </ul>
 
-                    <button className="button">Get Started</button>
+                    <a href="/contact" className="button">Get Started</a>
                   </div>
                   <div className="planItem planItem--pro">
                     <div className="card">
@@ -245,7 +245,7 @@ export default function ebay() {
                       <li className="disabled">Unlimited users</li>
                     </ul>
 
-                    <button className="button button--pink">Get Started</button>
+                    <a href="/contact" className="button button--pink">Get Started</a>
                   </div>
 
                   <div className="planItem planItem--entp">
@@ -271,9 +271,7 @@ export default function ebay() {
                       <li>Customize Panel</li>
                     </ul>
 
-                    <button className="button button--white">
-                      Get Started
-                    </button>
+                    <a href="/contact" className="button button--white">Get Started</a>
                   </div>
                 </div>
               </div>

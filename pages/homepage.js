@@ -236,7 +236,7 @@ const Homepage = () => {
             {/* Banner links */}
             <div className="bannerLinks">
               <div>
-                <Link className="btn" href="/service">
+                <Link className="btn" href="/services/amazon">
                   Explore Us →
                 </Link>
               </div>
@@ -264,7 +264,7 @@ const Homepage = () => {
             <h1>Work With The Best Leaders In The Field To Innovate Your E-Store Advanced Strategy</h1>
             <p>
             Get tips that make sense to you to grow your online store. If you are establishing your online business on Amazon, Shopify, eBay, Walmart, or creating a custom website, we will equip you with everything you need to become successful. From starting a side gig on a tight budget, we have website design services that can help you kick off without breaking the bank. Looking to dominate your niche and stand out from the crowd? Let us help you make that vision a reality. We will guide you every step of the way to ensure that your e-commerce business achieves success. No matter the stage you are at in your journey, we will turn your goals into reality and position you above your competition.</p>
-            <button className="btn btn-over"  >Ready? Set? LetsGo</button>
+            <a href="/contact" className="btn btn-over">Ready? Set? LetsGo</a>
           </div>
         </div>
        </div>

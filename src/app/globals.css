@@ -139,6 +139,9 @@ ul {
   all: unset;
   list-style-type: none;
 }
+button{
+  font-family: var(--mont) !important;
+}
 /* img {
   max-width: 100%;
   display: inline-block;

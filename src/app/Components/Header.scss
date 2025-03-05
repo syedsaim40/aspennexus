@@ -125,7 +125,7 @@
             }
         }
       }
-      @media (max-width: 767.9px){
+      @media (max-width: 768px){
         display: none;
       }
     }
@@ -186,6 +186,10 @@
         font-size: 22px;
         color: var(--primary);
         font-weight: 500;
+        a{
+          display: block;
+          width: 100%;
+        }
 
         .accordionButton {
           background: none;

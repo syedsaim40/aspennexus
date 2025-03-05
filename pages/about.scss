@@ -16,7 +16,7 @@
       color: rgb(89 89 89);
     }
     p {
-      font-size: 1.1rem;
+      font-size: 18px;
       padding-top: 1rem;
       margin-bottom: 2rem;
       color: rgb(89 89 89);
@@ -48,7 +48,7 @@
         padding-top: 1rem;
         font-size: 3rem;
         line-height: 3.5rem;
-        color: rgb(89 89 89);
+        color: #fff;
         padding-bottom: 2rem;
     }
     ul{
@@ -60,9 +60,45 @@
             color: white;
         }
     }
+    
+  @media (max-width: 768px) {
+    padding: 2rem;
+    margin-bottom: 0;
+    h1{
+      font-size: 24px;
+      padding: 0;
+    }
+  }
   }
   #faq{
     margin-bottom: 10rem;
     margin-top: 7rem;
   }
+  
+  @media (max-width: 768px) {
+    
+    #faq{
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+    }
+    .about_banner{
+      padding-top: 5rem;
+      height: 100%;
+      h1{
+        font-size: 2rem;
+        padding: 0;
+      }
+    }
+    .section_banner{
+      text-align: left;
+      h1{
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.banner_img{
+  display: none;
 }

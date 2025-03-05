@@ -519,7 +519,7 @@ const Contact = () => {
 
     const result = await res.json();
     if (res.ok) {
-      setStatus("Message sent successfully!");
+      setStatus("We have recived your email, our team will reach out to you soon!");
       setName("");
       setEmail("");
       setPhone("");
@@ -679,7 +679,7 @@ const Contact = () => {
                 </div>
               </div>
               <textarea
-                placeholder="Tell Us About Your Project"
+                placeholder="Please write your concern"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
@@ -689,7 +689,8 @@ const Contact = () => {
               </button>
             </form>
             <div className="status_Box">
-            {status && <p>{status}</p>}</div>
+              {status && <p>{status}</p>}
+            </div>
           </div>
         </div>
       </div>

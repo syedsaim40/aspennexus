@@ -56,6 +56,9 @@
     img {
       border-radius: 0.75rem;
     }
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   
   @media (max-width: 768px) {
@@ -224,8 +227,8 @@
   @media (max-width: 768px) {
     .nav_Item {
       h2 {
-        font-size: 20px;
-        padding-left: 1rem;
+        font-size: 20px !important;
+        padding-left: 1rem !important;
       }
     }
     .nav_img {

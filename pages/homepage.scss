@@ -134,6 +134,10 @@
     bottom: 20px;
     z-index: 1;
     animation: mouseLag 2s infinite linear;
+    
+  @media (max-width: 768px) {
+    bottom: 100px;
+  }
  
     svg {
       font-size: 50px;

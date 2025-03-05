@@ -86,29 +86,55 @@ function Header() {
           Contact →
         </Link>
       </div>
-      <button className="menuToggle" onClick={toggleMenu}>
+      {/* <button className="menuToggle" >
         mobile button
-      </button>
-      {isMenuOpen && (
-      <div className='mobile_Menu'>
+      </button> */}
+      <div className="menuToggle" onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div className={`mobile_Menu ${isMenuOpen ? 'open' : ''}`}>
+        <div className='closeBtn' onClick={toggleMenu}>
+          <span>X</span>
+      </div>
         <nav className="mobileMenu">
           <ul>
-            <li>Home</li>
+            <li>
+        <Link href="/" className={pathname === '/' ? 'active' : ''}>
+          Home
+        </Link>
+        </li>
             <li>
               <button className="accordionButton" onClick={toggleServices}>
                 Services
               </button>
               {isServicesOpen && (
-                <ul className="dropdown">
-                  <li>Web Development</li>
-                  <li>App Development</li>
+                <ul className="dropdown">                  
+                <li><Link href="/services/shopify">Shopify Automation</Link></li>
+                <li><Link href="/services/tiktok">Tiktok Shop Automation</Link></li>
+                <li><Link href="/services/amazon">Amazon Automation</Link></li>
+                <li><Link href="/services/walmart">Wal-Mart Automation</Link></li>
+                <li><Link href="/services/ebay">Ebay Automation</Link></li>
+                <li><Link href="/services/etsy">Etsy Automation</Link></li>
+                <li><Link href="/services/development">Website development</Link></li>
+                <li><Link href="/services/digitalMarketing">Digital Marketing</Link></li>
                 </ul>
               )}
             </li>
+            <li>
+        <Link href="/about" className={pathname === '/about' ? 'active' : ''}>
+          About Us
+        </Link>
+        </li>
+        <li>
+        <Link href="/contact">
+          Contact Us
+        </Link>
+        </li>
           </ul>
         </nav>
       </div>
-      )}
     </header>
   );
 }

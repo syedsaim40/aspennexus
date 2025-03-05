@@ -12,9 +12,9 @@
     z-index: 1;
     box-shadow: 0 2px 31px -16px #0006;
     z-index: 10;
-    @media (max-width: 767.9px){
-      display: none;
-    }
+    // @media (max-width: 767.9px){
+    //   display: none;
+    // }
     .logo{
       max-width: 150px;
       img{
@@ -140,32 +140,31 @@
   padding: 10px 20px;
   background-color: #fff;
   color: #444;
-  width: 80%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  width: 95%;
   height: 100vh;
+  position: fixed; // Change from absolute to fixed for full-screen effect
+  top: 0;
+  left: -100%; // Initially hidden off-screen (left)
+  bottom: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0px 10px 50px #0000003b;
+  transition: left 0.4s ease-in-out; // Smooth slide-in effect
+  z-index: 1000;
 
-  .logo {
-    font-size: 1.5rem;
+  &.open {
+    left: 0; // Slide in when menu is open
   }
 
-  .menuToggle {
-    background: none;
-    border: none;
-    color: #444;
-    font-size: 1.5rem;
+  .closeBtn {
+    position: absolute;
+    top: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    right: 20px;
     cursor: pointer;
-    display: none;
-    @media (max-width: 999px){
-      display: block;
-    }
   }
 
   .mobileMenu {
@@ -183,27 +182,34 @@
 
       li {
         padding: 10px 20px;
-        border-bottom: 1px solid #555;
+        border-bottom: 1px solid #55555540;
+        font-size: 22px;
+        color: var(--primary);
+        font-weight: 500;
 
         .accordionButton {
           background: none;
           border: none;
-          color: white;
           width: 100%;
           text-align: left;
-          padding: 10px 0;
+          padding: 0;
           cursor: pointer;
+          font-size: 22px;
+          color: var(--primary);
+          font-weight: 500;
         }
 
         .dropdown {
           list-style: none;
           padding: 0;
           margin: 0;
-          background-color: #555;
 
           li {
             padding: 10px 40px;
-            border-bottom: 1px solid #666;
+            border-bottom: 0.3px solid #55555540;
+            font-size: 20px;
+            color: var(--primary);
+            font-weight: 500;
           }
         }
       }
@@ -211,10 +217,39 @@
   }
 }
 
-// Mobile-specific styles
+.menuToggle {
+  width: 35px;
+  height: 5px * 3 + 7px * 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  div {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.open {
+    div:nth-child(1) {
+      transform: translateY(5px + 7px) rotate(45deg);
+    }
+    div:nth-child(2) {
+      opacity: 0;
+    }
+    div:nth-child(3) {
+      transform: translateY(-(5px + 7px)) rotate(-45deg);
+    }
+  }
+}
+
+// Show menu toggle only on mobile
 @media (max-width: 768px) {
   .menuToggle {
-    display: block; // Show toggle button on small screens
+    display: flex;
   }
 
   .mobileMenu {
@@ -224,7 +259,8 @@
 
 .menuToggle {
   display: none;
-  @media (max-width: 999px){
-    display: block;
+
+  @media (max-width: 999px) {
+    display: flex;
   }
 }

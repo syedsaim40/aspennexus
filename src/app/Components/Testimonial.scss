@@ -2,6 +2,10 @@
 // Testimonials Styles
 #testimonials{
   margin-bottom: 5rem;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
     .section_heading{
       max-width: 70%;
       margin: 0 auto 3rem auto;
@@ -11,6 +15,10 @@
     }
     .testimonial_slider{
       padding: 2rem 0;
+      
+  @media (max-width: 768px) {
+    padding: 0rem 0 2rem 0;
+  }
       
     .slick-slide{
       padding: 1rem !important;

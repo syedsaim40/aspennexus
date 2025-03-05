@@ -202,8 +202,8 @@ ul {
 }
 
 .btn4 {
-  padding: 1.2rem 1.3rem;
-  font-size: 1rem;
+  padding: 1.2rem 1.3rem !important;
+  font-size: 1rem !important;
   font-weight: 500;
   border: 2px solid var(--white);
   color: var(--white);
@@ -291,12 +291,9 @@ select{
     color: #331b3b;
     font-weight: 800;
     text-align: center;
-
     @media (max-width: 768px) {
       font-size: 32px;
-    }
-    @media (max-width: 576px) {
-      font-size: 20px;
+      line-height: 42px;
     }
   }
 
@@ -350,7 +347,7 @@ select{
 .faq-question {
   width: 100%;
   padding: 1.5rem 1rem;
-  font-size: 1rem;
+  font-size: 18px;
   text-align: left;
   background: #fff;
   border: none;
@@ -387,7 +384,7 @@ select{
 }
 
 .faq-answer.open {
-  max-height: 100px; /* Adjust based on your answer content */
+  max-height: max-content; /* Adjust based on your answer content */
   padding: 2rem 1rem;
 }
 

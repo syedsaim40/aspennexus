@@ -164,13 +164,13 @@ const Homepage = () => {
   const servicescontent = [
     {
       link: "/services/shopify",
-      img: "/Images/amazon.svg",
+      img: "/Images/shopifyicon.png",
       heading: "Shopify Automation",
       description: "Have a hassle-free work experience through our shopify automations!",
     },
     {
       link: "/services/tiktok",
-      img: "/Images/amazon.svg",
+      img: "/Images/tiktokicon.png",
       heading: "TikTok Shop Automation",
       description: "Our experts foster a way for brands to stay ahead on the ever-changing TikTok trends",
     },
@@ -181,14 +181,14 @@ const Homepage = () => {
       description: "Overview our automation services to learn how you can expand on world’s largest digital platform.",
     },
     {
-      link: "/services/websiteDevelop.js",
-      img: "/Images/amazon.svg",
+      link: "/services/development",
+      img: "/Images/developmenticon.png",
       heading: "Web development Services",
       description: "Functionality and innovation are the two key features we incorporate in our web development services.",
     },
     {
       link: "/services/digitalMarketing",
-      img: "/Images/amazon.svg",
+      img: "/Images/marketingicon.png",
       heading: "Digital marketing Services",
       description: "A good marketing technique and strategy amplify your brand’s growth in no time. Here’s how it works!",
     },

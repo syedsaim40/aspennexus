@@ -64,16 +64,25 @@
       font-weight: 600;
       text-align: center;
       color: white;
-
       span {
         color: black;
+        font-weight: 600;
       }
       @media (max-width: 768px) {
         font-size: 42px;
+        span{
+          display: block;
+          width: 100%;
+          height: 40px;
+          font-weight: 800;
+        }
       }
       @media (max-width: 575px) {
         font-size: 32px;
       }
+    }
+    @media (max-width: 768px) {
+      padding-bottom: 1rem;
     }
   }
   .banner_desp {
@@ -87,6 +96,11 @@
       line-height: 26px;
       color: #ffff;
     }
+    
+    @media (max-width: 768px) {
+      width: 90%;
+      margin-bottom: 2rem;
+    }
   }
   .bannerLinks {
     display: flex;
@@ -96,12 +110,8 @@
       padding: 1.2rem 1.5rem;
       cursor: pointer;
       @media (max-width: 768px) {
-        padding: 0.8rem 1.3rem;
-        font-size: 12px;
-      }
-      @media (max-width: 575px) {
-        padding: 0.5rem 1rem;
-        font-size: 8px;
+        padding: 1rem 3rem;
+        font-size: 18px;
       }
     }
     .Video {
@@ -198,17 +208,14 @@
         }
        }
        p{
-        font-size: 16px;
+        font-size: 18px;
         color: #9e9898;
         margin-bottom: 1.5rem;
         line-height: 1.6rem;
        
         font-weight: 600;
         @media (max-width: 767.9px) {
-          font-size: 14px;
-        }
-        @media (max-width: 575px) {
-          font-size: 12px;
+          font-size: 18px;
         }
        }
        button{
@@ -220,6 +227,27 @@
     }
   }
 
+  @media (max-width: 768px) {
+    margin: 0;
+    .overview_img{
+      display: flex;
+      justify-content: center;
+      img{
+        object-fit: contain;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        height: 300px;
+      }
+    }
+    .overview_section{
+      gap: 0;
+      padding-bottom: 4rem;
+    }
+    .overview_content{
+      padding-top: 0;
+    }
+  }
 }
 
 
@@ -293,7 +321,6 @@
           font-size: 58px;
           font-weight: 600;
           text-align: center;
-          
           span {
             color: var(--secondary);
           }
@@ -359,6 +386,10 @@
   padding: 2rem;
   margin-bottom: 5rem;
   // min-height: 500px;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 }
 .review {
   margin-bottom: 5rem;
@@ -431,7 +462,7 @@
   .cont_btn {
     flex: 1;
     p {
-      font-size: clamp(16px, 4vw, 16px);
+      font-size: clamp(18px, 4vw, 18px);
       color: #fff;
       font-weight: 400;
       line-height: normal;
@@ -453,9 +484,8 @@
   border-top-right-radius: 500px;
   overflow: hidden;
   @media (max-width: 768px) {
-    padding: 6rem 0rem 6rem 1rem;
-
-    border-top-right-radius: 400px;
+    padding: 2rem 0rem 6rem 1rem;
+    border-top-right-radius: 140px;
   }
   .arrowSpace {
     width: 300px;
@@ -495,6 +525,12 @@
         align-items: start;
         gap: 1rem;
         
+        @media (max-width: 767.9px) {
+          flex-direction: column;
+          gap: 0;
+          justify-content: center;
+          align-items: center;
+        }
       }
       .slide_Img {
         width: 80px;
@@ -507,10 +543,11 @@
         @media (max-width: 768px) {
           width: 50px;
           height: 50px;
-        }
-        @media (max-width: 575px) {
-          width: 40px;
-          height: 40px;
+          margin-bottom: 0;
+          img{
+            width: 50px;
+            height: 50px;
+          }
         }
       }
       h2 {
@@ -522,12 +559,13 @@
         width: 70%;
         color: var(--textColor);
         @media (max-width: 768px) {
-          font-size: 16px;
+          font-size: 18px;
+          line-height: 22px;
           margin: 0;
-        }
-        @media (max-width: 575px) {
-          font-size: 12px;
-          margin: 0;
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 10px 0;
         }
       }
       p {
@@ -536,12 +574,6 @@
         display: block;
         font-weight: 400;
         color: var(--lightText);
-        @media (max-width: 768px) {
-          font-size: 12px;
-        }
-        @media (max-width: 575px) {
-          font-size: 8px;
-        }
       }
       &:is(:hover) {
         transform: scale(1.01);
@@ -602,7 +634,7 @@
   position: relative;
   z-index: 0;
   @media (max-width: 575px) {
-    padding: 6rem 2rem;
+    padding: 2rem 1rem;
   }
   &::after {
     position: absolute;
@@ -646,13 +678,6 @@
           p {
             font-size: 20px;
             font-weight: 500;
-
-            @media (max-width: 768px) {
-              font-size: 16px;
-            }
-            @media (max-width: 575px) {
-              font-size: 12px;
-            }
           }
         }
       }
@@ -672,10 +697,7 @@
             margin-bottom: 5px;
             line-height: 38px;
             @media (max-width: 768px) {
-              font-size: 22px;
-            }
-            @media (max-width: 575px) {
-              font-size: 18px;
+              font-size: 26px;
             }
           }
           h5 {
@@ -683,12 +705,15 @@
             font-weight: 500;
             margin-bottom: 24px;
             @media (max-width: 768px) {
-              font-size: 12px;
-            }
-            @media (max-width: 575px) {
-              font-size: 8px;
+              font-size: 18px;
             }
           }
+        }
+        @media (max-width: 768px) {
+          text-align: center;
+          flex-direction: column;
+          gap: 0;
+          margin-bottom: 10px;
         }
       }
       .roi_Tel {
@@ -702,7 +727,7 @@
             color: var(--secondary);
           }
           @media (max-width: 575px) {
-            font-size: 12px;
+            font-size: 18px;
           }
         }
       }
@@ -732,9 +757,7 @@
             text-align: left;
             @media (max-width: 768px) {
               font-size: 18px;
-            }
-            @media (max-width: 575px) {
-              font-size: 14px;
+              text-align: center;
             }
           }
           p {
@@ -742,12 +765,9 @@
             line-height: 24px;
             font-size: 400;
             color: var(--heading);
-            @media (max-width: 768px) {
-              font-size: 12px;
-            }
-            @media (max-width: 575px) {
-              font-size: 8px;
-            }
+          }
+          @media (max-width: 768px) {
+            margin-bottom: 1rem;
           }
         }
         .roi_Icon {
@@ -767,11 +787,9 @@
             width: 16px;
             height: 16px;
           }
-          @media (max-width: 575px) {
-            align-items: start;
-            width: 12px;
-            height: 12px;
-          }
+        }
+        @media (max-width: 768px) {
+          text-align: center;
         }
       }
     }
@@ -817,5 +835,9 @@
 #faq{
   .section_heading{
     margin: 0 auto 5rem auto;
+    
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
   }
 }

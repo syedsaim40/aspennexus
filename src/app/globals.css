@@ -393,3 +393,8 @@ select{
     width: calc(100% - 16px);
   }
 }
+.typed-cursor{
+  @media (max-width: 768px){
+    display: none !important;
+  }
+}

@@ -47,7 +47,7 @@ function Footer() {
                                 </ul>
                             </div>
                             <div className='footer_box'>
-                                <h3>Contact</h3>
+                                <h3>Address</h3>
                                 <ul className='footer_List'>
                                     <li><address>2785, 447 Broadway, 2nd Floor, New York, NY, New York, US, 10013</address></li>
                                 </ul>

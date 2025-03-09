@@ -37,11 +37,12 @@ export default function development() {
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
+                <h1>WEB DEVELOPMENT</h1>
                   <h2>
                     Making businesses standout with ourtailored web development
                     services!
                   </h2>
-                  <h1>WEB DEVELOPMENT</h1>
+                  
                   <p>
                     At Aspen Nexus, our experts craft your digital presence with
                     functional and cutting-edge web development services. Our

@@ -36,11 +36,12 @@ export default function shopifyAuto() {
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
+                <h1>Shopify Automation</h1>
                   <h2>
                     ‘’Transforming stores into revenue generating powerhouses
                     with our automation services!’’
                   </h2>
-                  <h1>Shopify Automation</h1>
+                 
                   <p>
                     At Aspen Nexus, we specialize in building, optimizing, and
                     automating high-converting Shopify stores that help
@@ -51,7 +52,7 @@ export default function shopifyAuto() {
                   </a>
                 </div>
                 <div className="service_image">
-                  <Image src={shp2} height={480} width={320} />
+                  <Image src={shp2} height={480} width={370} />
                 </div>
               </div>
               <div className="nav_heading">

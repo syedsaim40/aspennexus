@@ -37,10 +37,11 @@ export default function tiktokAuto() {
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
+                <h1>TIKTOK SHOP AUTOMATION</h1>
                   <h2>
                     ‘’Automate, innovate and dominate TikTok with Aspen Nexus!’’
                   </h2>
-                  <h1>TIKTOK SHOP AUTOMATION</h1>
+                 
                   <p>
                     Aspen Nexus automates your TikTok Shop, handling product
                     sourcing, listing, fulfillment, and marketing—so you can

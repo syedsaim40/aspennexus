@@ -36,10 +36,11 @@ export default function ebay() {
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
+                <h1>ETSY AUTOMATION</h1>
                   <h2>
                   We handle everything from listings to fulfillment, so you can focus on growing your business.
                   </h2>
-                  <h1>ETSY AUTOMATION</h1>
+                
                   <p>
                     At Aspen Nexus,Etsy Automation simplifies your shop
                     management by handling listings, order fulfillment, and

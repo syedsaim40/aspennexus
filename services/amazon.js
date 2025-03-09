@@ -32,11 +32,12 @@ export default function amazon() {
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
+                <h1>AMAZON AUTOMATION</h1>
                   <h2 className="mt-1">
                     Creating stores, digital products and websites to take your
                     business to the nextlevel!
                   </h2>
-                  <h1>AMAZON AUTOMATION</h1>
+                 
                   <p>
                     At Aspen Nexus, we provide Amazon Automation Services to
                     help entrepreneurs and business owners build, manage, and

@@ -37,11 +37,12 @@ export default function walmart() {
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
+                <h1>WALLMART AUTOMATION </h1>
                   <h2>
                     Achieve the highest level of e-commerce success with our
                     tailored Walmart services.
                   </h2>
-                  <h1>WALLMART AUTOMATION </h1>
+                  
                   <p>
                     Aspen Nexus streamlines your Walmart store with automated
                     product sourcing, inventory management, buy box

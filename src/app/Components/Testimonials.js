@@ -29,7 +29,7 @@ const Testimonials = () => {
   var testimonialsSlideSettings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 900,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,

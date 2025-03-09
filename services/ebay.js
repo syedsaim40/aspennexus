@@ -37,10 +37,11 @@ export default function etsy() {
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
+                <h1>EBAY AUTOMATION </h1>
                   <h2>
                   Managing listings, inventory, and customer inquiries can drain resources and distract from core business goals.
                   </h2>
-                  <h1>EBAY AUTOMATION </h1>
+                
                   <p>
                     Enhance Growth and Profitability with Professional eBay
                     Consulting. Our end-to-end services are crafted to increase

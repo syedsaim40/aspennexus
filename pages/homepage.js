@@ -231,7 +231,7 @@ const Homepage = () => {
              
             </div>
             <div className="banner_desp">
-              <p>Aspen Nexus; a tech driven company bringing you allthe solutions, be it store setup, automations or selling digital products online through eye catching web designs, our experts use updated technology and tools to help you grow.</p>
+              <p>Aspen Nexus; a tech driven company bringing you all the solutions, be it store setup, automations or selling digital products online through eye catching web designs, our experts use updated technology and tools to help you grow.</p>
             </div>
             {/* Banner links */}
             <div className="bannerLinks">
@@ -264,7 +264,7 @@ const Homepage = () => {
             <h1>Work With The Best Leaders In The Field To Innovate Your E-Store Advanced Strategy</h1>
             <p>
             Get tips that make sense to you to grow your online store. If you are establishing your online business on Amazon, Shopify, eBay, Walmart, or creating a custom website, we will equip you with everything you need to become successful. From starting a side gig on a tight budget, we have website design services that can help you kick off without breaking the bank. Looking to dominate your niche and stand out from the crowd? Let us help you make that vision a reality. We will guide you every step of the way to ensure that your e-commerce business achieves success. No matter the stage you are at in your journey, we will turn your goals into reality and position you above your competition.</p>
-            <a href="/contact" className="btn btn-over">Ready? Set? LetsGo</a>
+            <a href="/contact" className="btn btn-over">Grow Your Store</a>
           </div>
         </div>
        </div>
@@ -312,8 +312,8 @@ const Homepage = () => {
               </div>
               <div className="roi_pricing" ref={counterRef}>
                 {[
-                  { amount: 2862440, label: 'Generated In Revenue For Our Client (So Far)' },
-                  { amount: 1753300, label: 'Spent On Google & Facebook Advertising' },
+                  { amount: 125600, label: 'Generated In Revenue For Our Client (So Far)' },
+                  { amount: 96700, label: 'Spent On Google & Facebook Advertising' },
                   { amount: 23453, label: 'Savings Realized' },
                 ].map((item, index) => (
                   <div className="roi_counter" key={index}>
@@ -324,11 +324,11 @@ const Homepage = () => {
                   </div>
                 ))}
               </div>
-              <div className="roi_Tel">
+              {/* <div className="roi_Tel">
                 <p>
                   <span>Say Hi!</span> <a href={`tel:${+923209455811}`}>+92 320 9455811</a>
                 </p>
-              </div>
+              </div> */}
             </div>
             <div className="roi_Info">
               <div className="roi_Card">

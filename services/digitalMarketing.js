@@ -36,11 +36,12 @@ export default function digitalMarketing() {
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
+                <h1>DIGITAL MARKETING</h1>
                   <h2>
                     “Helping brands getin the spotlightthrough ourtargeted
                     marketing campaigns!”
                   </h2>
-                  <h1>DIGITAL MARKETING</h1>
+                
                   <p>
                     Offering you comprehensive digital marketing services that
                     drive sales and boost your brand’s image and presence. From

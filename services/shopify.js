@@ -36,12 +36,12 @@ export default function shopifyAuto() {
             <div className="container">
               <div className="service_banner">
                 <div className="service_content">
-                <h1>Shopify Automation</h1>
+                  <h1>Shopify Automation</h1>
                   <h2>
                     ‘’Transforming stores into revenue generating powerhouses
                     with our automation services!’’
                   </h2>
-                 
+
                   <p>
                     At Aspen Nexus, we specialize in building, optimizing, and
                     automating high-converting Shopify stores that help
@@ -215,7 +215,8 @@ export default function shopifyAuto() {
                     Simple, transparent pricing
                   </h1>
                   <p className="plansHero__subtitle">
-                    No contracts. No suprise fees.
+                    Our Service Packages Choose the perfect e-commerce solution
+                    that fits your business needs and helps you grow online.
                   </p>
                 </div>
                 <div className="planItem__container">
@@ -223,27 +224,42 @@ export default function shopifyAuto() {
                     <div className="card">
                       <div className="card__header">
                         <div className="card__icon symbol symbol--rounded"></div>
-                        <h2>Free</h2>
+                        <h2>Basic</h2>
                       </div>
                       <div className="card__desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do
+                        "Launch fast and start earning with a professionally
+                        designed Shopify store, a full month of branded social
+                        media content, and a 2-week Facebook Ads campaign
+                        engineered to attract your first customers and prove
+                        your store’s potential."
                       </div>
                     </div>
 
                     <div className="price">
-                      $0<span>/ month</span>
+                      $499<span>/ month</span>
                     </div>
 
                     <ul className="featureList">
-                      <li>2 links</li>
-                      <li>Own analytics platform</li>
-                      <li className="disabled">Chat support</li>
+                      <li>Shopify Store Setup (basic theme)</li>
+                      <li>Basic Product Research (up to 5 products)</li>
+                      <li>
+                        Initial Product Listing Optimization (up to 5 listings)
+                      </li>
+                      <li>Store Launch Assistance</li>
+                      <li>
+                        Social Media Developments and handling (for 4 weeks)
+                      </li>
+                      <li>Facebook And Insta ads Campaign (for 2 weeks)</li>
+                      <li>Basic Aftersales Support (1 month)</li>
+
+                      {/* <li className="disabled">Chat support</li>
                       <li className="disabled">Mobile application</li>
-                      <li className="disabled">Unlimited users</li>
+                      <li className="disabled">Unlimited users</li> */}
                     </ul>
 
-                    <a href="/contact" className="button">Get Started</a>
+                    <a href="/contact" className="button">
+                      Get Started
+                    </a>
                   </div>
                   <div className="planItem planItem--pro">
                     <div className="card">
@@ -253,50 +269,104 @@ export default function shopifyAuto() {
                         <div className="card__label label">Best Value</div>
                       </div>
                       <div className="card__desc">
-                        Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris
+                        "Dominate Your Niche with a High-Converting Shopify
+                        Store—Expertly Built to Skyrocket Sales, Maximize ROI,
+                        and Crush Your Competition."
                       </div>
                     </div>
 
                     <div className="price">
-                      $18<span>/ month</span>
+                      $999<span>/ month</span>
                     </div>
 
                     <ul className="featureList">
-                      <li>2 links</li>
-                      <li>Own analytics platform</li>
-                      <li>Chat support</li>
-                      <li className="disabled">Mobile application</li>
-                      <li className="disabled">Unlimited users</li>
+                      <li>
+                        {" "}
+                        End-to-End Solution – We handle everything so you don’t
+                        have to.
+                      </li>
+                      <li>
+                        {" "}
+                        Precision-Targeted Ads – Your products in front of eager
+                        buyers.
+                      </li>
+                      <li>
+                        {" "}
+                        Precision-Targeted Ads – Your products in front of eager
+                        buyers.
+                      </li>
+                      <li>
+                        FREE Premium Store (€599 Value) – Fully built,
+                        optimized, and ready to sell.
+                      </li>
+                      <li>
+                        Instant Sales-Ready Setup – Skip the wait—start earning
+                        fast.
+                      </li>
+                      <li>
+                        {" "}
+                        First Sale Guarantee – We’re so confident, we back
+                        it with results.
+                      </li>
+
+                      {/* <li className="disabled">Mobile application</li>
+                      <li className="disabled">Unlimited users</li> */}
                     </ul>
 
-                    <a href="/contact" className="button button--pink">Get Started</a>
+                    <a href="/contact" className="button button--pink">
+                      Get Started
+                    </a>
                   </div>
 
                   <div className="planItem planItem--entp">
                     <div className="card">
                       <div className="card__header">
                         <div className="card__icon"></div>
-                        <h2>Enterprise</h2>
+                        <h2>Premium</h2>
+                        <div className="card__label label">Most Popular</div>
                       </div>
                       <div className="card__desc">
-                        Nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor
+                        "Tailored for high-impact brands, our Premium Suite
+                        delivers advanced Shopify architecture, dynamic social
+                        media and product management workflows, precision‑driven
+                        Facebook Ads, and VIP white‑glove support—powered to
+                        outpace competitors and maximize lifetime value."
                       </div>
                     </div>
 
-                    <div className="price">Let's Talk</div>
+                    <div className="price">
+                      {" "}
+                      <del>$2500</del> $1499<span>/ month</span>
+                    </div>
 
                     <ul className="featureList">
-                      <li>2 links</li>
-                      <li>Own analytics platform</li>
-                      <li>Chat support</li>
-                      <li>Mobile application</li>
-                      <li>Unlimited users</li>
-                      <li>Customize Panel</li>
+                      <li>Shopify Store Development</li>
+                      <li>Shopify Store Design</li>
+                      <li>Logo & Banners Design</li>
+                      <li>Profitable Product Niche Research</li>
+                      <li>Product Hunting</li>
+                      <li>Product Analysis</li>
+                      <li>Supplier Search and Finalization</li>
+                      <li>Dropshipping Integration</li>
+                      <li>Social Media Creation</li>
+                      <li>Social Media Posting</li>
+                      <li>
+                        Social Media Campaign (for 2 months) Note:One month
+                        marketing budget is included.
+                      </li>
+                      <li>Order Fulfillment</li>
+                      <li>Payment Integration
+                      </li>
+                      <li>Shopify Account Management
+                      </li>
+                      <li> Inventory Management
+                      </li>
+                      <li>Customer Care & CSR service</li>
                     </ul>
 
-                    <a href="/contact" className="button button--white">Get Started</a>
+                    <a href="/contact" className="button button--white">
+                      Get Started
+                    </a>
                   </div>
                 </div>
               </div>

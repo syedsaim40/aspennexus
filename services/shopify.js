@@ -308,11 +308,20 @@ export default function shopifyAuto() {
                         First Sale Guarantee – We’re so confident, we back
                         it with results.
                       </li>
-
-                      {/* <li className="disabled">Mobile application</li>
-                      <li className="disabled">Unlimited users</li> */}
                     </ul>
-
+                    {/* <ul className="featureList cross">
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                      <li>------------------------</li>
+                    </ul> */}
                     <a href="/contact" className="button button--pink">
                       Get Started
                     </a>

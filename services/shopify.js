@@ -236,7 +236,7 @@ export default function shopifyAuto() {
                     </div>
 
                     <div className="price">
-                      $499<span>/ month</span>
+                      <del>$700</del> $499<span>/ One-Time Investment</span>
                     </div>
 
                     <ul className="featureList">
@@ -276,7 +276,7 @@ export default function shopifyAuto() {
                     </div>
 
                     <div className="price">
-                      $999<span>/ month</span>
+                      <del>$1400</del> $999<span>/ One-Time Investment</span>
                     </div>
 
                     <ul className="featureList">
@@ -327,7 +327,29 @@ export default function shopifyAuto() {
                     </a>
                   </div>
 
-                  <div className="planItem planItem--entp">
+                  <div className="planItem blackItem planItem--entp">
+                    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="10 100 300 100"
+      className="bg"
+    >
+      <g data-name="Layer 2">
+        <g data-name="Layer 1">
+          {[...Array(55)].map((_, i) => {
+            const x = Math.random() * 580 + 5;
+            const y = Math.random() * 280 + 5;
+            return (
+              <path
+                key={i}
+                className="stars-bg__star"
+                d={`M${x},${y}a1.18,1.18,0,1,0,1.18,1.18A1.18,1.18,0,0,0,${x},${y}`}
+                fill="#ffffff82"
+              />
+            );
+          })}
+        </g>
+      </g>
+    </svg>
                     <div className="card black">
                       <div className="card__header">
                         <div className="card__icon"></div>
@@ -345,7 +367,7 @@ export default function shopifyAuto() {
 
                     <div className="price">
                       {" "}
-                      <del>$2500</del> $1499<span>/ month</span>
+                      <del>$2500</del> $1499<span>/ One-Time Investment</span>
                     </div>
 
                     <ul className="featureList">

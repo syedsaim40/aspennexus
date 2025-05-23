@@ -41,6 +41,21 @@ function Header() {
         <Link href="/">
         <Image src="/Images/logo3.svg" alt="alt" width={140} height={60} />
         </Link>
+        <div className='atom_holder'>
+          <div id="atom">
+            <div id="nucleus">
+            </div>
+            <div className="orbit">
+              <div className="electron"></div>
+            </div>
+            <div className="orbit">
+              <div className="electron"></div>
+            </div>
+            <div className="orbit">
+              <div className="electron"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Center: Navbar */}

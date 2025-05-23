@@ -307,6 +307,14 @@ body {
 }
 // hero ends
 
+// animation keyframes
+@keyframes mymove {
+  50% {box-shadow: 0px 0px 41px 0px #ee6d4d;}
+}
+@keyframes mymove2 {
+  50% {box-shadow: 0px 0px 31px 0px #000000;}
+}
+
 // plan item starts
 .planItem {
   --border: 1px solid #e6e6e6;
@@ -331,15 +339,46 @@ body {
   display: inline-flex;
   flex-direction: column;
   height: max-content;
+  --boxShadow: 0px 14px 30px rgba(204, 204, 204, 0.32);
+
+  &:is(:hover, :focus){
+    &:not(.blackItem){
+      --border: 1px solid #ee6c4d;
+      --bgColor: #fce1db2e;
+      --boxShadow: 0px 10px 41px -30px #ee6c4d;
+      background-color: var(--bgColor);
+      border: var(--border);
+      border-radius: 1rem;
+      box-shadow: var(--boxShadow);
+      .card{
+        background: #fbeae6;
+        padding: 10px 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+  &.blackItem{
+      animation: mymove 2s infinite;
+      position: relative;
+      z-index: 1;
+      .card{
+        background: #000;
+        padding: 10px 10px;
+        border-radius: 10px;
+      }
+      &:is(:hover, :focus){
+        .bg{
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
 
   .price {
     --priceMargin: 2rem 0;
   }
 
   &--pro {
-    --border: 0;
-    --boxShadow: 0px 14px 30px rgba(204, 204, 204, 0.32);
-
     .label {
       --labelBg: #fdb72e;
       --labelColor: #fff;
@@ -449,9 +488,9 @@ body {
 
   h2 {
     color: var(--titleColor);
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.2;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
     flex-grow: 1;
   }
@@ -608,4 +647,33 @@ body {
 
 .faq_Wrap {
   margin-bottom: 4rem;
+}
+
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+}
+@keyframes blink {
+  0%   { opacity: 0; }
+  50% { opacity: 0.6; }
+  100% { opacity: 0; }
+}
+.stars-bg__star {
+  opacity: 0;
+  animation: blink 3s infinite;
+}
+.stars-bg__blink-2 {
+  animation-delay: 1s;
+}
+.stars-bg__blink-3 {
+  animation-delay: 2s;
 }

@@ -15,14 +15,11 @@ const Gallery = () => {
   const [isClient, setIsClient] = useState(false);
 
   const galleryTab = [
-    { imageUrl: "Images/ss1.webp" },
-    { imageUrl: "Images/ss2.webp" },
-    { imageUrl: "Images/ss1.webp" },
-    { imageUrl: "Images/ss2.webp" },
-    { imageUrl: "Images/ss1.webp" },
-    { imageUrl: "Images/ss2.webp" },
-    { imageUrl: "Images/ss1.webp" },
-    { imageUrl: "Images/ss2.webp" },
+    { imageUrl: "Images/ss3.jpg" },
+    { imageUrl: "Images/ss4.jpg" },
+    { imageUrl: "Images/ss5.jpg" },
+    { imageUrl: "Images/ss6.jpg" },
+    { imageUrl: "Images/ss7.jpg" },
   ];
 
   const slides = galleryTab.map((item) => ({
@@ -44,7 +41,7 @@ const Gallery = () => {
   centerMode: true,
   infinite: true,
   centerPadding: "60px",
-  slidesToShow: 5,
+  slidesToShow: 2,
   speed: 500,
   responsive: [
     {

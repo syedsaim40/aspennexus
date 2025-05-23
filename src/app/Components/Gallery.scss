@@ -14,7 +14,8 @@
 
   .gallery-item {
     position: relative;
-    height: 400px;
+    // height: 400px;
+      height: 280px;
     padding: 0 1rem;
 
     // @media (min-width: 768px) {
@@ -77,7 +78,12 @@
   &.slick-current{
     transform: scale(1.03);
     .gallery-item{
-      height: 420px;
+      // height: 420px;
+      height: 280px;
     }
   }
+}
+.gallery_Holder {
+    min-height: max-content;
+    padding-bottom: 2rem;
 }

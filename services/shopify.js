@@ -328,7 +328,7 @@ export default function shopifyAuto() {
                   </div>
 
                   <div className="planItem planItem--entp">
-                    <div className="card">
+                    <div className="card black">
                       <div className="card__header">
                         <div className="card__icon"></div>
                         <h2>Premium</h2>

@@ -314,7 +314,8 @@ body {
   --boxShadow: none;
 
   &__container {
-    --direction: column;
+    // --direction: column;
+    --direction: row;
 
     display: grid;
     grid-auto-flow: var(--direction);
@@ -355,6 +356,9 @@ body {
       &__icon {
         background-image: var(--entpIcon);
         background-size: cover;
+      }
+      &.black{
+        background: #000;
       }
     }
 
@@ -423,11 +427,19 @@ body {
 .card {
   --titleColor: #000;
   --descColor: var(--baseColor);
+  position: sticky;
+  top: 80px;
+  background: #fff;
+  padding: 10px 0;
 
   &__header {
     display: flex;
     gap: 1rem;
     align-items: center;
+  }
+
+  &.black{
+    background: #000;
   }
 
   &__icon {
